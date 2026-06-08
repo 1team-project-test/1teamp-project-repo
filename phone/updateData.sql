@@ -1,6 +1,6 @@
 -- 1. 특정 유저('user01')의 비밀번호 변경
 UPDATE USER_TABLE 
-SET PSW = '10user' 
+SET PSW = '123456' 
 WHERE USER_ID = 'user01';
 
 -- 2. 특정 유저('user02')가 이메일을 변경하고 한 살 더 먹었을 때 (여러 컬럼 동시 수정)
