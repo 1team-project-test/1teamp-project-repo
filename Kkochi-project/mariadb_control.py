@@ -4,7 +4,7 @@ import mysql.connector
 from dotenv import load_dotenv
 
 load_dotenv()
-# 환경 변수 일괄 선언 및 변환 (U=scott 계정 반영)
+# 환경 변수 일괄 선언 및 변환
 H, P, U, PA, N, T = os.getenv("DB_HOST", "localhost"), int(os.getenv("DB_PORT", 3306)), os.getenv("DB_USER", "scott"), os.getenv("DB_PASS", ""), os.getenv("DB_NAME", "kkochi_db"), os.getenv("DB_TABLE", "kkochi_user")
 
 def get_db(db=True):
@@ -12,7 +12,7 @@ def get_db(db=True):
     return mysql.connector.connect(host=H, port=P, user=U, password=PA, database=N if db else None)
 
 def initialize_database_automatically():
-    """DB와 필수 테이블(회원/이력서) 생성을 하나의 실행 흐름으로 결합"""
+    """DB와 필수 테이블(회원/이력서/히스토리) 생성을 하나의 실행 흐름으로 결합 및 리빌드"""
     try:
         with get_db(db=False) as conn:
             with conn.cursor() as cur:
@@ -22,7 +22,7 @@ def initialize_database_automatically():
                 # 1. 회원 정보 테이블 생성 (T 변수 연동)
                 cur.execute("CREATE TABLE IF NOT EXISTS {} (id INT AUTO_INCREMENT PRIMARY KEY, user_id VARCHAR(50) NOT NULL UNIQUE, password VARCHAR(255) NOT NULL, username VARCHAR(50) NOT NULL, email VARCHAR(100) NOT NULL, phone VARCHAR(30) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;".format(T))
                 
-                # 2. 파싱 4대 핵심 데이터를 담을 최신 규격의 kkochi_resume TABLE 생성
+                # 2. 파싱 4대 핵심 데이터를 담을 최신 규격의 kkochi_resume 테이블 신설
                 cur.execute("""
                     CREATE TABLE IF NOT EXISTS kkochi_resume (
                         user_id VARCHAR(50) PRIMARY KEY,
@@ -35,6 +35,21 @@ def initialize_database_automatically():
                         personality TEXT,
                         full_text TEXT,
                         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+                """)
+                
+                # 3. 대용량 대화록 보관을 위해 기존 이력 테이블이 있다면 구조 초기화 후 재생성 (LONGTEXT 반영)
+                cur.execute("DROP TABLE IF EXISTS kkochi_history;")
+                cur.execute("""
+                    CREATE TABLE kkochi_history (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        user_id VARCHAR(50) NOT NULL,
+                        company VARCHAR(100) NOT NULL,
+                        job VARCHAR(100) NOT NULL,
+                        interviewer_style VARCHAR(100) NOT NULL,
+                        chat_log LONGTEXT NOT NULL,
+                        feedback_log LONGTEXT,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
                 """)
                 conn.commit()
@@ -55,19 +70,17 @@ def register_user(username, user_id, password, email, phone):
             return True
     except: return False
 
-# 💡 [오류 해결 핵심] 유실되었던 로그인 인증 함수를 다시 복구했습니다.
 def authenticate_user(user_id, password):
-    """[로그인] 유저 인증 및 회원 데이터 반환"""
+    """[로그인] 구조 압축"""
     try:
         with get_db() as conn, conn.cursor(dictionary=True) as cur:
             cur.execute("USE {};".format(N))
             cur.execute("SELECT * FROM {} WHERE user_id = %s AND password = %s".format(T), (user_id, password))
             return cur.fetchone()
-    except: 
-        return None
+    except: return None
 
 def save_parsed_resume(user_id, company, job, style, file_name, skills, exp, motiv, personality, raw_text):
-    """[파싱 데이터 영구 저장] 변수명 매핑 오류 수정 완료"""
+    """[파싱 데이터 영구 저장] 구조 압축"""
     try:
         with get_db() as conn, conn.cursor() as cur:
             cur.execute("USE {};".format(N))
@@ -76,29 +89,45 @@ def save_parsed_resume(user_id, company, job, style, file_name, skills, exp, mot
                 (user_id, company, job, interviewer, skills_and_specs, experience_projects, motivation, personality, full_text)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON DUPLICATE KEY UPDATE
-                    company = VALUES(company),
-                    job = VALUES(job),
-                    interviewer = VALUES(interviewer),
-                    skills_and_specs = VALUES(skills_and_specs),
-                    experience_projects = VALUES(experience_projects),
-                    motivation = VALUES(motivation),
-                    personality = VALUES(personality),
-                    full_text = VALUES(full_text)
+                    company = VALUES(company), job = VALUES(job), interviewer = VALUES(interviewer),
+                    skills_and_specs = VALUES(skills_and_specs), experience_projects = VALUES(experience_projects),
+                    motivation = VALUES(motivation), personality = VALUES(personality), full_text = VALUES(full_text)
             """
             cur.execute(sql, (user_id, company, job, style, skills, exp, motiv, personality, raw_text))
             conn.commit()
             return True
-    except:
-        return False
-    
-    # 💡 mariadb_control.py 최하단에 이어서 복사 붙여넣기 해주세요.
+    except: return False
+
+# 💡 [복구 완료] document_page.py가 애타게 찾던 기존 서류 정보 자동 로드 함수를 보강 복구했습니다.
 def get_user_resume(user_id):
     """[이력서/설정 불러오기] 로그인된 유저의 기존 면접 설정 및 파싱 서류 데이터를 DB에서 조회"""
     try:
         with get_db() as conn, conn.cursor(dictionary=True) as cur:
             cur.execute("USE {};".format(N))
-            # kkochi_resume 테이블에서 해당 유저의 레코드를 딕셔너리 형태로 한 줄 추출
             cur.execute("SELECT * FROM kkochi_resume WHERE user_id = %s", (user_id,))
             return cur.fetchone()
-    except:
-        return None
+    except: return None
+
+def save_interview_and_feedback_together(user_id, company, job, style, chat_messages, feedback_json):
+    """[이력/피드백 원스톱 통합 저장] 단 한 번의 트랜잭션으로 대용량 세트를 안전하게 보관함 적재"""
+    try:
+        import json
+        with get_db() as conn, conn.cursor() as cur:
+            cur.execute("USE {};".format(N))
+            clean_log = json.dumps([m for m in chat_messages if m["role"] != "system"], ensure_ascii=False)
+            f_log = json.dumps(feedback_json, ensure_ascii=False)
+            
+            sql = "INSERT INTO kkochi_history (user_id, company, job, interviewer_style, chat_log, feedback_log) VALUES (%s, %s, %s, %s, %s, %s)"
+            cur.execute(sql, (user_id, company, job, style, clean_log, f_log))
+            conn.commit()
+            return True
+    except: return False
+
+def get_user_interview_histories(user_id):
+    """[면접 기록 목록 조회] 해당 유저가 과거에 진행했던 모든 면접 및 피드백 이력 세트 추출"""
+    try:
+        with get_db() as conn, conn.cursor(dictionary=True) as cur:
+            cur.execute("USE {};".format(N))
+            cur.execute("SELECT * FROM kkochi_history WHERE user_id = %s ORDER BY created_at DESC", (user_id,))
+            return cur.fetchall()
+    except: return []

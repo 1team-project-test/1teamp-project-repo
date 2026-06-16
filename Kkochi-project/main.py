@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 import auth
 import document_page
 import interview_page
-import feedback_page  # 💡 [신규 추가] 피드백 페이지 모듈 임포트
+import feedback_page 
+import history_page
 
 load_dotenv()
 st.set_page_config(page_title="꼬치꼬치 - AI 면접 코칭", page_icon="🍢", layout="wide")
@@ -69,8 +70,8 @@ else:
     st.markdown("<style>.main, .block-container, [data-testid='stAppViewContainer'] { background: none !important; padding: 2rem 1rem !important; overflow: auto !important; }</style>", unsafe_allow_html=True)
     st.title(f"🍢 {st.session_state['user_info']['username']}님의 면접 코칭방")
     
-    # 💡 [오류 해결 핵심] 피드백 리포트 메뉴 항목을 menu_list에 정식 추가하여 index 에러 해결!
-    menu_list = ["📄 이력서 제출", "🤖 실전 면접방", "📊 면접 피드백"]
+    # main.py 로그인 분기 내부 menu_list 구역 수정 (3칸으로 확장)
+    menu_list = ["📄 이력서 제출", "🤖 실전 면접방", "📊 면접 피드백", "🎯 면접 이력 관리"]
     menu = st.sidebar.radio("이동할 페이지 선택", menu_list, index=menu_list.index(st.session_state["current_menu"]))
     st.session_state["current_menu"] = menu
 
@@ -92,3 +93,5 @@ else:
     elif menu == "📊 면접 피드백":
         # 💡 [신규 추가] 피드백 전용 페이지 렌더링 함수 호출 연결
         feedback_page.render_feedback_page()
+    elif menu == "🎯 면접 이력 관리": # 👈 싹 추가해 연결!
+        history_page.render_history_page()

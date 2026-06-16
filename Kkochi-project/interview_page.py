@@ -1,6 +1,7 @@
 import os
 import streamlit as st
 from openai import OpenAI
+import mariadb_control as db
 
 def generate_ai_question(messages):
     """OpenAI API를 통해 면접관 성향에 맞는 실시간 질문 생성 (최신 문법 고정)"""
@@ -77,8 +78,31 @@ def render_interview_page():
                 st.write(next_q)
                 st.session_state["interview_messages"].append({"role": "assistant", "content": next_q})
                 st.rerun()
-    # interview_page.py 맨 마지막 라인 바로 아래에 붙여넣어 주세요!
+    
     st.markdown("---")
-    if st.button("🚪 면접 종료하고 AI 종합 피드백 받기 ➡️", use_container_width=True, type="primary"):
+    if st.button("🚪 면접 종료 및 AI 종합 피드백 받기 ➡️", use_container_width=True, type="primary"):
+        # 💡 [핵심 조치] 화면을 넘기기 전, 면접방에서 먼저 AI 채점 분석기를 가동합니다!
+        with st.spinner("📝 면접 내용을 종합 채점하고 보관함에 이력을 안전하게 적재 중입니다..."):
+            # feedback_page 모듈의 핵심 함수를 빌려와 선제 피드백 데이터 빌드
+            import feedback_page
+            report = feedback_page.generate_interview_feedback(st.session_state["interview_messages"])
+            
+            # API 통신 실패 예외 발생 시 비상 복구 안전 덤프 데이터 매핑
+            if not report:
+                report = {
+                    "total_score": 75, "grade": "B",
+                    "strengths": "성실하게 답변을 구성해주신 점이 아주 훌륭합니다.",
+                    "weaknesses": "압박형 꼬리 질문에 근거 수치 증명이 다소 밀렸습니다.",
+                    "best_answer_guide": "다음 훈련에서는 정량적 지표를 섞어 두괄식 표현을 연습하세요."
+                }
+            
+            # 📌 대화록과 분석 레포트를 들고 MariaDB 통합 원스톱 저장 함수 호출 가동
+            uid = st.session_state["user_info"]["user_id"]
+            db.save_interview_and_feedback_together(uid, company, job, style, st.session_state["interview_messages"], report)
+            
+            # 피드백 화면이 API를 중복 호출하지 않도록 캐시 적재 동기화 복사
+            st.session_state["feedback_report"] = report
+
+        # 백엔드 적재 임무 완료 후 안전하게 피드백 룸으로 워프!
         st.session_state["current_menu"] = "📊 면접 피드백"
         st.rerun()

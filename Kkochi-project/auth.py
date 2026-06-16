@@ -88,7 +88,20 @@ def render_auth_page():
             
             if st.button("가입하기", use_container_width=True, key="btn_register_submit"):
                 if all([reg_id, reg_pw, reg_name, reg_email, reg_phone]):
-                    if not re.match(r"^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$", reg_pw): st.warning("⚠️ 비밀번호 조건을 다시 확인해 주세요.")
-                    elif "@" not in reg_email: st.error("❌ 올바른 이메일 주소 형식이 아닙니다.")
-                    elif db.register_user(reg_name, reg_id, reg_pw, reg_email, reg_phone): st.success("✅ 회원가입 성공!")
-                else: st.warning("⚠️ 모든 항목을 빈칸 없이 채워주세요.")
+                    if not re.match(r"^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$", reg_pw): 
+                        st.warning("⚠️ 비밀번호 조건을 다시 확인해 주세요.")
+                    elif "@" not in reg_email: 
+                        st.error("❌ 올바른 이메일 주소 형식이 아닙니다.")
+                    else:
+                        # 회원가입 함수 실행
+                        is_success = db.register_user(reg_name, reg_id, reg_pw, reg_email, reg_phone)
+                        
+                        if is_success:
+                            st.success("🎉 회원가입 성공! 로그인 탭에서 로그인을 진행해 주세요.")
+                            # 사용자가 성공 메시지를 볼 수 있도록 1.5초 대기 후 새로고침 (필요시 사용)
+                            # import time; time.sleep(1.5); st.rerun()
+                        else:
+                            # mariadb_control.py에서 에러 출력을 해주지만, 여기서도 실패 알림
+                            st.error("❌ 회원가입에 실패했습니다. 위의 DB 오류 메시지를 확인하세요.")
+                else: 
+                    st.warning("⚠️ 모든 항목을 빈칸 없이 채워주세요.")
