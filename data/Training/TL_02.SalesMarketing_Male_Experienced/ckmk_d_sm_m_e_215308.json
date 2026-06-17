@@ -1,0 +1,66 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "이제까지 본인이 살면서 이룬 성과 중에 가장 큰 성과가 무엇인가요 본인이 생각하는 가장 큰 성과에 대해 말씀해 주세요",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 본인이 지금까지 살면서 가장 큰 성과와 그런 부분에 대해서 자랑 한번 해보도록 하겠습니다. 어 일단 군 생활을 간부 생활로 지내면서 육 년 간의 군 생활을 마쳤다는 것이 어 어떻게 보면 좀 자신에게 뿌듯하고 이십 대 청춘을 나라에를 위해서 봉사하고 희생하는 정신으로 살았다는 그런 이십 대에 대해서 굉장히 자랑스럽고 두 번째는 지금 가정을 이루고 어 딸과 아들이 하나 있습니다 .그래서 내 가족이 행복하게 잘 지내고 있는데 이렇게 가정을 꾸렸다. 부모의 도움 없이 자력으로 와이프의 그 자력으로 인해서 이렇게 한 개의 가정을 이루고 아이들을 잘 키울 수 있다는 것에 대해서 평범한 게 제일 어렵다고 하는데 정말 평범하게 잘 지내고 있는 것 같습니다. 그런 부분에서 지금까지 해왔던 과정 중 그 두 가지가 제일 큰 성과일 것 같고 또 이제 경력들을 쌓아서 이 회사에 입사를 하게 되면 또 하나의 또 저의 자랑거리가 생길 것 같습니다. 그런 부분에서 제가 이런 성과들이 있었던 것 같고 그런 부분이 자랑스러운 것 같습니다. 이상입니다.",
+                "wordCount": 147
+            },
+            "emotion": [
+                {
+                    "text": "어 일단 군 생활을 간부 생활로 지내면서 육 년 간의 군 생활을 마쳤다는 것이 어 어떻게 보면 좀 자신에게 뿌듯하고 이십 대 청춘을 나라에를 위해서 봉사하고 희생하는 정신으로 살았다는 그런 이십 대에 대해서 굉장히 자랑스럽고 두 번째는 지금 가정을 이루고 어 딸과 아들이 하나 있습니다 .",
+                    "expression": "p-achievement",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "군 생활을 간부 생활로 지내면서 육 년 간의 군 생활을 마쳤다는 것이 뿌듯하고, 가정을 이루고 아이들과 잘 지내고 있다는 것이 평범한 것이 제일 어렵다고 하는데 그런 부분에서 지금까지 해왔던 과정 중 그 두 가지가 제일 큰 성과일 것 같고, 경력들을 쌓아서 이 회사에 입사를 하게 되면 또 하나의 자랑거리가 생길 것 같습니다.",
+                "wordCount": 52
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 385678,
+            "duration": 12050,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/Experienced/ckmk_q_sm_m_e_215308.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2730318,
+            "duration": 85320,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/Experienced/ckmk_a_sm_m_e_215308.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "어 이전 직장에서 퇴사 퇴사를 하셨잖아요 어 퇴사한 것을 혹시 후회하지는 않으셨나요 또 후회를 하셨다면 어 후회하신 이유는 무엇인지 함께 말씀해 주시길 바랍니다",
+                "wordCount": 23
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "직장을 세 번 옮기게 되었는데 처음 직장은 어 남편이 해외로 이주했기 때문에 어 주재원으로 함께 나갈 수밖에 없어서 이주했기 때문에 후회할 수는 없었고요. 다만 조금 후회가 되는 것은 그동안 오 년 동안 나가 있는 동안에 어 제가 다니던 직장을 그만두게 돼요. 그거는 후회가 되었지만 아이들과 가족과 함께 있어야 한다는 것 때문에 그게 더 좋은 일이라고 생각해서 어 후회 그렇게 큰 후회라고 생각하지 않습니다. 하지만 제가 경력단절 여성이 되는 것만큼은 쪼금 후회스러웠습니다.",
+                "wordCount": 71
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "남편의 해외 이주로 인해 직장을 세 번 옮기게 되었고, 오 년 동안 경력단절 여성이 되어 직장을 그만둔 것은 후회가 되지만 아이들과 가족과 함께 있어야 하는 것이 더 좋다고 생각했습니다.",
+                "wordCount": 29
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 546638,
+            "duration": 17080,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_q_ps_f_e_234648.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1369038,
+            "duration": 42780,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_a_ps_f_e_234648.wav"
+        }
+    }
+}

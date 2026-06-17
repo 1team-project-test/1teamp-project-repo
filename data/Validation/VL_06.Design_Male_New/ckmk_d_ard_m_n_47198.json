@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "십 년 후 본인의 모습 어떤 모습일까요.",
+                "wordCount": 7
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 좋은 디자이너로서 성장해 있을 것이라고 생각합니다. 저는 지금도 제 이 직무를 정말 사랑하고 나중에 있어서의 제 모습도 디자이너가 되길 바라고 있습니다. 저는 그래서 제 장기적인 목표 중기적인 목표 단기적인 목표를 굉장히 중요시하는데요. 저에게 있어 현재 단기적인 목표는 취업과 디자인에 대한 생각을 자리 잡게 하는 것이고 저의 중기적인 목표는 그 직무 분야에서 좀 더 많은 경험과 제 스킬들을 습득하 하는 것입니다. 그렇게 해서 제가 이 분야에서 정말 많은 지식을 가졌을 때 제 장기적인 목표로는 어느 한 한 회사의 큰 팀장으로 자리를 한다든지 아니면 제가 새로운 제 회사를 차려서 디자인 분야에 있어서 제 열정을 멀리 표하고 그러도록 노력할 것 같습니다. 제 장기적인 목표 그리고 중기적인 목표까지 달려갈 수 있는 곳이 본회사라고 생각하여 지원했습니다.",
+                "wordCount": 112
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "제 장기적인   목표 그리고 중기적인 목표까지 달려갈 수 있는 곳이 본회사라고 생각하여 지원했습니다.",
+                    "expression": "c_sincere_job",
+                    "category": "etc"
+                }
+            ],
+            "summary": {
+                "text": "저는 현재 단기적으로 취업과 디자인에 대한 생각을 자리 잡게 하는 것이며, 중기적인 목표는 그 직무 분야에서 좀 더 많은 경험과 제 스킬들을 습득하는 것입니다. 그래서 제가 이 분야에서 많은 지식을 가졌을 때 장기적인 목표 그리고 중기적 목표까지 달려갈 수 있는 곳을 본회사라고 생각하여 지원했습니다.",
+                "wordCount": 43
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 176078,
+            "duration": 5500,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/New/ckmk_q_ard_m_n_47198.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2036558,
+            "duration": 63640,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/New/ckmk_a_ard_m_n_47198.wav"
+        }
+    }
+}

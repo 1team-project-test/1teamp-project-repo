@@ -1,0 +1,76 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "기차를 운행하면서 산사태로 운행이 삼 십 분 정도 정차가 돼 있어요.  이때 어떻게 조치하실 건가요.",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "아 이게 불가피하고 불가항력적인 일임과 동시에 이게 개인이 어 적극적으로 어떤 조치를 하기에는 좀 어려운 부분이 있는 사고이기 때문에 아 저 같은 경우에 우선 이 뭐 일 일 구와 철도청에 이 사고에 대한 신고를 하고 난 이후에는 일 일 구와 철도청 그리고 아 이 기관사들 뭐 그 들의 대처에 잘 따라가면서 다른 사고나 추가적인 이 차 문제가 발생하지 않도록 그 움직이는 게 최대 가장 좋고 바람직한 조치라고 생각을 합니다. 그래서 아 방 안내 방송을 잘 듣고 아 뭐 철도청이나 그 출동한 소방관 같은 그런 도 그 전문적 전문가들이 그 시키는 대로 안전 수칙을 준수하면서 그들의 명령에 따라서 질서 정연하게 움직이고 조급한 마음을 가지지 않는 않고 그들을 믿고 따르는 것이 가장 안전하고 적절한 조치라고 생각을 합니다. 그래야 이 문제해결도 빨리 이루어지고 다른 이 차적인 사고도 발생하지 않을 수 있을 것이라고 생각합니다.",
+                "wordCount": 130
+            },
+            "emotion": [
+                {
+                    "text": "아 이게 불가피하고 불가항력적인 일임과 동시에 이게 개인이 어 적극적으로 어떤 조치를 하기에는 좀 어려운 부분이 있는   사고이기 때문에 아 저 같은 경우에 우선 이 뭐 일 일 구와 철도청에 이 사고에 대한 신고를 하고 난 이후에는 일 일 구와   철도청 그리고 아 이 기관사들 뭐 그 들의 대처에   잘 따라가면서 다른 사고나 추가적인 이 차 문제가 발생하지 않도록 그    움직이는 게 최대 가장 좋고 바람직한 조치라고 생각을 합니다.",
+                    "expression": "u-belief",
+                    "category": "neutral"
+                },
+                {
+                    "text": "그래서   아 방 안내 방송을 잘 듣고 아 뭐 철도청이나   그 출동한 소방관   같은 그런 도 그 전문적 전문가들이 그 시키는 대로 안전 수칙을 준수하면서 그들의   명령에 따라서 질서 정연하게 움직이고 조급한 마음을 가지지 않는 않고   그들을 믿고 따르는 것이 가장 안전하고 적절한 조치라고 생각을 합니다.",
+                    "expression": "u-belief",
+                    "category": "neutral"
+                },
+                {
+                    "text": "그래야 이 문제해결도 빨리 이루어지고 다른 이 차적인 사고도 발생하지 않을 수 있을 것이라고 생각합니다.",
+                    "expression": "u-belief",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "불가항력적인 일임과 동시에 개인이 적극적으로 조치를 취하기는 어려운 부분이 있기 때문에, 문제해결도 빨리 이루어지고 다른 이 차적인 사고도 발생하지 않을 수 있을 것이라고 생각합니다.",
+                "wordCount": 24
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 384078,
+            "duration": 12000,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_13125.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2782798,
+            "duration": 86960,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_13125.wav"
+        }
+    }
+}

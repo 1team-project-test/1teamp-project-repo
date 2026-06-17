@@ -1,0 +1,66 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "네이버나 다음 구글 같은 검색 엔진을 비교해 주시고 이 세 가지의 각각 검색 엔진들에는 어떤 차이점과 장단점이 있는지 말씀해 주세요",
+                "wordCount": 20
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어 일단은 세 덩이로 나눠서 설명드리기 전에 제가 두 덩이로 먼저 한 번 나눠서 설명을 드려 볼게요. 음 네이버랑 다음은 일단 포털 사이트입니다. 그 검색에 대한 정보만 나오는 게 아니라 쇼핑이나 블로그나 동영상이나 어떤 다양한 정보로 유입될 수 있는 그런 링크로 영입 영입 연결될 수 있는 그런 고리들이 많아요. 어 그래서 좀 포괄적인 정보를 좀 운영을 하는 편이고 다만 두 그런 네이버랑 다음에 대해서 차이가 있다면 네이버는 쇼핑 쪽이 많죠 아무래도 뭐 파워 링크 막 이런 쪽으로 먼저 뜨니까 그런 쪽으로 많이 이용할 때 쓰는 편인 것 같고 다음 같은 경우는 좀 최신 정보들 뭔가 최신 어 네이버랑 비슷하긴 한데 그런 블로그 같은 것도 좀 최신 기사들이 좀 많은 것 같아요. 뭐 네 그렇죠. 그리고 구글 같은 경우는 어 검색을 위한 사이트이기 때문에 뭐 네이버랑 네이버랑 다음 처럼 뭔가 블로그를 운영하거나 쇼핑 정보 이런 걸 보기보다는 진짜 순수하게 검색에 대한 정보를 조금 알 수 있어서 그런 점이 좀 편안한 것 같습니다.",
+                "wordCount": 151
+            },
+            "emotion": [
+                {
+                    "text": "음 네이버랑 다음은 일단 포털 사이트입니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "네이버와 다음은 포털 사이트로 검색 정보만 나오는 게 아니라 다양한 정보로 유입될 수 있는 링크가 많은데 좀 포괄적인 정보를 운영하는 편입니다. 네이버는 쇼핑 쪽이고 다음이나 구글은 검색을 위한 사이트이기 때문에 순수하게 검색에 대한 정보를 알 수 있는 점이 편리합니다.",
+                "wordCount": 39
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 396878,
+            "duration": 12400,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_286456.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2704718,
+            "duration": 84520,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_286456.wav"
+        }
+    }
+}

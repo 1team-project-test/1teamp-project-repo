@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "어 지원자님께서 생각하시기에 어 본인이 상상하는 자신의 노년은 어떤 모습이 어 되고 싶으신가요 자기가 생각하는 이상적인 노년의 모습을 바래 말씀해 주시길 바랍니다",
+                "wordCount": 22
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제가 생각하는 노년의 이상적인 모습은 언제 어디서 무엇을 하든 항상 행복감을 느끼는 삶입니다. 노년기에 접할 때면 인간 인생에 많은 고난들을 겪고 성공도 어느 정도 누리었을 시기라고 생각합니다. 죽음이 더 가까운 나이에 이르러서는 보다 더 행복한 순간이 더욱 많아야 한다고 생각합니다. 그러기 위해서는 그전까지 인생을 알차고 의미 있게 살아야 한다고 생각합니다. 또한 다양한 추억을 남기기 위해 수동적으로 지내는 삶이 아닌 적극적으로 자신의 인생을 주도해 나가고 만들어 나가고 계획해 나가는 그런 삶이 필요하다고 생각합니다. 그래서 저는 이렇게 적극적으로 열심히 인생을 살아 노년기 때는 행복한 순간들만 기억에 남고 정신력이 강하여 웬만한 것들에는 굴하지 않으며 건강하게 살아가고 싶습니다.",
+                "wordCount": 94
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "제가 생각하는 노년의 이상적인 모습은 언제 어디서 무엇을 하든 항상 행복감을 느끼는 삶이라 생각합니다. 그래서 저는 적극적으로 열심히 살아 노년기 때는 행복한 순간들만 기억에 남고 정신력이 강하여 웬만한 것들에는 굴하지 않으며 건강하게 살아가고 싶습니다.",
+                "wordCount": 34
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 537038,
+            "duration": 16780,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_208381.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2792398,
+            "duration": 87260,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_208381.wav"
+        }
+    }
+}

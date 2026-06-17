@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "과거 직면한 어려운 문제를 해결하기 위해서 본인이 어떤 아이디어를 제안했거나 또는 무엇을 했는지 그 과정에 대해서 설명 한 번 해 주시겠습니까",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "예전에 한국에서 생산하는 프로젝트가 있었는데 이게 공장의 생산 설비의 문제로 인해서 고객과 정한 납기를 맞출 수 없는 크나큰 문제가 직면하게 되었습니다. 당시 한국에서는 더 이상 생산할 수 있는 캐파 여력이 없다 라고 판단 중국이라는 지역으로 옮겨서 공장 설비부터 시작해서 모든 거를 빠른 시간 안에 셋업을 시켰고 이 기준으로 해서 고객과 약속한 납기를 지킬 수 있도록 현장의 인원들을 급파 모든 것들을 한 달 안에 마무리했던 기억이 있습니다.",
+                "wordCount": 66
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "공장의 생산 설비의 문제로 고객과 정한 납기를 맞출 수 없는 문제가 있었습니다. 중국이라는 지역으로 옮겨 공장 설비부터 시작해서 모든 것을 빠른 시간 안에 셋업 시켰고 한 달 안에 마무리 했습니다.",
+                "wordCount": 30
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 504398,
+            "duration": 15760,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_q_sm_m_n_377708.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1104718,
+            "duration": 34520,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_a_sm_m_n_377708.wav"
+        }
+    }
+}

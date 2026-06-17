@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "일을 하다 보면 다른 지역에서 업무를 수행해야 될 수도 있습니다 지원자님은 타 지역 업무도 괜찮으실까요",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "타 지역 근무는 사실 고민해 보지 않았습니다. 제가 이 회사에 지원을 한 이유는 아무래도 제가 지금 거주하고 있는 이 집과 가장 가까웠기 때문인데요. 저에게는 이 거리가 굉장히 중요합니다. 저는 고등학교와 대학교를 제가 살고 있는 이 집에서 굉장히 먼 거리에 위치해 있는 학교를 다녔었습니다. 그래서 저는 항상 이 회사만큼은 제가 살고 있는 이 집에서 가까운 거리에 있는 회사에 입사를 하고자 했었는데요. 그렇기 때문에 제가 이 회사에 입사를 하게 되었고 어 다른 지역에서 업무를 수행해야 한다면 저는 어 고민을 하고 어 하겠지만 어 타 지역 근무는 조금 어려울 것 같습니다.",
+                "wordCount": 88
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "제가 이 회사에 지원을 한 이유는 아무래도 제가 지금 거주하고 있는 이 집과 가장 가까웠기 때문인데요.",
+                    "expression": "c_sincere_job",
+                    "category": "etc"
+                }
+            ],
+            "summary": {
+                "text": "저는 고등학교와 대학교를 제가 살고 있는 이 집에서 굉장히 먼 거리에 위치한 학교에 다녔습니다. 그래서 저는 집에서 가까운 이 회사에 입사하게 되었고 타 지역에서 업무를 수행해야 한다면 타 지역 근무는 어려울 것 같습니다.",
+                "wordCount": 33
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 271438,
+            "duration": 8480,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_349377.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2074318,
+            "duration": 64819,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_349377.wav"
+        }
+    }
+}

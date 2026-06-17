@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "저희 회사에 들어오게 된다면 가장 가고 싶은 부서는 어디인지 왜 그렇게 생각하셨는지 함께 얘기해 주세요",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "회사에는 많은 부서들이 있습니다만은 어 가장 가고 싶은 부서는 마케팅부라고 생각을 합니다. 어 많은 사람들은 마케팅 부서가 힘들고 어렵다 라고 생각하는 경향들이 있는 것 같습니다. 하지만 저는 오히려 마케팅이라는 부서가 어 가장 중요하면서 가장 많은 가치를 만들어내는 부서라고 생각을 합니다. 예전에는 생산이 가장 중요한 부서일 때가 있었습니다. 어 많은 업체들이 생산에 참여하지 않고 몇 개 업체들만 생산 과정에 참여할 때는 마케팅이라는 것은 크게 의미가 없었을 것입니다. 하지만 지금 이 시대에서 수많은 업체들이 비슷한 제품들을 만들어내고 있다고 봅니다. 이런 상황에서는 생산 물론 중요합니다만은 그 생산된 제품 서비스를 고객들에게 얼마나 많이 어 전달하고 판매하고 그 사람들이 써 볼 수 있게 하는 그런 과정들이 훨씬 더 중요해진 시대가 되었다고 생각을 합니다. 훨씬 더 중요하고 다이면 다이나믹한 부서에서 일해 볼 생각입니다.",
+                "wordCount": 117
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "많은 업체들이 비슷한 제품들을 만들어내고 있는 현 시대에서 가장 중요한 부서는 마케팅부라고 생각합니다. 생산된 제품 서비스를 고객들에게 얼마나 많이 전달하고 판매하고 그 사람들이 써 볼 수 있게 하는 과정들이 훨씬 더 중요해진 시대가 되었다고 생각합니다.",
+                "wordCount": 35
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 257678,
+            "duration": 8050,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_385297.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3525198,
+            "duration": 110160,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_385297.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "요즘 쓰리디 티비가 이슈 이슈인데 기술적인 부분에서 쓰리디 티비에 중요하다고 생각하는 점을 말씀해 주시고 또한 소비자의 관점에서 본인의 생각을 말씀해 주세요",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "마치 영화에서나 있을 법한 쓰리디 체험을 티비 로 할 수 있는 쓰리디 티비는 정말 그 기술이 가히 놀랍다고 할 수 있습니다. 그 기술을 저희가 제대로 체험하려면 안경을 써야 하거나 안경을 쓰지 않는 경우에는 다소 떨어지는 그러한 체험을 갖게 하는 것이 현재의 쓰리디 티비의 상황입니다. 그것은 기술이 아무리 발전하더라도 소비자에게 편리성을 가져다주지 못하면 정말로 대중화되기는 어렵다는 것을 증빙하는 기술이 바로 쓰리디 티비 라고 생각을 합니다. 그래서 앞으로 쓰리디 티비가 더 나아가야 할 기술적인 부분은 소비자들이 정말 편리하게 그것을 체험할 수 있게 해야 합니다. 리모콘 하나로 쓰리디를 선택해서 자연스럽게 볼 수 있는 그러한 기술이 구현되지 않으면 현재처럼 정말로 안경을 써야 하거나 쓰지 않으면 체험이 다소 떨어지는 그러한 상황일 때는 소비자들에게 어느 정도 외면을 받게 되고 가격만 비싼 티비로 전략할 가능성이 높다고 저는 개인적으로 생각을 합니다.",
+                "wordCount": 123
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "쓰리디 체험을 티비로 할 수 있는 쓰리디 티비의 기술은 놀랍습니다. 하지만 기술의 발전은 소비자의 편리성을 가져다주지 못하면 대중화되기는 어렵습니다. 따라서 소비자들이 편리하게 체험할 수 있게 기술이 구현되어야 합니다. 그렇지 않으면 소비자들은 외면을 받고 가격만 비싼 티비로 전략할 가능성이 높다고 생각합니다.",
+                "wordCount": 40
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 518478,
+            "duration": 16200,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_296133.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3289678,
+            "duration": 102800,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_296133.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인이 생각할 때 본인은 남을 잘 이끄는 리더형과 남을 잘 따르는 팔로워형 중 어떤 유형에 맞는다고 생각을 하십니까 본인은 어떤 유형인지 이유도 함께 말씀해 주시기 바랍니다",
+                "wordCount": 26
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 남을 잘 이끄는 리더 형 입니다. 뭐 남 잘 따르는 팔로워형이기도 하고 이제 상황마다 다르긴 하지만 좀 좀 남을 잘 이끄는 편인 것 같습니다. 워낙 좀 동생 선배들보다 동생들이랑도 더 친하고 그러다 보면은 이제 제가 많이 데리고 다니면서 막 사주고 이러는 편이지만 그런 게 익숙해져서 그런지 좀 남을 따라가서 막 따라다니고 막 따르고 말 듣고 그런 것보다 그냥 저가 부르고 음 뭐 이거 하자 하고 뭐 같이 놀고 같이 일하고 그 이제 마음 맞는 동생들이랑 같이 일하고 오히려 이제 그런 게 더 편함 기 때문에 그런 것 같습니다. 그런 유형인 것 같습니다.",
+                "wordCount": 93
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 남 잘 따르는 팔로워형이면서 남을 잘 이끄는 리더형 입니다. 동생들과도 더 친해지고 그런 게 익숙해져서 저는 혼자 놀고 일하는 것보다 동생들과 같이 일하는 게 더 편하기 때문에 리더형을 택했습니다.",
+                "wordCount": 29
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 604878,
+            "duration": 18900,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_q_sm_m_n_289264.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2048398,
+            "duration": 64010,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_a_sm_m_n_289264.wav"
+        }
+    }
+}

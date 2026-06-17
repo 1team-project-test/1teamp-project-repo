@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님의 다른 주변 사람들이 생각하는 지원자님의 단점과 장점에 대해서 모두 한 번 말씀해 주시기 바랍니다",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 음 주변에서 저를 볼 때 저의 장점은 어떤 것이든 포기하지 않는 자세로 임하는 저의 마음가짐이라고 생각하고 그것에 대해서 많이 말을 해 줍니다. 너는 정말 본받을 점이 많고 멋진 사람이구나 라고 말을 많이 해 주는데 그렇게 칭찬을 해 주는 이유가 일단 저에게 있어서 저에게 주어진 일에 항상 최선을 다하고 포기하지 않는 자세로 임하기 때문이 아닐까 라고 지레짐작해 보는 바입니다. 그리고 저의 단점을 말을 해 줄 땐 너무 줏대가 없다 라고 말을 해 주는데 제가 워낙 남을 배려하고 남에게 맞춰 주는 그래서 그들을 위하면서 살다 보니까 저의 생각이나 의견을 아니 말하지 않을 때가 많은 것 같습니다. 그럴 때도 너무 줏대 없다 라고 말을 해 주는데 그래서 저는 이 단점을 조금 더 저의 생각과 결정을 잘 할려고 그리고 거기에 책임을 지려고 노력하는 편인 것 같습니다.",
+                "wordCount": 124
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "그리고 저의 단점을 말을 해 줄 땐 너무 줏대가 없다 라고 말을 해 주는데 제가 워낙 남을 배려하고 남에게 맞춰 주는 그래서 그들을 위하면서 살다 보니까 저의 생각이나 의견을 아니 말하지 않을 때가 많은 것 같습니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "주변에서는 저를 볼 때 어떤 것이든 포기하지 않는 마음가짐이 좋다고 말합니다. 그리고 저의 단점을 말 해 줄 땐 너무 줏대 없다 라고 말을 해 주는데 저는 이 단점을 조금 더 생각과 결정을 잘 할려고 그리고 거기에 책임을 지려고 노력하는 편인 것 같습니다.",
+                "wordCount": 43
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 382478,
+            "duration": 11950,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_383000.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2465358,
+            "duration": 77040,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_383000.wav"
+        }
+    }
+}

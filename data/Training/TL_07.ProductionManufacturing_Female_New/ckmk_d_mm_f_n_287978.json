@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "만약 시간이 촉박한 상황이 생긴다면 어떤 방법으로 시간 관리를 하시나요 본인만의 시간 관리법에 대해서 말씀해 주세요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "시간을 촉박할 때 해야 될 과제가 있으면 먼저 가장 중요한 순서대로 과제를 분류합니다. 그리고 나서 과제의 난이도별로 또다시 한번 분류합니다. 그리고 어 난이도에 따라 시간이 얼마나 걸리는지도 거기에 같이 체크를 해 줍니다. 가장 위에 체크된 것은 중요하고 그리고 일이 어렵고 그리고 시간이 가장 많이 걸리는 일이 가장 위에 가고 반대로 어 중요도도 좀 떨어지고 시간도 짧게 걸리고 쉽게 해결할 수 있는 일을 가장 아래쪽에 배치를 한 다음 제 시간표를 쪼개서 가장 큰 부분에 해당하는 어 앞쪽에 있는 것들을 먼저 채워 넣습니다. 그래서 무슨 일이 있어도 그 시간 안에 그것들을 하기에 노력을 할 것입니다. 그리고 뒤에 있는 것들은 자투리 시간을 이용해서 제 업무 시간 이후에라도 제가 아주 쉽게 해결할 수 있기 때문에 어 시간을 쪼개서 이후에 그것을 하기 위해서 뒤쪽으로 놓고 앞에 있는 일들을 해결해 가면서 짬짬이 중간중간 어 시간이 날 때마다 어 중요도가 떨어지고 쉽게 해결할 수 있는 일들을 사이사이에 해결해서 어 앞에 있는 일에 집중을 하되 뒤쪽에 있는 일들은 짬짬이 남는 시간에 미리미리 하는 식으로 하여서 어 나중에는 모든 일이 다 어 어느 정도 성과를 낼 수 있게 그렇게 관리를 합니다.",
+                "wordCount": 172
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "시간이 촉박할 때 해야 될 과제가 있으면 가장 중요한 순서대로 과제를 분류하고 난이도에 따라 다시 분류한 다음 시간표를 쪼개서 가장 큰 부분에 해당하는 것들을 먼저 채워넣습니다. 그리고 뒤에 있는 것들은 업무 시간 이후에라도 쉽게 해결할 수 있도록 뒤쪽에 놓고 앞에 있는 일들을 처리해 가면서 나중에 어느 정도 성과를 낼 수 있게 관리를 합니다.",
+                "wordCount": 53
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 302158,
+            "duration": 9440,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_287978.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2683918,
+            "duration": 83870,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_287978.wav"
+        }
+    }
+}

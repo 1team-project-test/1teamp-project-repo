@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "이 직무를 위해 당신이 이것만큼은 열심히 했다고 생각하는 것은",
+                "wordCount": 9
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "봉사활동과 실습 생활 실습을 정말 열심히 했습니다. 특히 실습의 실습의 경우 어 삼 주를 하는 학생들이 참 많았는데 저는 사 주를 꿋꿋하게 채우고 그리고 사 주를 채운 뒤에도 그 기관에서 꾸준히 봉사활동을 하는 등 그분들과 함께 좋은 경험과 좋은 관계를 만들어 왔다고 생각합니다.",
+                "wordCount": 41
+            },
+            "emotion": [
+                {
+                    "text": "봉사활동과 실습 생활 실습을 정말 열심히 했습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "특히 실습의 실습의 경우 어   삼 주를 하는 학생들이 참 많았는데 저는 사 주를 꿋꿋하게 채우고 그리고 사 주를 채운 뒤에도 그 기관에서 꾸준히 봉사활동을 하는 등 그분들과 함께 좋은   경험과 좋은 관계를 만들어 왔다고 생각합니다.",
+                    "expression": "u-belief",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "봉사활동과 실습 생활 실습을 정말 열심히 했습니다. 특히 실습의 실습의 경우 어   삼 주를 하는 학생들이 참 많았는데 저는 사 주를 꿋꿋하게 채우고 그리고 사 주를 채운 뒤에도 그 기관에서 꾸준히 봉사활동을 하는 등 그분들과 함께 좋은   경험과 좋은 관계를 만들어 왔다고 생각합니다.",
+                    "expression": "p_cus_orien",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 사 주를 채우더라도 꾸준히 봉사활동을 하는 등 분들과 함께 좋은 경험과 좋은 관계를 만들어 왔다고 생각합니다. 특히 실습 실습을 열심히 했습니다.",
+                "wordCount": 22
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 217678,
+            "duration": 6800,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_12838.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 772238,
+            "duration": 24130,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_12838.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "시험 기간이나 시간이 촉박한 상황에 어떤 방법으로 시간 관리를 하시나요 또 그러한 시간 관리 노하우를 말씀해 주시기를 바랍니다",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 그 시험의 준비는 끝이 없습니다. 그래서 뭐 촉박하다 안 하다 그런 내용은 조금 제가 느끼는 경험이나 과거를 생각하실 때 조금 어울리지 않은 용어라고 생각을 하구요. 본인이 가용할 시간 내에 어떤 뭐 체계라든지 어떤 공부 내용을 본인이 할 것인지 계획을 잡아야 겠죠. 어 그다음에 그 계획대로 본인이 원하는 만큼 어 준비를 하면은 어 그 충분하다 일단 생각을 하고 또 단지 제가 원하는 만큼의 시간을 하루에 예를 들어서 열 시간을 준비를 해야 되는데 갑작스럽게 어떤 상황이 발생이 돼서 네 시간 다섯 시간밖에 못 했다 그로 인하여 많은 시간에 대해서 준비가 부족했다 뭐 이런 것은 나올 수가 있겠죠. 그렇기 때문에 그 시험 준비 기간에는 어 최대한 대외적인 접촉 뭐 그 변화라든지 뭐 어 외출이라든지 이런 것을 어떤 그 최소화하는 게 가장 중요하다고 생각합니다. 그 이유는 자기 스스로 자기 시간을 통제하고 외부 요인으로 영향을 받지 않는 그런 환경을 본인이 구축하고 관리하는 게 더 중요하기 때문에 그렇다면 당연히 본인이 원하는 만큼의 시간을 본인이 관리할 수 있기 때문에 촉박이라는 경우가 나올 수도 없고 단지 또 본인이 열 시간 충분하다 생각했는데 하다 보니까 열 시간은 부족하다 그런 경우는 나올 수 있겠습니다.",
+                "wordCount": 175
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "시험 준비 기간에는 최대한 대외적인 접촉, 외출 등을 최소화하는 게 가장 중요하다고 생각합니다. 외부 요인으로 영향을 받지 않는 환경을 본인이 구축하고 관리하는 게 더 중요하기 때문에 촉박이라는 경우가 나올 수도 없고 본인이 열 시간 충분하다 했는데 하다 보니 열 시간은 부족하다 그런 경우는 나올 수 있겠습니다.",
+                "wordCount": 46
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 476878,
+            "duration": 14900,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_338582.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3004878,
+            "duration": 93900,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_338582.wav"
+        }
+    }
+}

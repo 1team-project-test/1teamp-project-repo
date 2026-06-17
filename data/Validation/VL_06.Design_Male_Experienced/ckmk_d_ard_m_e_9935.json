@@ -1,0 +1,81 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "본인이 지원한 업무의 전문가라고 생각하는가.",
+                "wordCount": 5
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저가 제가 지원한 업무에 전문가라고 생각하는지에 대해 질문을 주셨는데 어 저는 이 분야에 대해서 전문가라고 생각을 합니다. 왜냐하면 저는 이제 공연뿐만 아니라 이 영상 촬영하는 부분까지도 많은 공부와 또한 경험이 풍부하게 있고 또한 지인들을 통하여서 촬영 현장에 많이 다녀 보았기 때문에 영상 촬영에 대해서 저는 부족함이 없다라고 생각을 합니다. 실제로 감독님들이 부재할 경우에 제가 많이 했습니다.",
+                "wordCount": 58
+            },
+            "emotion": [
+                {
+                    "text": "저가 제가 지원한 업무에 전문가라고 생각하는지에 대해 질문을 주셨는데 어 저는 이 분야에 대해서 전문가라고 생각을 합니다.",
+                    "expression": "u-belief",
+                    "category": "neutral"
+                },
+                {
+                    "text": "왜냐하면 저는 이제 공연뿐만 아니라 이 영상 촬영하는 부분까지도 많은 공부와 또한 경험이 풍부하게 있고 또한 지인들을 통하여서 촬영 현장에 많이 다녀 보았기 때문에 영상 촬영에 대해서 저는 부족함이 없다라고 생각을 합니다.",
+                    "expression": "u-belief",
+                    "category": "neutral"
+                },
+                {
+                    "text": "실제로 감독님들이 부재 할 경우에 제가 많이 했습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "저가 제가 지원한 업무에 전문가라고 생각하는지에 대해 질문을 주셨는데 어 저는   이 분야에 대해서 전문가라고 생각을 합니다.",
+                    "expression": "c_sincere_job",
+                    "category": "etc"
+                },
+                {
+                    "text": "왜냐하면 저는 이제 공연뿐만 아니라 이 영상 촬영하는 부분까지도 많은 공부와 또한 경험이 풍부하게 있고   또한 지인들을 통하여서 촬영 현장에 많이 다녀 보았기 때문에 영상 촬영에 대해서 저는 부족함이 없다라고 생각을 합니다.   실제로 감독님들이 부재 할 경우에 제가 많이 했습니다.",
+                    "expression": "d_dgn_proc",
+                    "category": "technology"
+                }
+            ],
+            "summary": {
+                "text": "저는 공연뿐만 아니라 영상 촬영하는 부분까지도 많은 공부와 경험이 풍부하고 지인들을 통하여서 촬영 현장에 많이 다녀 보아서 영상 촬영에 대해서는 부족함이 없습니다.",
+                "wordCount": 22
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 233678,
+            "duration": 7300,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/Experienced/ckmk_q_ard_m_e_9935.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1090638,
+            "duration": 34080,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/Experienced/ckmk_a_ard_m_e_9935.wav"
+        }
+    }
+}

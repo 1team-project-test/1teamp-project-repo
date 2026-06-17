@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "어 입사 후에 만약에 상사가 업무와 무관한 일을 시켰다고 하면 잘 수행할 자신이 있을까요 아니면 수행하지 않을 건지도 궁금합니다 답변해 주시기 바랍니다",
+                "wordCount": 22
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어 상사가 업무랑 무관한 일을 시키는 거는 상사의 자질이 없다고 생각을 합니다. 저는 이거를 수행하고 수행 안 하고를 떠나서 어 회사 자체에 고발이 들어가야 한다고 생각해요 이런 일들은. 제가 예전에 인턴으로 일했던 어떤 회사에서 상사가 저한테 개인적인 업무를 시킨 적이 있었어요. 예를 들어서 뭐 자기네 집 매트리스를 가서 교환해 와라 반품을 하라고 했나 그래서 제가 그걸 들고 갔었거든요. 그리고 이 회사에서 출시하지 않는 상품인 건데 뭔가 샘플처럼 저한테 이거를 맡긴 적이 있었어요 이걸 해 오라고. 근데 그것도 결국은 자기 개인적인 일이었단 말이죠. 그러니까 제가 거기 회사에서 업무적으로 하는 일이 아닌 것들을 자기의 권한으로 시켰던 건데 그때는 제가 사회생활도 처음이었고 어렸기 때문에 그렇게 해야 되는 줄 알았어요. 근데 그 회사를 나오고 남는 게 아무것도 없는 거예요. 그리고 그 회사는 망했어요. 그러니까 업무랑 무관한 일을 시키는 것 자체가 상사의 무능함이라고 생각을 하고 그 회사의 어떤 실태를 보여준다고 생각이 듭니다.",
+                "wordCount": 138
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "상사가 업무와 무관한 일을 시키는 것은 자질이 없다고 생각하며, 회사 자체에 고발이 들어가야 한다고 생각합니다. 예전에 인턴으로 일했던 어느 회사에서 제게 개인적인 업무를 시킨 적이 있었는데, 그것 자체가 상사의 무능함이라고 생각을 하고 그 회사의 어떤 실태를 보여준다고 생각이 듭니다.",
+                "wordCount": 39
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 605838,
+            "duration": 18930,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_q_ard_f_e_149727.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2632078,
+            "duration": 82250,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_a_ard_f_e_149727.wav"
+        }
+    }
+}

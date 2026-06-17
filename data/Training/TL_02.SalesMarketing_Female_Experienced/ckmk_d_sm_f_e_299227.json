@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "본인은 남을 잘 이끄는 리더형과 남을 잘 따르는 팔로워형 중에 어떤 유형에 속하는지 그리고 그 이유는 무엇인지 설명해 주세요",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 남을 잘 리끄는 리더형입니다. 결국엔 리더가 가장 중요한 자리라고 생각합니다. 애플을 지금의 자리까지 만든 것은 스티브 잡스입니다. 스티브 잡스가 만들어 놓은 애플의 이미지가 애플의 상징성이 있기에 그가 죽은 지 십 년이 넘었지만 여전히 애플은 정상의 궤도에 있습니다. 스티브 잡스가 경영에서 떠난 지 오래되었지만 여전히 사람들은 스티브 잡스를 그리워합니다. 그가 이 리더였기 때문입니다. 그는 약간 독선적인 사람이긴 했지만 잘 기틀을 만들었습니다. 애플의 기틀을 만들어 놓았기 때문에 그 기틀 안에서 애플은 여전히 발전하고 있습니다. 결국 한 기업을 만드는 것은 한 명의 리더입니다. 물론 리더가 사라진 후에도 그 기업은 잘 이끌어 나가고 있지만 그렇게 본인이 없어도 회사가 잘 이끌어 나가게 하는 것조차도 리더의 몫이라고 생각합니다. 이렇게 리더가 회사에는 꼭 필요합니다. 리더가 본인이 없어도 회사를 잘 이끌어 회사가 잘나가게 만들 수도 있으며 본인의 주도록 어떤 것을 만들 혁신을 만들 수도 있습니다. 따라서 저는 가장 중요한 것은 리더라고 생각하기 때문에 스스로가 리더형이 되고 싶어 합니다.",
+                "wordCount": 141
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "애플을 지금의 자리까지 만든 것은 스티브 잡스입니다. 그가 만들어 놓은 애플의 이미지가 애플의 상징성이기에 애플은 정상의 궤도에 있습니다. 결국 한 기업을 만드는 것은 한 명의 리더입니다. 본인이 없어도 회사를 잘 이끌어 나가게 하는 것까지도 리더의 몫이라고 생각합니다. 따라서 저는 스스로가 리더형이 되고 싶어 합니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 332878,
+            "duration": 10400,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/Experienced/ckmk_q_sm_f_e_299227.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3206478,
+            "duration": 100200,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/Experienced/ckmk_a_sm_f_e_299227.wav"
+        }
+    }
+}

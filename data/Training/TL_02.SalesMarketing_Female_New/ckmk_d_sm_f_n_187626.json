@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "소통 능력을 키우기 위해서 어떤 일을 할 수 있으신가요 생각나는 방법들을 자세하게 말씀 해 주세요",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "소통 능력을 키우기 위해서 어떤 일을 할 수 있을까. 제가 생각나는 방법은 소통이라는 것은 상대방에 대한 관심과 또 상대방에 대한 예의 그리고 상대방에 대한 저의 호감 표명 이런 것들이 우선되면 잘될 수 있다고 생각합니다. 내가 저 사람과 소통을 하고 싶은데 관심이 없다거나 그 사람에 대해서 호감이 없으면 확실히 소통이 어려워지는 것 같습니다. 조금이라도 좋은 점을 발견하려고 노력하고 또 그 사람에게 내가 호감이 있다는 것을 표현하고 또 그 사람의 변화가 있으 있으면 변화를 내가 느끼고 있다는 것을 알려준다든지 이런 식으로 너에게 늘 관심이 있고 나는 너에게 좋은 생각을 갖고 있고 너랑 잘 지내고 싶어 이런 생각을 음 전달한다 그러면 분명히 소통을 잘 할 수 있다고 생각합니다. 그게 이루어지지 않으면 소통이 끊길 수밖에 없다고 생각하고요. 음 어떤 사람이든 좋은 사람 좋기만 한 사람도 없고 나쁘기만 한 사람도 없다고 생각합니다. 물론 상대적인 거겠지만 그 사람이 좋은 점을 발견하려고 노력하고 또 저 사람이 음 맘에 들지 않은 점이 있을 때는 분명히 그럴 만한 이유가 있을 것이다 라는 생각으로 그것을 잘 받아들이고 나와 맞지 않더라도 그 사람의 개성이고 내가 그걸 어떻게 할 수 없다 라고 인정을 하면 훨씬 소통하는 데 도움이 된다고 생각합니다.",
+                "wordCount": 178
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "소통 능력은 상대방에 대한 관심과 예의, 호감 표명 등이 우선되면 잘 될 수 있다고 생각합니다. 좋은 점을 발견하려고 노력하고 또 호감이 있다는 것을 표현하고 그 사람의 변화가 있으면 변화를 알려줘야 소통에 도움이 될 것 같습니다. 그 사람의 개성이고 제가 어떻게 할 수 없다 라고 인정을 하면 훨씬 소통에 도움 될 수 있다 생각합니다.",
+                "wordCount": 53
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 358478,
+            "duration": 11200,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_187626.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2751438,
+            "duration": 85980,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_187626.wav"
+        }
+    }
+}

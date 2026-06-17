@@ -1,0 +1,75 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "주로 스트레스를 받을 때는 어떻게 하시나요 왜 그런 방법으로 스트레스를 해소하는지도 말씀해 주시겠어요",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 스트레스를 받으면 슬픈 음악을 듣습니다. 슬픈 음악을 듣다 보면 스트레스 상황이 잊혀지면서 하염없이 눈물이 납니다. 눈물을 한참 흘리다 보면 어느 사이에 제 마음은 차분히 가라앉아 있습니다. 그리고 평온해집니다. 그래서 저는 스트레스를 받으면 슬픈 음악을 듣고 눈물을 한참 흘리고 그리고 마음을 잘 진정시켜서 다시 일상으로 복귀합니다.",
+                "wordCount": 46
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "저는 스트레스를 받으면 슬픈 음악을 듣습니다.",
+                    "expression": "p_str_coping",
+                    "category": "technology"
+                },
+                {
+                    "text": "슬픈 음악을 듣다 보면 스트레스 상황이 잊혀지면서 하염없이 눈물이 납니다.",
+                    "expression": "p_str_coping",
+                    "category": "technology"
+                },
+                {
+                    "text": "눈물을 한참 흘리다 보면 어느 사이에 제 마음은 차분히 가라앉아 있습니다.",
+                    "expression": "p_str_coping",
+                    "category": "technology"
+                },
+                {
+                    "text": "그래서 저는 스트레스를 받으면 슬픈 음악을 듣고 눈물을 한참 흘리고 그리고 마음을 잘 진정시켜서 다시 일상으로 복귀 합니다.",
+                    "expression": "p_str_coping",
+                    "category": "technology"
+                }
+            ],
+            "summary": {
+                "text": "저는 스트레스를 받으면 슬픈 음악을 듣고 스트레스 상황이 잊혀지면서 하염없이 눈물을 흘립니다. 그리고 마음을 잘 진정시켜서 다시 일상으로 복귀합니다.",
+                "wordCount": 19
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 276558,
+            "duration": 8640,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_263405.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1234638,
+            "duration": 38580,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_263405.wav"
+        }
+    }
+}

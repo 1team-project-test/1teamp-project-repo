@@ -1,0 +1,76 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자분께서 무엇인가를 달성하기 위해서 목표를 세우시고 이 년에서 삼 년 동안 열심히 노력하셔서 그와 같은 목표를 달성한 적이 있으신지 궁금합니다",
+                "wordCount": 20
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "한때 제가 건강에 관심을 가지고 대체 의학을 공부한 적이 있습니다. 어 대체 의학을 공부할 때 처음에는 일반적인 의학 내용이 아니라서 어 그 내용을 이해하고 원리를 이해하는 것이 힘이 들었습니다. 하지만 어 여러 뛰어난 어 선배들의 모습이나 그 과정들을 보면서 이 대체 의학을 제대로 이해하고자 어 제가 한 이 삼 년 동안 열심히 강의를 듣고 자료를 수집하고 그리고 그것을 실행에 옮기고 많은 사례들을 만들어 가면서 차츰차츰 그 대체 의학에 대한 이해를 높여서 어 일반 병원에서 힘들어하는 난치병을 치유라고 말하기는 어렵지만 개선하는 그런 경험을 한 적이 있습니다. 처음에는 불가능할 것 같았던 그런 목표들이 꾸준히 노력하고 공부하고 그런 경험을 쌓으면서 어 나중에는 어 일반 사람이 생각지 못한 그런 결과를 만들어 냈을 때 어 개인적으로 무척 큰 성취감을 느꼈던 기억이 있습니다. 그리고 그런 과정들을 통해서 저도 제 자신의 건강을 되찾고 활기찬 에너지가 가득 가득한 그런 어 제 신체 상황을 만들어서 지금도 건강한 상태가 된 것이 어 보람 있다고 생각을 하고 있습니다.",
+                "wordCount": 147
+            },
+            "emotion": [
+                {
+                    "text": "어 대체 의학을 공부할 때 처음에는 일반적인 의학 내용이 아니라서 어 그 내용을 이해하고 원리를 이해하는 것이 힘이 들었습니다.",
+                    "expression": "n-distress",
+                    "category": "negative"
+                },
+                {
+                    "text": "처음에는 불가능할 것 같았던 그런 목표들이 꾸준히 노력하고 공부하고 그런 경험을 쌓으면서 어 나중에는 어 일반 사람이 생각지 못한 그런 결과를 만들어 냈을 때 어 개인적으로 무척 큰 성취감을 느꼈던 기억이 있습니다.",
+                    "expression": "p-achievement",
+                    "category": "positive"
+                },
+                {
+                    "text": "그리고 그런 과정들을 통해서 저도 제 자신의 건강을 되찾고 활기찬 에너지가 가득 가득한 그런 어 제 신체 상황을 만들어서 지금도 건강한 상태가 된 것이 어 보람 있다고 생각을 하고 있습니다.",
+                    "expression": "p-achievement",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "한때 제가 건강에 관심을 가지고 대체 의학을 공부한 적이 있습니다. 처음엔 내용 이해와 원리 이해에 힘이 들었지만 선배들의 모습을 보면서 제대로 이해하고자 제가 강의를 듣고 자료를 수집하고 그것을 실행에 옮기고 많은 사례들을 만들어 가면서 조금씩 대체 의학에 대한 이해를 높여서 일반 병원에서 힘들어하는 난치병을 개선하는 경험을 했습니다.",
+                "wordCount": 48
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 368718,
+            "duration": 11520,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_387494.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3760398,
+            "duration": 117510,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_387494.wav"
+        }
+    }
+}

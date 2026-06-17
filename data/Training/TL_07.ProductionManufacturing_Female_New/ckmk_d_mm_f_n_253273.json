@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "각 사람에게는 장점과 단점이 있습니다 지원자님께서 생각하실 때 자신의 단점이라고 생각하는 것이 있다면 말씀을 해 주시기 바랍니다 그리고 이를 보완하기 위해서 어떠한 노력을 했다면 함께 말씀해 주세요",
+                "wordCount": 27
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어 저는 아침잠이 남들보다 조금 많은 편입니다. 어 그래서 학교 다닐 때도 그렇게 곤욕을 치렀는데요. 이 습관이 계속 이어지다 보니까 나중에 업무를 할 때도 지장이 생겨서 예전에 일했을 때 회사의 팀장님께서 저에게 면담을 해 주시면서 왜 이렇게 아침잠이 많은지 생각해 보고 분석을 해 봐라 라고 제안을 주셨습니다. 그래서 그때 당시에 제가 왜 이렇게 아침잠이 많은 건지 이게 체질적인 건지 한의원에도 가보고 병원에도 다녀봤는데요. 결국에 체질적으로는 다행히 아무런 문제가 없었고 음 밤에 조금 덜먹고 제시간에 자고 유투브 끊고 하니까 아침에 보다 잘 시간이 많이 확보가 되니 제 몸이 컨디션을 회복하고 아침에 제시간에 일어나는 것을 제가 느꼈습니다. 그래서 요즘에는 많이 회복이 되어서 조금 더 일찍 일어나서 아침의 중요성을 깨닫고 운동을 한다거나 아니면 따뜻한 차를 마시는 등으로 어 하루를 좀 더 건강하게 시작을 보내고 있습니다.",
+                "wordCount": 122
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 아침잠이 남들보다 많아 학교 다닐 때도 곤욕을 치뤘는데, 이것이 계속 이어지다 보니 나중에 업무 할 때도 지장이 생겨서 회사 팀장님께서 분석을 제안하였습니다. 결국에 체질적으로는 문제가 없었고, 저녁에 조금 덜먹고 제시간에 자고 유투브를 끊고 하니 몸이 건강을 되찾고 일찍 일어나게 되었습니다.",
+                "wordCount": 41
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 611278,
+            "duration": 19100,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_253273.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2674958,
+            "duration": 83590,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_253273.wav"
+        }
+    }
+}

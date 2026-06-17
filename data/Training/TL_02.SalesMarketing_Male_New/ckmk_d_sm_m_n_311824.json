@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님의 장점과 단점에 대해서 설명해 주시기 바랍니다 그리고 그것을 특화시키고 극복하기 위한 본인의 노력도 함께 말씀해 주시기 바랍니다",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 먼저 저의 장점은 끈기와 인내 그리고 책임감입니다. 어떤 한 가지 일을 맡았을 때 단기적인 성과에 치우쳐서 충동적으로 그 업무를 이제 그 어 맡은 업무를 충동적으로 처리하는 것이 아니라 냉철하게 생각하고 장기적으로 생각해서 맡은 업무를 책임감 있게 처리를 하는 편입니다. 어 이것을 특화시키기 위해서 저는 텔레마케팅 경험이 어 가장 좀 커다란 소중한 경험이 경험이었다고 저는 생각을 합니다. 그리고 두 번째로는 이제 단점인데요. 저는 조금 게으른 편이 없지 않아 있는 편입니다. 일을 미루기도 하고 늦잠을 자는 것도 상당히 좋아하는 편입니다. 이것을 극복하기 위해서 제가 생각한 것은 제가 한 노력은 바로 체크리스트였습니다. 일 년의 체크리스트들을 만들고 그것들을 습관적으로 이제 고치기 위해서 지키기 위해서 노력을 했습니다. 그 결과 백 퍼센트까지는 아니어도 어느 정도 습관으로서 제 몸에 자리 잡게 되었고 어 현재는 백 퍼센트까지는 아니더라도 구십 퍼센트 이상은 그것을 극복할 수 있게끔 만들어주는 원동력이 되었습니다. 이상으로 답변 마치겠습니다. 들어 주셔서 감사합니다.",
+                "wordCount": 137
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "네 먼저 저의 장점은 끈기와 인내 그리고 책임감입니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "저는 끈기와 인내 그리고 책임감이 장점입니다. 단점은 조금 게으른 편이었는데 이를 극복하기 위해서 체크리스트를 만들고 그것을 습관적으로 고치기 위해서 노력을 했습니다. 그 결과 어느 정도 습관으로서 자리잡게 되었고 지금은 어느 정도 극복하게 되었습니다. 이상으로 답변 마치겠습니다.",
+                "wordCount": 36
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 480398,
+            "duration": 15010,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_q_sm_m_n_311824.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2457358,
+            "duration": 76790,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_a_sm_m_n_311824.wav"
+        }
+    }
+}

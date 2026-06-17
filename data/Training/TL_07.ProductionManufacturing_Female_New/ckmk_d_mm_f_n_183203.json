@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님께서는 본인 스스로 숫자와 창의 중에 어떤 것에 더 가깝다고 생각하시나요 이유도 함께 설명해 주세요",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "기본적으로 숫자에 능한 편입니다. 어렸을 적부터 수학을 좋아해 어 숫자에 관련한 어떤 뭐 기본적인 표와 행렬 어 그리고 그래프 그리고 다양한 어떤 문제 해결 능력에 좀 탁월한 재능을 보였었고 이러한 숫자에 능한 특기를 어 실무적인 부분에서 가져오면 어 공장 생산직에 근무했을 때 어 이제 파루 평균 공장에서 생산하는 어 량은 얼마이며 그 양이 어떤 의미를 가지고 있으며 어느 시간대 가장 생산량이 높으며 어떤 방식으로 근무해야 가장 효율이 나오는가 이런 뭐 보고서 같은 것이 매일매일 올라왔기 때문에 그런 보고서를 그 읽은 읽은 후에 이 데이터를 바탕으로 어떤 의미를 도출해 낼 수 있겠는가 이런 부분에 관한 자문을 공장장님에게 드리기도 했고 제 스스로도 이런 데이터를 가지고 있는 이 자리에서 제가 할 수 있는 일은 무엇인가 이런 부분들을 많이 도움을 받았습니다. 그렇기 때문에 숫자에 능하다는 능력은 정말 생산 라인에 있어서 어 필수 불가결한 능력이라 생각합니다.",
+                "wordCount": 131
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "어릴 적부터 수학을 좋아해서 숫자에 능통했습니다. 그래서 어 공장 생산직에 근무할 때 어 매일 생산직 관련 보고서가 올라왔고 이것을 읽고 자문을 공장장에게 드리기도 했습니다. 그렇기 때문에 숫자는 생산 라인에 있어서 필수 불가결한 능력이라 생각합니다.",
+                "wordCount": 34
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 425358,
+            "duration": 13290,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_183203.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2869838,
+            "duration": 89680,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_183203.wav"
+        }
+    }
+}

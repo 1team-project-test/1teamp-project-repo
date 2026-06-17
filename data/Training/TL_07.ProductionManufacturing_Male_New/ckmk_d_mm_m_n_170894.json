@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "만약 지원자님의 직무에 맞지 않는 일을 하시게 된다면 어떻게 대처하시겠습니까 그래도 괜찮으신가요",
+                "wordCount": 12
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어떤 직무든 간에 제가 일을 하다 보면 제가 좋아하는 일임에도 불구하고 맞지 않을 수 있습니다. 어떻게 보면 적성과 흥미를 잘 따져봐야 되는데요 . 저 같은 경우에는 적성에 맞는 일 흥미에 맞는 일 둘 중 최대한 둘 다 수용해 갈려고 합니다. 그래서 적성에도 맞고 흥미에도 맞는 그런 일들을 찾아보곤 하는데 직무에 맞지 않는 일을 하게 된다는 것은 어떻게 보면 적성 부분 혹은 흥미 둘 다 일 수도 있습니다. 적성 부분에서 잘 맞지 않는 일이라면 이것은 바로 어떤 결단을 내리는 것은 아니라고 생각합니다. 제가 좀 더 노력해 보고 이 직무에 대해서 제 적성에 맞는 어떤 일이 있을 것입니다. 그것을 적어도 육 개월 정도는 파악을 해 봐야 될 것 같습니다. 그리고 흥미가 없는 일이라면 흥미가 없는 상태에서 어느 정도 적성은 맞는지를 찾아볼 것입니다. 흥미는 없지만 적성은 있는 적성은 저와 맞는 일이라면 흥미는 추후에 생길 수 있기 때문입니다. 그리고 적성과 흥미 둘 다 저와 맞지 않는 일이라고 생각이 든다면 어느 정도 빠른 결단을 내려야 될 것이라고 생각을 합니다. 다른 일을 알아보는 게 나을 수도 있는 것이죠.",
+                "wordCount": 162
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "어떤 직무든 간에 적성과 흥미를 잘 따져봐야 하는데, 저 같은 경우 적성에도 맞고 흥미에도 맞는 일들을 찾아보곤 하는데 적성에 맞지 않는 일을 하게 된다는 것은 적성 부분 혹은 흥미 둘 다 일 수도 있습니다. 적성 부분에서 잘 맞지 않는 일이라면 이것은 바로 어떤 결단을 내리는 것은 아니라고 생각합니다.",
+                "wordCount": 48
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 473038,
+            "duration": 14780,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_170894.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2701198,
+            "duration": 84410,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_170894.wav"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "혹시 이전 직장에서 퇴사한 다음 퇴사한 것을 후회해 본 적은 없으셨나요 있다면 왜 후회했는지 그 이유도 함께 말씀해 주세요",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 저는 이전 직장을 퇴사한 것을 후회한 적이 많습니다. 단순히 경제적인 이유 때문은 아니고 제가 회사를 퇴사할 당시 많은 준비가 되어 있지 않기 때문이었습니다. 직장 생활의 스트레스로 인해 건강을 잃게 되었고 삶의 목표가 흔들려 방황하게 되어 회사를 퇴사하였지만 이후에 계획에 대해 면밀한 준비를 해 놓지 않았던 것이 제가 퇴사를 한 후 후회하게 된 점의 원인이었습니다.",
+                "wordCount": 54
+            },
+            "emotion": [
+                {
+                    "text": "네 저는 이전 직장을 퇴사한 것을 후회한 적이 많습니다.",
+                    "expression": "n-distress",
+                    "category": "negative"
+                },
+                {
+                    "text": "직장 생활의 스트레스로 인해 건강을 잃게 되었고 삶의 목표가 흔들려 방황하게 되어 회사를 퇴사하였지만 이후에 계획에 대해 면밀한 준비를 해 놓지 않았던 것이 제가 퇴사를 한 후 후회하게 된 점의 원인이었습니다.",
+                    "expression": "n-distress",
+                    "category": "negative"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 이전 직장을 퇴사한 것을 후회한 적이 많습니다. 퇴사 당시 준비가 되어 있지 않았기 때문입니다. 면밀한 준비를 하지 않았던 것이 퇴사 후 후회하게 된 점의 원인이었습니다.",
+                "wordCount": 26
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 355278,
+            "duration": 11100,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_q_bm_m_e_295208.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1752398,
+            "duration": 54760,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_a_bm_m_e_295208.wav"
+        }
+    }
+}

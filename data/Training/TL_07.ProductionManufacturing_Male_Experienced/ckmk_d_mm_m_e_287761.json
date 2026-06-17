@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "입사 후에 근무를 하다가 정작 지원한 분야가 본인과 잘 맞지 않는다는 사실을 깨닫게 된다면 어떻게 하실 건가요",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "아마 이전에 있었던 질문에서도 똑같은 거였던 것 같은데 지원한 분야가 저와 맞지 않는다는 거 알았을 때는 어 제가 저를 제대로 객관적으로 보지 못했다는 사실이 첫 번째일 거고 또 두 번째는 내가 제대로 직무를 파악하지 못했다 라는 게 두 번째일 거라고 생각을 합니다. 그래서 이 두 가지 중에 어떤 것이 맞지 않아서 그렇게 깨달았는지를 먼저 알 거 같고 만약에 첫 번째 내가 나를 제대로 알지 못했다 라고 한다면 그러면 나는 무엇을 잘하고 내가 무엇을 하고 싶어 하고 하는 것인지를 조금 더 알아보기 위해 나를 더 알아보는 시간을 가질 것 같고 만약에 두 번째 직무와 관련된 것은 내가 잘 파악하지 못했다 라고 한다면 어 그리고 그것을 깨달은 게 단기간에 깨달았다면 음 좀 섣부른 판단인 거라고 생각을 해서 조금 더 시간을 두고 내가 잘 알지 못하는 분야이기 때문에 그렇게 생각을 할 수 있었다 라고 생각을 해서 쫌 일단 버티면서 시간을 그 직무를 더 알아가기 위해 노력을 할 것 같습니다. 그럼에도 불구하고 많지 않다 라고 생각하면 그때는 뭐 다른 것들을 찾아봐야 하겠지만 저라면은 조금 더 시간을 가지고 더 그 직무를 알기 위해 노력을 할 것 같습니다.",
+                "wordCount": 172
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "지원한 분야가 저와 맞지 않는다는 걸 알았을 때는 제가 저를 제대로 객관적으로 보지 못했다는 사실이 첫 번째일 것이고 또 두 번째는 제가 제대로 직무를 파악하지 못했다 라는 게 두 번째일 것입니다. 두 가지 중 어떤 것이 맞지 않아 그렇게 깨달았다면 조금 더 시간을 가지고 더 직무를 알기 위해 노력해야 할 것 같습니다.",
+                "wordCount": 52
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 310478,
+            "duration": 9700,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/Experienced/ckmk_q_mm_m_e_287761.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2778958,
+            "duration": 86840,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/Experienced/ckmk_a_mm_m_e_287761.wav"
+        }
+    }
+}

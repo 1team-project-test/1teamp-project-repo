@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자께서는 협업하는 과제와 혼자 하는 과제가 있다면 어느 것을 더 선호하는 편인가요 그 이유도 함께 같이 말씀해 주시겠습니까",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 아무래도 이제 영업을 하기 때문에 조금 혼자 하는 과제 개인으로 하는 과제가 익숙한 것 같습니다. 아마 많은 영업사원들이 개인의 실적을 평가받기 때문에 이런 측면이 더 강한 것 같은데요. 어 그래서 사실 이제 여러 가지 협업을 하기보다는 영업에 있어서는 본인의 역량과 재능을 충분히 발휘를 해서 인정을 받고 또 그거에 맞춰서 좀 진행하는 게 많은 것 같습니다. 어 저도 그래서 아무래도 영업 활동을 오래 하다 보고 외근이 많다 보니까 어 개인 업무에 좀 치중해 있는 편인데요. 왜냐하면 저희 이제 업무 특성이 외근이 잦고 또 외부에서 사람을 만나야 되는 경우가 많습니다. 그렇다 보니까 뭐 팀원들을 뭘 한 달 이상 못 보기도 하고요. 그리고 본인들이 이제 열심히 한 만큼 평가를 받기 위해서 목표도 개인적으로 설정을 하고 달려가는 측면이 강한 것 같습니다. 하지만 그렇다고 해서 협업 과제를 소홀히 하거나 또 그게 주어졌을 때 어 열심히 하지 않는 편은 아닌 것 같고요. 또 만약에 그런 상황이 주어진다고 하면 또 제 스스로 협업이 잘될 수 있도록 노력을 많이 기울이는 것 같습니다. 그래서 혼자 하는 과제가 편하기도 하지만 또 협업 과제가 있을 때는 충실하게 이행을 하는 편입니다.",
+                "wordCount": 170
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "많은 영업사원들이 개인의 실적을 평가 받기 때문에 개인으로 하는 과제가 익숙한 것 같습니다. 협업보다는 본인의 역량과 재능을 충분히 발휘해서 인정을 받고 그에 맞춰서 진행하는 게 많은데 개인 업무에 좀 치중해 있는 편입니다. 하지만 협업 과제를 소홀히 하지 않는 편은 아니고 스스로 협업이 잘 될 수 있도록 노력을 많이 기울이는 것 같았습니다.",
+                "wordCount": 51
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 492238,
+            "duration": 15380,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_154232.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2705998,
+            "duration": 84560,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_154232.wav"
+        }
+    }
+}

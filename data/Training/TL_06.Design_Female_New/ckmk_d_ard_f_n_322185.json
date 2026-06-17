@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인의 장단점을 말씀해 주세요 그리고 그것들을 각각 특화 시키고 극복하기 위해서 했던 노력도 같이 말씀해 주세요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 저의 장점과 단점에 대해 말씀드리겠습니다. 일단 저의 장점은 어떤 일이든 포기하지 않고 끝까지 도전하는 저의 자세입니다. 사실 살면서 어느 순간은 포기하고 싶은 마음이 들기 마련입니다. 하지만 저는 제가 꿈꾸고 제가 해야 할 일이 있으면 끝까지 포기하지 않고 해내는 마음가짐과 자세를 지니고 있습니다. 이것을 특화 시키기 위해 한 노력은 이러한 자세는 운동을 통해서 많이 배울 수 있다고 생각합니다. 혹독한 신체 훈련을 통해서 정말 포기하고 싶은 순간에도 끝까지 버텨내는 자세를 기를 수 있었습니다. 그리고 저의 단점은 약간의 우유부단한 성격입니다. 이러한 성격을 가지게 된 계기는 어렸을 때부터 저보다는 남을 먼저 생각하고 배려하는 것에서부터 시작되었는데요. 이것이 어떻게 보면 신중하다 고 말 할 수 있지만 살아가면서 조금은 저를 힘들게 하는 부분이라고 생각합니다. 그래서 저는 이 우유부단함을 고치기 위해서 일단 저에 대해서 알아가는 데에 집중하고 있습니다.",
+                "wordCount": 119
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "그리고 저의 단점은 약간의 우유부단한 성격입니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "저는 어떤 일이든 포기하지 않고 끝까지 도전하는 자세와 약간의 우유부단한 성격이 있습니다. 이것을 특화시키기 위해서는 운동을 통해서 많이 배울 수 있으나, 저는 우유부단의 성격을 고치기 위해 일단 저에 대해 알아가는 데에 집중하고 있습니다.",
+                "wordCount": 33
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 291918,
+            "duration": 9120,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_322185.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3652238,
+            "duration": 114130,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_322185.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "RND",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지금 보고 있는 이 면접을 위해서 지원자님께서 여러 가지 준비를 하면서 고생을 많이 하셨을 텐데요 지원자님께서는 평소 어떤 방식으로 면접을 준비하셨는지가 궁금합니다",
+                "wordCount": 22
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "오늘 면접을 위해서 어 특별하게 따로 준비한 것은 음 많지는 않습니다. 따로 준비한 것이 있다면 회사에 대한 그 정보를 수집하고 그 지금 회사의 현황 그리고 앞으로 나아갈 발전 방향 또 제가 만약에 들어왔을 때에 어떤 업무를 담당할 수 있는지에 대한 적용성 등에 대해서 스터디를 좀 해 보았구요. 아 준비는 저는 어 평소에 자기 계발하는 그런 그 책을 읽으면서 긍정적인 마인드를 갖고 매일매일 자기를 어떻게 단속을 하면서 어 나아갈지에 대한 어 고민과 또 어 하나 하루하루를 어 그렇게 채워가는 좋은 그 역량으로 채워가는 것에 에 관심이 있어서 그런 하루하루를 에 그 일을 하고 있고 또 전공 분야에 대해서는 꾸준하게 이제 관심사를 업데이트하고 또 기술을 습득하는 데 에 매진을 하고 있으므로 그것이 이 면접에 대한 준비라고 할 수 있겠습니다.",
+                "wordCount": 117
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "오늘 면접을 위해 회사에 대한 정보를 수집하고 현황, 발전 방향, 적용성 등에 대한 스터디를 했습니다. 저는 자기 계발 책을 읽으며 매일 자기 단속과 좋은 역량으로 채워가고 있고 전공 분야에 대해서는 관심사 업데이트와 기술 습득에 매진하고 있습니다.",
+                "wordCount": 36
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 568078,
+            "duration": 17750,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Male/New/ckmk_q_rnd_m_n_304088.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3348878,
+            "duration": 104650,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Male/New/ckmk_a_rnd_m_n_304088.wav"
+        }
+    }
+}
