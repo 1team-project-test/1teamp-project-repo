@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "개인적으로 공부를 어떻게 하시는지 말씀해 주세요 강의나 책을 활용한 공부처럼 구체적인 방법을 설명해 주시기 바랍니다",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 제가 전혀 몰랐던 분야에 대해서 어 새롭게 공부를 시작하면 저는 먼저 책을 이용해서 공부를 하는 편입니다. 일단 전혀 모르는 분야이기 때문에 기본적인 어 서적을 이용해서 어 새롭게 공부하는 어 분야에 대한 대한 개념이라든지 어 기초적인 지식을 얻고자 노력을 하는 편입니다. 그리고 저는 어 모든 공부의 시작은 암기라고 생각을 합니다. 그래서 동영상을 보거나 강의를 듣는 것은 어떤 지식을 제가 습득하는 것에 어 그 특히 습득 암기를 통한 습득에는 어 그렇게 큰 도움이 되지 않는다고 생각을 합니다. 그래서 책을 보고 또 어 그 텍스트를 읽 읽는 과정에서 여러 한 번 읽다 보면 어 저절로 암기가 되는 경우들이 많기 때문에 주로 책을 보면서 공부를 하고 어 그것을 어 일 그 그 책을 읽다가 제가 꼭 기억해야 하는 부분들은 따로 메모를 해서 그것을 기억하기 위해서 노력을 하는 편입니다. 어 기본적으로 어 그 제가 새롭게 공부하는 분야에 대한 어떤 기본적인 지식이 지식을 책을 통해서 습득을 한 후에 어 그다음 단계의 책을 보면서 또 좀 조금 더 어 깊이 있고 또 심도 있는 어 공부를 하고 있고 어 그런 과정을 어 지금까지 살면서 계속해 왔기 때문에 아무래도 익숙하게 어 제가 공부하고 공부했던 방법들을 계속 사용을 해서 공부를 하는 것 같습니다.",
+                "wordCount": 185
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "새롭게 공부를 시작하면 먼저 책을 이용해서 공부를 하는 편인데, 기본적으로 제가 새롭게 공부하는 분야에 대한 기본적인 지식이 지식을 책을 통해서 습득을 한 후에 그 다음 단계의 책을 보면서 더 깊이 있고 또 심도 있는 공부를 하고 있고 지금까지 살면서 계속해 왔기 때문에 아마 익숙하게 제가 공부하고 공부했던 방법들을 계속 사용을 해서 공부를 하는 것 같습니다.",
+                "wordCount": 55
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 625358,
+            "duration": 19540,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_315464.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3715598,
+            "duration": 116110,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_315464.wav"
+        }
+    }
+}

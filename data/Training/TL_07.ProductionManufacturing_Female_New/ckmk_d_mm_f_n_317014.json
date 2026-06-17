@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님께서 해당 직무에 지원한 이유가 무엇인지 말씀해 주시구요 이 직무에 왜 적합한 인재인지까지도 함께 답변해 주시기 바랍니다",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "예 저는 대학에서 기계 공학을 공부를 하였고요. 또 프로젝트라든가 이런 것들을 통해서 좀 이론적인 부분들을 많이 학습하였습니다. 어 그래서 이제는 이런 것들을 좀 현시점에서 실행하는 실생활에 활용할 수 있는 기술로 활용되는 그런 기반을 만드는 데 좀 이바지하면 어떨까 그러한 생각으로 어 엔지니어 업무에 좀 지원을 하게 되었구요. 어 어떻게 보면은 과거에는 정말 엔지니어의 공학도라는 이 연구 개발 쪽으로 조금 어 편중이 되었다면 앞으로는 우리가 얘기하는 기술자 이것을 활용해서 실생활에 이용할 수 있는 어떤 도구나 기구를 만드는 어 그런 기술자 쪽으로 조금 좀 전향을 해볼까 합니다. 그런 생각으로 어떤 저희가 배웠던 어떤 이론들을 실생활에 활용하기 위한 어 그런 방향으로 좀 일을 해보고 싶어서 어 이 직무에 지원하게 되었습니다.",
+                "wordCount": 107
+            },
+            "emotion": [
+                {
+                    "text": "예 저는 대학에서 기계 공학을 공부를 하였고요.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "예 저는 대학에서 기계 공학을 공부를 하였고요.",
+                    "expression": "c_private",
+                    "category": "background"
+                },
+                {
+                    "text": "어 그래서 이제는 이런 것들을 좀 현시점에서 실행하는 실생활에 활용할 수 있는 기술로 활용되는 그런 기반을 만드는 데 좀 이바지하면 어떨까 그러한 생각으로 어 엔지니어 업무에 좀 지원을 하게 되었구요.",
+                    "expression": "c_sincere_job",
+                    "category": "etc"
+                }
+            ],
+            "summary": {
+                "text": "실생활에 활용할 수 있는 기술로 활용될 수 있는 기반을 만드는데 도움이 되고자 엔지니어 업무에 지원을 하게 되었습니다. 앞으로는 기술자 이것을 활용해서 실생활을 위한 기구를 만드는 기술자 쪽으로 전향하려고 합니다. 그래서 이 직무에 지원하게 되였습니다.",
+                "wordCount": 34
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 403278,
+            "duration": 12600,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_317014.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2064398,
+            "duration": 64510,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_317014.wav"
+        }
+    }
+}

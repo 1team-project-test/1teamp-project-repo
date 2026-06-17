@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "현재 본인이 존경하는 디자이너는 누구이며 그 디자이너가 발표한 제품에 대해 설명해 보세요",
+                "wordCount": 12
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 다른 사람들과의 생각이나 가치관이나 방향성이 조금 다르기 때문에 제 저는 어 독특한 디자인을 하는 그런 제품이나 그런 디자이너를 좋아합니다. 어 지금 갑자기 말하라고 하니 이름은 생각이 안 나는데요. 박 땡땡 씨입니다. 이름이 지금 생각이 안 나는데 그분은 어 디자이너라고 하면 자신의 작품에 프라이드를 갖고 누구나 다 자신의 자신의 작품에 프라이드 갖고 있기는 하지만 그분은 굉장히 독특한 디자인을 하고 있는데요. 그 디자인에 대한 프라이드가 상당합니다. 그런데 저도 그렇게 평범한 디자인보다는 남이 생각하지 못하는 부분을 캐치하는 그의 능력이 참 부럽고요. 그런 부분을 자신 있게 표현해 내는 그걸 자신이 생각한 부분을 어 시각적으로 표현해 내는 그런 부분을 아주 높이 사고 있습니다. 제품의 그분이 브랜드를 갖고 있지 않아서 그것은 말씀드리기가 조금 그렇지만 복면가왕에서 그 의상이나 마스크를 디자인하는 그 디자이너를 제가 가장 좋아하고 그분의 작품을 눈여겨보고 있고 가장 좋아하고 있습니다.",
+                "wordCount": 127
+            },
+            "emotion": [
+                {
+                    "text": "그런데 저도 그렇게 평범한 디자인보다는 남이 생각하지 못하는 부분을 캐치하는 그의 능력이 참 부럽고요.",
+                    "expression": "p-affection",
+                    "category": "positive"
+                },
+                {
+                    "text": "제품의 그분이 브랜드를 갖고 있지 않아서 그것은 말씀드리기가 조금 그렇지만 복면가왕에서 그 의상이나 마스크를 디자인하는 그 디자이너를 제가 가장 좋아하고 그분의 작품을 눈여겨보고 있고 가장 좋아하고 있습니다.",
+                    "expression": "p-affection",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "박땡땡 디자이너는 독특한 디자인을 하고 있으며 그 디자인만의 프라이드도 상당합니다. 독특한 디자인이지만 남이 생각하지 못하는 부분을 캐치하는 능력이 참 부럽고 그런 부분을 자신 있게 표현하는 능력을 아주 높이 사고 있습니다. 경연에서 의상이나 마스크를 디자인하는 디자이너를 제가 가장 좋아하고 있습니다.",
+                "wordCount": 39
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 400718,
+            "duration": 12520,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_60230.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2746318,
+            "duration": 85820,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_60230.wav"
+        }
+    }
+}

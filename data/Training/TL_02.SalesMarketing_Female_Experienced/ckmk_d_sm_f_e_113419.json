@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "회사 생활 중에 자기에게 맞는 사람과 그렇지 않은 사람들이 있습니다 특히 원인과 성격이 반대인 사람과 갈등이 생겼습니다 이럴 때 어떻게 해결하시겠습니까",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 아무래도 업무를 진행을 하다 보면 팀원들 간의 갈등이 생길 수가 있을 것 같습니다. 제가 의도하진 않았지만 다른 팀원이 그 상황을 오해할 수도 있고 아니면 그 상황이 꼬여서 진행이 될 수 있다고 생각이 드는데요. 하지만 그동안 갈등을 저는 좀 지혜롭게 해결하는 편인 것 같았습니다. 어떤 문제가 객관적으로 발생했을 때는 그 갈등을 객관적인 수치로 해결을 하면 될 것 같습니다. 그 프로세스만 고치면 문제가 해결이 되고 어 그런 부분들이 자연스럽게 해결이 됐는데요. 문제는 팀원들과 구성원들 간의 감정적인 갈등을 해결하는 게 가장 어려웠습니다. 저의 말로 인해서 다른 사람이 오해를 한다거나 그거에 대해서 감정적으로 기분 나쁘다 이런 경우가 사실 제일 힘들었는데요. 그래서 사실 저는 회사 생활을 할 때 상대방의 감정을 기분 나쁘게 하지 않기 위해서 많이 주의를 하고 노력을 하는 편인 것 같습니다. 감정이 한 번 상하게 되면 계속해서 그 사람에 대해서 부정적인 감정이 들기 때문에 저는 애초부터 그렇게 하지 않으려고 미연에 방지를 하는데요. 혹시나 제가 실수를 할 경우에도 빨리빨리 감정을 캐치해서 바로 잡는 편인 것 같습니다. 그래서 감정적으로 상대방을 좀 배려해서 일을 하는 성격인 것 같습니다.",
+                "wordCount": 162
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "어떤 문제가 객관적으로 발생했을 때는 그 갈등을 객관적인 수치로 해결을 하면 될 것 같습니다.",
+                    "expression": "c_confl_mg",
+                    "category": "personality"
+                }
+            ],
+            "summary": {
+                "text": "업무 진행 시 팀원들 간 갈등이 생길 수 있는데, 저는 그 갈등을 객관적인 수치로 해결하는 편인데, 문제는 팀원들과 구성원들 간의 감정적인 갈등을 해결하는 게 가장 어려웠습니다. 그래서 회사 생활을 할 때 상대방의 감정을 기분 좋게 하지 않기 위해서 많이 노력하고, 실수를 할 경우에도 빨리 빨리 감정을 캐치해서 바로 잡는 편인 것 같습니다.",
+                "wordCount": 52
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 489038,
+            "duration": 15280,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/Experienced/ckmk_q_sm_f_e_113419.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2805838,
+            "duration": 87680,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/Experienced/ckmk_a_sm_f_e_113419.wav"
+        }
+    }
+}

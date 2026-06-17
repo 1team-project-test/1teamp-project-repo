@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "대학 생활을 보내면서 본인을 가장 힘들게 했던 경험은 무엇입니까 이것을 어떻게 극복했는지도 말씀해 주시기 바랍니다",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "남들보다 나이가 좀 들어서 대학을 다녔기 때문에 세대 차이에서 오는 캠퍼스 생활이 힘들었습니다. 물론 중요한 것은 주변의 친구들이 누구냐에 따라서 그걸 극복하느냐 극복하지 못하느냐의 차이도 있을 수 있습니다. 저는 다행히도 주변에 있는 후배들이면서 같은 과 친구들이 매우 친절하게 잘 대해주고 그리고 오히려 언니라고 하면서 선배에 대한 언니에 대한 배려를 챙겨주곤 했습니다. 그런데 이 경우보다는 반대의 경우가 더 많다고 생각이 됩니다. 늦깍이 입학생 그리고 중간에 휴학했던 선배 이런 사람들과는 벌써 몇 달 차이만 지나도 그 벌어지는 세대 차이가 있을 수 있기 때문에 이 세대 차이에서 오는 외로움과 괴리감 그리고 소외감 이런 모든 것들이 아마 극복하기 어려운 감정이 될 수 있습니다. 그런데 저는 다행히도 그런 경험은 없었습니다.",
+                "wordCount": 105
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "주변 친구들의 세대 차이에서 오는 외로움과 괴리감, 소외감 등은 극복하기 어려운 감정이 될 수 있지만 저는 그런 경험은 없었습니다.",
+                "wordCount": 19
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 380558,
+            "duration": 11890,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_326028.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2688718,
+            "duration": 84020,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_326028.wav"
+        }
+    }
+}

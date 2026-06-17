@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "그동안 진행한 프로젝트 들 가운데 가장 기억에 남는 프로젝트가 있습니까 있다면 어떤 점에서 가장 기억에 남는지 설명해 주세요",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 가장 기억에 남는 프로젝트는 조별로 진행이 됐었는데요. 한 공장의 씨아이를 만드는 프로젝트였습니다. 그런데 거기서 조원 중에 한 명은 잠수를 탔고 한 명은 연락이 잘되지 않아서 굉장히 힘들었었는데요. 거기서 정말 포기하고 싶었지만 제가 꾸준히 연락을 취하고 그리고 그 친구들에게 수소문한 결과 결국은 모두 다 함께 모여서 그 공장에 가서 잘 프로젝트를 진행했던 기억이 떠오르는데요. 아무래도 그런 사람 간의 관계에 있어서 이 사람이 안 나온다거나 정말 연락이 안 되면 너무 답답하더라구요. 그래서 약간 그랬던 기억이 아직까지 머리에 남아있구요. 그래도 긍정적으로 잘 해결된 좋은 케이스였다고 생각이 듭니다.",
+                "wordCount": 86
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "가장 인상적인 프로젝트는 조별로 진행되었는데, 한 공장의 씨아이를 만드는 프로젝트였습니다. 조원 두 명은 잠수를 탔고 한 명은 연락이 되지 않아 굉장히 힘들었는데, 친구들에게 수소문한 결과 모두가 함께 모여 프로젝트를 진행했던 기억이 납니다.",
+                "wordCount": 32
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 442318,
+            "duration": 13820,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_138680.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1709518,
+            "duration": 53420,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_138680.wav"
+        }
+    }
+}

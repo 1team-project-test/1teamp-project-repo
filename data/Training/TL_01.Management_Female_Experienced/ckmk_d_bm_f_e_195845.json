@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "만약 회사에 입사하여 지원자님의 직무에 맞지 않는 일을 하게 되신다면 어떻게 하시겠습니까 그래도 괜찮으시겠습니까",
+                "wordCount": 14
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 제 성향에 맞는 일을 하는 것에 대해서 굉장히 큰 자부심을 가지고 있고 또 제가 지금 지원한 직무가 제 천직 중의 하나라는 생각을 가지고 있기 때문에 만약에 제가 이 부서가 아니라 다른 부서로 발령 나게 된다 라면은 최대한 빨리 그 부서로 다시 발령받을 수 있도록 굉장히 많은 노력들을 할 것 같습니다. 그리고 충분한 노력을 했음에도 불구하고 만약에 계속해서 받아들여지지 않는다 라면 왜 받아들여지지 않았는지에 대해서 혼자 치열하게 한번 많이 고민해 보고 어 다른 인사팀에도 한 번 더 건의를 해보고 어필도 해보고 정말 많은 노력들을 해 볼 것 같습니다. 다만 제가 최선을 다해서 모든 노력을 했는데도 계속해서 받아들여지지 않는다 라면 저는 아무래도 다른 곳을 또 알아볼 수도 있을 것 같습니다. 왜냐하면 제가 그만큼 정말 하고 싶었던 일이었고 정말 잘 할 수 있는 자신감들이 있기 때문에 그 기회가 주어지지 않는다면 그 부분에 대해서 사실 많은 쪼끔 좌절도 느낄 수도 있고 스스로 직업 가치관에 대해서 의문을 품을 수도 있기 때문입니다.",
+                "wordCount": 146
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 제 성향에 맞는 일을 하는 것에 큰 자부심을 가지고 있고 지원 직무가 제 천직 중의 하나라는 생각을 가지고 있기 때문에 이 부서가 아닌 다른 부서로 발령나게 된다면 최대한 빨리 그 부서로 다시 발령받을 수 있도록 굉장히 많은 노력들을 할 것 같습니다.",
+                "wordCount": 42
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 424718,
+            "duration": 13270,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_q_bm_f_e_195845.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2620878,
+            "duration": 81900,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_a_bm_f_e_195845.wav"
+        }
+    }
+}

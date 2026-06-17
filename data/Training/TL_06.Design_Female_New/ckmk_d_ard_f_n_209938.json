@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "어 사람들과 업무를 하다 보면 협업을 하는 것은 굉장히 불가피한 일입니다 어 지원자님께서 사람들과 협업을 하며 어 가장 어려웠던 점이 있었다면 그것은 무엇인가요 그리고 어떻게 극복하셨나요",
+                "wordCount": 26
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "사람들과 협업을 하며 가장 어려웠던 점은 열심히 하지만 결과물이 좋지 않은 팀원의 효율성이었습니다. 이럴 경우에는 그 팀원의 참여 및 기여들을 문체 삼지도 못하지만 실력에 대한 적나라한 비판이 어려울뿐더러 단기적으로 그 팀원의 실력을 향상시키는 것도 불가능하기 때문입니다. 이럴 경우에는 그 팀원을 철저히 보조적으로 사용하여서 해당 역경을 극복해 냈습니다. 기획과 그 외에 모든 것들을 새로이 하면서도 단순 반복적 노동들을 모두 해당 팀원에게 시켜 팀원 참여도와 그리고 새로이 기획을 하는 저희의 시간과 에너지들 모두 세이브하는 결과였습니다.",
+                "wordCount": 75
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "기획과 그 외에 모든 것들을 새로이 하면서도 단순 반복적 노동들을 모두 해당 팀원에게 시켜 팀원 참여도와 그리고 새로이 기획을 하는 저희의 시간과 에너지들 모두 세이브하는 결과였습니다.",
+                    "expression": "c_cop",
+                    "category": "personality"
+                }
+            ],
+            "summary": {
+                "text": "열심히 하지만 결과물이 좋지 않은 팀원의 효율성이 좋지 않으면 팀원을 보조적으로 사용해서 역경을 극복했습니다. 새로이 기획을 하는 우리의 시간과 에너지들 모두 세이브한 결과였습니다.",
+                "wordCount": 23
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 556878,
+            "duration": 17400,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_209938.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1711118,
+            "duration": 53470,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_209938.wav"
+        }
+    }
+}

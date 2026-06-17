@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "RND",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님께서는 이제 창의성과 팀워크 중 뭐 무엇이 더 중요하다고 생각하시나요 어 저마다 더 중요하다고 생각하는 게 다를 텐데요 지원자님께서 생각 더 중요하다고 생각하시는 것과 그 근거도 함께 들어서 말씀해 주시길 바랍니다",
+                "wordCount": 31
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "아 조금 고민이 되네요 요거는. 왜냐하면 음 다른 것보다도 이거는 팀웍도 사실 중요하다고 생각이 들어서요. 음 되게 복합적인 거 같애요. 저희 업무는 어 개인적인 어떤 그런 넓은 개인의 넓은 시야를 요구하면서도 굉장히 그 동료로서의 이것을 하는 일을 하는 그런 다수의 어떤 단체로서의 그런 배경 지식이라든지 여러 가지 부분이 좀 함께 어우러져야지 그니까 뭉치 뭉쳐야지 더 큰 저희 업무의 극대화된 효과를 조금 발휘할 수 있다고 생각을 해요. 왜냐하면 이게 개인이 각각 아는 그런 섬유나 뭐 이런 여러 가지 소재에 대한 지식과 또 이게 화학이라든지 물리학이라든지 이런 저희는 사실 수학도 업무적으로 굉장히 접목이 되어 있기 때문에 많을수록 더 다양하게 뻗칠 수가 있어요 생각을.",
+                "wordCount": 101
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "팀웍이 중요하다고 생각했어요. 업무는 개인의 시야를 요구하면서도 여러 부분이 함께 어우러져야 업무의 극대화된 효과를 발휘할 수 있다고 생각해요. 업무적으로 접목이 되어 있기 때문에 많을수록 더 다양하게 뻗칠 수가 있어요.",
+                "wordCount": 29
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 642958,
+            "duration": 20090,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/Experienced/ckmk_q_rnd_f_e_179645.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2901198,
+            "duration": 90660,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/Experienced/ckmk_a_rnd_f_e_179645.wav"
+        }
+    }
+}

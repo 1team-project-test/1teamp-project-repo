@@ -1,0 +1,76 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "스터디를 따로 하고 계신 것이 있으신가요 만약 그렇다면 어떤 스터디를 하고 계신지 왜 하고 계신지 함께 얘기해 주세요",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 스터디를 따로 하고 있는 것이 있습니다. 저는 영어 회화 스터디를 하는데요. 아 지금 이십 세 때부터 제가 새벽 일곱 시에 영어 회화반을 십 년간 들었습니다. 그때 들으면서 어 그 수업이 끝나고 언제나 그 앞에 찻집에 모여서 스터디를 했습니다. 그것도 영어로 했지요. 영어로 스터디를 하면서 좀 더 발전된 그런 모임을 언제나 가지면서 너무너무 즐거운 시간이었습니다. 예 그런데 한 십 년간 갔다가 보니까 제가 결혼도 하게 되고 그다음에 아이들도 키우게 되면서 아이들을 키우게 되니까 아이들과 함께 또 영어 화를 하다 보면 우리 아이들한테도 되게 도움이 되지 않을까 그래서 아이들하고 공부를 열심히 하면서 그다음에 동네에 친구들과 함께 스터디를 하고 있습니다. 그래서 영어 회화 반에 들어가서 아 영어 회화를 하는데 저도 되게 열심히 했다고 생각을 했는데 제 나이 대에 어 다른 친구분들도 보면 엄청 열심히 공부를 하시더라구요. 일단 그 친구들 같은 경우는 해외여행에 갔을 때 별 무리 없이 여행을 하고 싶어서 영어를 하는 경우도 있었지만 저 같은 경우는 이 회사에 들어와서 바이어들이나 아니면 외국 손님들과 소통을 잘 하게 하고 싶어서 좀 더 열심히 하는 아 그런 목적이 있습니다. 게서 영어 회화 공부도 열심히 하구요. 그다음에 역사 공부는 또 역사 스터디 역사 문화 지도사분들과 함께 역사 스터디를 하고 있습니다. 우리나라 역사도 어 너무 재미있는 역사가 많아서 공부하는 데 도움이 많이 됩니다.",
+                "wordCount": 197
+            },
+            "emotion": [
+                {
+                    "text": "저는 영어 회화 스터디를 하는데요.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "아 지금 이십 세 때부터 제가 새벽 일곱 시에 영어 회화반을 십 년간 들었습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "영어로 스터디를 하면서 좀 더 발전된 그런 모임을 언제나 가지면서 너무너무 즐거운 시간이었습니다.",
+                    "expression": "p-happiness",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "아 지금 이십 세 때부터 제가 새벽 일곱 시에 영어 회화반을 십 년간 들었습니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "저는 영어 회화 스터디를 따로 하고 있습니다. 영어 회화반을 십 년간 들으면서 좀 더 발전된 모임을 항상 가지면서 재미있게 지냈습니다. 그런데 십 년 동안 갔다 보니 아이들도 키우고 또 영어 화를 하다 보면 우리 아이들한테도 도움이 될 것 같아 아이들과 함께 공부를 열심히 하면서 동네에 친구들과 함께 스터 디를 하고 있고, 회사에 들어와서 바이어들이나 외국 손님들과 소통을 잘 하게 되고 싶어서 더 열심히 하고 있습니니다.",
+                "wordCount": 65
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 419918,
+            "duration": 13120,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_q_ps_f_e_242324.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3857678,
+            "duration": 120550,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_a_ps_f_e_242324.wav"
+        }
+    }
+}

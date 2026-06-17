@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "업무를 하던 중에 직무가 적성에 맞지 않는다면 어떻게 하실 건지 상황을 가정하고 말씀해 주시기 바랍니다",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "일을 하던 중 이런 직무가 저의 적성에 맞지 않는다고 판단이 된다면 저는 다시 한번 이 일에 대해 생각해 볼 것 같습니다. 이 일을 계속 해야 되는지 아니면 다른 직무로 전환을 해야 하는지 말이지요. 예를 들어 제가 자동차 세일즈맨이라고 가정해 보겠습니다. 고객들을 만나고 제품을 설명하고 고객들이 만족해서 구매하는 결과까지 이어졌을 때 저는 많은 희열을 느꼈습니다. 하지만 이 일을 진행하면서 좋은 고객만 있는 것이 아니라 정말 진상 고객도 많더라고요. 그러다 보니 진상 고객들이 저에게 컴플레인을 거는 상황에서는 스트레스가 너무 쌓여서 마음이 힘들었습니다. 이러한 상황을 반복해서 겪다 보니 저는 이 일이 저와 맞지 않는다고 생각이 들 수도 있을 것 같아요. 그럴 경우 제가 극복할 수 있는 방법이 없는지 선배들과 상의하고 선배들은 이럴 때 어떻게 했는지 여쭤보겠습니다. 그리고 그들이 극복했던 방법을 제가 적용해 보고 저 또한 그 방법으로 극복할 수 있는지 확인한 후 만약 그것이 어렵다고 하면 다른 직무를 선택해 보겠습니다.",
+                "wordCount": 137
+            },
+            "emotion": [
+                {
+                    "text": "고객들을 만나고 제품을 설명하고 고객들이 만족해서 구매하는 결과까지 이어졌을 때 저는 많은 희열을 느꼈습니다.",
+                    "expression": "p-achievement",
+                    "category": "positive"
+                },
+                {
+                    "text": "그러다 보니 진상 고객들이 저에게 컴플레인을 거는 상황에서는 스트레스가 너무 쌓여서 마음이 힘들었습니다.",
+                    "expression": "n-distress",
+                    "category": "negative"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "세일즈맨이라는 직무가 적성에 맞지 않는다고 판단되면 일을 계속해야 되는지 다른 직무로 전환해야 하는지 생각해 볼 것 같습니다. 일을 진행하며 진상 고객도 많이 만나다보니 스트레스가 너무 쌓여서 마음이 힘들겠습니다. 이런 상황을 반복해서 겪으니 제가 극복할 수 있는 방법이 없는지 선배들과 상의하고 선배들은 어떻게 했는지 여쭤보겠습니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 418638,
+            "duration": 13080,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_283718.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2758478,
+            "duration": 86200,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_283718.wav"
+        }
+    }
+}

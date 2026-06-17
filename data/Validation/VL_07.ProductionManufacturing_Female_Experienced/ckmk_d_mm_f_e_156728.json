@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "직무를 수행하다 보면 난관에 봉착하는 경우가 종종 발생할 텐데요 이 경우에는 어떻게 해결하실 것 같은지 지원자님의 해결법과 그 이유에 대해서 말씀해 주시기 바랍니다",
+                "wordCount": 23
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "음 이게 아무래도 우리는 옷 만지는 사람이니까 음 가장 뭐 좀 아 큰일 났다 싶은 경우는 이미 재단을 했을 때 이미 옷감을 짤라냈는데 잘못된 방향으로 가고 있었을 때 그게 이제 아유 지금 생각만 해도 아찔하네요 그거는. 근데 오 이거는 근데 손님과 고객과 대화를 우선 일차적으로 해야 되고 그래서 현재 상황이 어떤지를 솔직하게 밝혀야 되고 그다음에 이제 그 남아있는 그 원단 그 재단된 남은 남은 옷감으로 쪼금 최대한 그 고객이 원래 원하 원하는 방향으로 다시 조금 리폼을 해야죠. 그런 부분에 대해서 다시 그걸 살릴 수 있는 방향에 대한 거 저는 뭐 수도 없이 했죠. 이게 제가 경력이 이십 몇 년인데 뭐 이런 게 없었겠습니까 정말 많아요. 제가 재 재단을 한 게 아니라 남이 한 거를 저한테 넘어오는 경우가 수두룩했죠.",
+                "wordCount": 118
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "재단을 했을 때 잘못된 방향으로 가고 있었을 때 고객과 대화를 일차적으로 해야 되고 현재 상황이 어떤지를 솔직히 밝혀야 되고 남은 원단 그 재단된 남은 옷감으로 최대한 고객이 원하는 방향으로 다시 리폼을 해야겠습니다.",
+                "wordCount": 32
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 470798,
+            "duration": 14710,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/Experienced/ckmk_q_mm_f_e_156728.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2865038,
+            "duration": 89530,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/Experienced/ckmk_a_mm_f_e_156728.wav"
+        }
+    }
+}

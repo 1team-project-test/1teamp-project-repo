@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "기차가 운행을 하다 삼십 분 동안 산사태로 정차되었습니다 이때 본인이 관리 책임을 받는 위치에 있다면 어떻게 조치 하실 건가요",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 답변드리겠습니다. 기차가 산사태로 삼십 분 동안 정차되었는데 제가 관리 책임의 위치에 있다면 저는 먼저 승객들에게 양해를 구하고 상황을 알린 다음에 안전을 우선적으로 생각하여 승객분들을 안전한 곳으로 대피시키겠습니다. 그리고 다른 열차나 다른 이동편을 통해 할 수 있는 한 최대한 많이 승객들을 이동시키고 회사에 보고를 하여 어 관련 뭐 어 어 프로세스를 따라서 문제를 해결하도록 하겠습니다. 이상입니다.",
+                "wordCount": 57
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "산사태로 정차된 기차의 관리 책임자는 승객들에게 양해를 구하고 상황을 알린 뒤 승객분들을 안전한 곳으로 대피시키고 회사에 보고하여 문제를 해결하도록 하겠습니다.",
+                "wordCount": 20
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 317518,
+            "duration": 9920,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/New/ckmk_q_ard_m_n_376646.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1435278,
+            "duration": 44850,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/New/ckmk_a_ard_m_n_376646.wav"
+        }
+    }
+}

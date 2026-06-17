@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "어 혹시 매일매일 공부하고 있는 분야가 따로 있으시나요 또 있으시다면 그 분야를 왜 공부하고 계신지도 함께 말씀해 주시길 바랍니다",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저 같은 경우에는 매일 오전에 일어나면 영어를 연습하고 있는데요. 그 이유는 물론 요즘은 파파고나 구글 번역 같이 번역 프로그램이 너무 잘 돼 있기도 하지만 영어를 어느 정도 할 줄 알면은 내가 업무를 하는 데 있어서 조금 더 잘 도움이 되겠다 혹은 하다못해 해외 출장을 갈 때도 내가 직접 공항에서부터 해외에 있는 우리 지사까지 직접 혼자 찾아갈 수 있는 그런 능력들이 배양되지 않을까 라는 생각에서 지금 일 년 정도 째 회사에서 지원되고 있는 복지 프로그램을 통해서 직접 영어 공부를 하고 있는 중에 있습니다. 그래서 저는 제가 지금 입사하려고 하는 이 기업에도 직원들에게 영어를 직접 공부할 수 있는 그런 프로그램들을 어 직접 운영 중에 있다는 있다 라는 소리를 들었는데요. 그래서 저는 자기 개발적인 부분을 굉장히 중요하게 생각했기 때문에 만약에 회사 입사 후에 바쁘다 라면 꼭 집에 들어가기 전에는 전화 영어를 십 분이라도 해서 이런 개발 능력들을 계속 키워나가고 싶습니다.",
+                "wordCount": 137
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "그 이유는 물론 요즘은 파파고나 구글 번역 같이 번역 프로그램이 너무 잘 돼 있기도 하지만 영어를 어느 정도 할 줄 알면은 내가 업무를 하는 데 있어서 조금 더 잘 도움이 되겠다 혹은 하다못해 해외 출자를 갈 때도 내가 직접 공항에서부터 해외에 있는 우리 지사까지 직접 혼자 찾아갈 수 있는 그런 능력들이 배양되지 않을까 라는 생각에서 지금 일 년 정도 째 회사에서 지원되고 있는 복지 프로그램을 통해서 직접 영어 공부를 하고 있는 중에 있습니다.",
+                    "expression": "c_imp",
+                    "category": "personality"
+                }
+            ],
+            "summary": {
+                "text": "저는 자기 개발적인 부분을 굉장히 중요하게 생각했기 때문에 회사 입사 후에 바쁘다면 반드시 전화 영어를 십 분이라도 해서 이런 개발 능력들을 계속 키워나가고 싶습니다.",
+                "wordCount": 24
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 431438,
+            "duration": 13480,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_q_bm_f_e_209685.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2640718,
+            "duration": 82520,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_a_bm_f_e_209685.wav"
+        }
+    }
+}

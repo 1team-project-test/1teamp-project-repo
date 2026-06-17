@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인이 생각하는 본인의 단점이 있다면 말씀해 주시고 그 단점을 보완하기 위해 어떤 노력을 했는지 함께 말씀해 주세요",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저만 제가 가지고 있는 단점이라고 하면 계획을 세우지 않으면 어 조금은 게을러지고 나태해진다는 데에 있다 라고 말씀을 드리고 싶습니다. 어 때문에 이를 보완하기 위해서 저는 항상 일과가 끝난 후나 아니면 어 이른 아침에 일어나서 항상 오늘 해야 할 일을 작성을 하는 그런 계획을 짜면서 생활을 해 나가고 있습니다. 항상 계획을 짤 때는 우선순위를 두어서 어떤 일을 먼저 처리해야 하는지에 관해서 항상 생각을 하고 음 효율적으로 일을 처리하기 위해서 노력을 하고 있는 것 같습니다. 이렇게 저의 단점이었던 부분이 현재는 계획을 세우고 그리고 항상 규칙적으로 생활하려고 노력을 하다 보니 그 단점을 단점이 어 조금은 당 장점으로 다가올 수 있도록 노력을 하고 있는 것 같습니다. 항상 여러 가지들의 단점이 있을 수 있지만 그런 단점들은 항상 제가 꼼꼼하게 체크를 해서 그런 부분들은 항상 보완하고 어 정말 능력 있는 그런 신입사원이 되도록 최선을 다하겠습니다.",
+                "wordCount": 129
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "항상 계획을 짤 때는 우선 순위를 두어서 어떤 일을 먼저 처리해야 하는지에 관해서 항상 생각을 하고 음 효율적으로 일을 처리하기 위해서 노력을 하고 있는 것 같습니다.",
+                    "expression": "f_cons",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 계획을 세우지 않으면 게을러지고 나태해진다는 단점이 있어서 이를 보완하기 위해 일과가 끝난 후나 아침에 일어나 오늘 해야 할 일을 작성하는 계획을 짜면서 생활을 해 나가고 있습니다. 항상 단점이 있을 수 있지만 제가 꼼꼼하게 체크를 해서 그런 부분들을 항상 보완하겠습니다.",
+                "wordCount": 40
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 400078,
+            "duration": 12500,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_227369.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2855758,
+            "duration": 89240,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_227369.wav"
+        }
+    }
+}

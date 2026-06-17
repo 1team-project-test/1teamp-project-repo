@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자는 무언가를 달성하기 위해 목표를 세우고 이 삼 년간 열심히 노력해서 목표를 달성한 경험이 있으신가요",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 있습니다. 저는 늦은 나이에 외국어를 공부하였습니다. 사실은 영어도 잘 하지 못하는데 중국어를 배우고 싶은 마음이 들었습니다. 대학을 중국어과를 나오고 그러는 친구들과 비교해서 제가 나이도 늦 늦은 나이인데 그들과 동등하리라는 생각은 하지 않았지만 뒤지고 싶지도 않았습니다. 정말 이 년 동안 열심히 일했습니다. 중국에 안녕하세요 도 모르고 시작한 중국어가 이 년 만에 에이치에스케이 칠 급을 받을 만큼 충분한 성과를 달성했습니다.",
+                "wordCount": 58
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 늦은 나이에 외국어를 공부해 이 년 만에 에이치에스케이 칠급을 받을 만큼 충분한 성과를 달성했습니다. 영어도 잘 못하는데 중국어를 배우고 싶은 마음이 들었습니다.",
+                "wordCount": 23
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 368078,
+            "duration": 11500,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_q_bm_f_e_103628.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1868238,
+            "duration": 58380,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_a_bm_f_e_103628.wav"
+        }
+    }
+}

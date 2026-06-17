@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "RND",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "살면서 무엇인가 하나에 푹 빠져 그것에 몰두해 본 경험이 있으신가요 있다면 그것은 무엇인가요",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "푹 빠져서 몰두한 적은 제가 만화 애니메이션을 보면서 굉장히 몰두한 적이 있습니다. 그 만화 캐릭터들마다 그 사회 안에서 그 만화 안에서 주어진 역할이 있었는데요. 그거를 보면서 큰 재미를 느끼기도 했고 또 어 현실에서 굉장히 스트레스 받는 일이 있었는데 재미있는 만화를 보면서 스트레스를 풀었던 것 같습니다. 근데 다만 너무 빠져서 하루 종일 만화 영화만 보느라 아무것도 못 한 적이 중 고등학생 시절에 있습니다. 그래서 어 성인이 된 지금은 스트레스를 푸는 용도로 많이 보구요. 음 중 고등학생 때 정말 밥도 안 먹고 계속 애니메이션 첫 화부터 마지막 화까지 달리듯이 본 적이 있습니다.",
+                "wordCount": 90
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "만화 애니메이션을 보면서 스트레스를 풀었는데 너무 빠져서 아무것도 못한 적이 있습니다. 성인이 된 지금은 스트레스를 푸는 용도로 많이 보구요. 중 고등학생 때 밥도 안 먹고 계속 애니메이션을 본 적이 있습니다.",
+                "wordCount": 30
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 288398,
+            "duration": 9010,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_q_rnd_f_n_178191.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1713998,
+            "duration": 53560,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_a_rnd_f_n_178191.wav"
+        }
+    }
+}

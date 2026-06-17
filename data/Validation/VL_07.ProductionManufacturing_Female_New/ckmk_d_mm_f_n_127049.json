@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "우리가 흔히 피로하다 라고 말할 때 그 피로에 대해서 어떻게 생각하시는지 한번 설명해 주십시오",
+                "wordCount": 14
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "출근을 해서 일을 하거나 학교에서 공부를 하거나 집에서 가사를 하거나 대부분의 사람들은 반복되는 일상을 살아가고 있습니다. 이런 일상에서 피로감도 점점 쌓여가고 있고요. 이런 피로도 점점 더 쌓이면 만성피로가 생긴다고 하구요. 이런 피로 증세는 너도 있고 나도 있고 다들 그렇다 하고 그래서 금세 지나치게 되는데 만성 피로 증후군은 금세 피곤함을 느끼고 휴식의 취해 몸을 나른해지는 등 피로 증세가 지속되는 꼭 한 삼 개월까지 계속 가는 그런 것들을 이야기할 수 있습니다. 그래서 제 증세를 보면 음 기억력과 집중력이 급격히 떨어지고요 업무나 학업을 할 때면 지나치게 피곤함도 느끼고 그다음에 잠을 많이 잔 것 같은데 개운하지도 않고 특별한 이유도 없는데 몸이 쑤시고 아프고 불안감을 느끼고 별일 아닌데도 예민하게 반응합니다. 그러면 우리 왜 이런 것들이 생기는지 왜 피로가 생기는 건지 아무래도 충분한 수면을 취하지 못해서 일지 않을까 생각되고요. 그리고 커피로 인해서 하루 종일 커피를 마셔서 그 각성제로 인해 그냥 몽롱한 상태로 지내서 나의 피로가 더 누적되는 건 아닌지 또는 식사에 있어서 다이어트한다고 식사를 걸어서 오는 그런 피로가 아닐까 라는 생각도 듭니다.",
+                "wordCount": 156
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "대부분의 사람들은 반복되는 일상을 살아가고 있습니다. 이런 일상에서 피로감도 점점 쌓여가고 있고, 피로도 점점 더 쌓이면 만성 피로가 생깁니다. 만성 피로 증후군은 피로가 지속되는 한 삼 개월까지 계속 가는 것들을 이야기합니다. 커피로 인해 몽롱한 상태로 지내서 저의 피로가 더 누적되는 건 아닌지, 또는 다이어트한다고 식사를 해서 오는 피로도 있을 것 같습니다.",
+                "wordCount": 51
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 325838,
+            "duration": 10180,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_127049.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2742478,
+            "duration": 85700,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_127049.wav"
+        }
+    }
+}

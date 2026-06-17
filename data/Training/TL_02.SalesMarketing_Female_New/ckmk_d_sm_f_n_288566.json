@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "과거 프로젝트를 수행했던 경험이 있는지 궁금합니다 있다면 프로젝트 대에서 어떤 역할을 맡으셨는지 말씀해 주세요",
+                "wordCount": 14
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "프로젝트라고 하면 여러 가지가 있겠지만 팀 내에서 프로젝트를 담당했을 때 저는 앞에서 발표하는 발표자 역할을 했던 기억이 납니다. 각자의 다양한 의견들을 취합하고 시간 내에 그것들을 완성하는 가운데 제일 중요한 건 의견과 여러 가지 것들을 잘 만들어 놨다고 하더라도 그것을 잘 포장하고 그것을 포장한 것을 잘 출력하는 부분이 제일 중요하다고 생각합니다. 많은 사람들이 서로의 맡은 역할을 잘 했을 때 저에게 발표자의 역할을 주셨을 때 그것 또한 나에게 주어진 기회인 만큼 그 저희 팀이 하고자 하는 얘기를 제가 대변해서 잘 나타냈을 수 있는 표현 능력을 잘 했기 때문에 좋은 결과 또한 얻어졌다고 봅니다. 그렇기 때문에 프로젝트라는 것을 수행하는 데 있어서는 좋은 아이디어로 좋은 작품과 프리젠테이션을 잘 수행하는 것도 물론 중요하지만 제일 중요한 건 그것을 앞에서 잘 발표하고 그것들을 사람들한테 잘 전달하는 것 또한 중요하다고 생각합니다.",
+                "wordCount": 123
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "프로젝트 수행에 있어서는 좋은 아이디어로 좋은 작품과 프리젠테이션을 잘 수행하는 것도 물론 중요하지만 제일 중요한 건 앞에서 잘 발표하고 그것들을 사람들한테 잘 전달하는 것 또한 중요하다고 생각합니다.",
+                "wordCount": 27
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 343118,
+            "duration": 10720,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_288566.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3788878,
+            "duration": 118400,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_288566.wav"
+        }
+    }
+}

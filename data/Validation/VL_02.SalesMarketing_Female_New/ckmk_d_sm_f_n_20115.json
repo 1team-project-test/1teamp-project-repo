@@ -1,0 +1,75 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "시간이 남을 때 주로 뭘 하고 지내시지요",
+                "wordCount": 7
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 시간이 남을 때 어 그 유튜브를 보거나 아니면 어 에스엔에스를 많이 합니다. 어 그렇게 시간을 많이 보내는데 음 유튜브에는 다양한 어 아시겠지만 다양한 정보와 그리고 재미있는 거 그리고 이제 다양한 재미있는 영상들이 많기 때문에 음 그것을 보면서 이제 재미도 얻고 그리고 스트레스도 풀고 그리고 음 다양한 뭐 제 정보도 많이 얻기 때문에 그렇게 많이 보다 보면 시간 가는지 모르고 이렇게 보게 됩니다. 그리고 에스엔에스도 어 요즘 핫한 장소 뭐 이렇 가기 놀러 가기 좋은 곳이나 음 괜찮은 뭐 제품 등등 어 여러 가지 정보들을 어 사진과 함께 어 콘텐츠나 이런 그 재미있게 많기 정보 제공을 하는 게 많기 때문에 보면서 어 관심이 있는 것들은 저장을 해 두고 찜을 해 놓고 그곳에 찾아가거나 그 제품을 사거나 어 실제 뭐 그렇기도 하고요. 그리고 실제 음 그 에스엔에스 광고를 보고 구매한 적도 여러 번 있습니다. 시간 남을 때 에스엔에스 유튜브를 많이 합니다.",
+                "wordCount": 140
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "저는 시간이 남을 때 어 그 유튜브를 보거나 아니면 어 에스엔에스를 많이 합니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                },
+                {
+                    "text": "그리고 에스엔에스도 어 요즘 핫한 장소 뭐 이렇 가기 놀러 가기 좋은 곳이나 음 괜찮은 뭐 제품 등등 어 여러 가지 정보들을 어 사진과 함께 어 콘텐츠나 이런 그 재미있게 많기 정보 제공을 하는 게 많기 때문에 보면서 어 관심이 있는 것들은 저장을 해 두고 찜을 해 놓고 그곳에 찾아가거나 그 제품을 사거나 어 실제 뭐 그렇기도 하고요.",
+                    "expression": "c_private",
+                    "category": "background"
+                },
+                {
+                    "text": "그리고 실제 음 그 에스엔에스 광고를 보고 구매한 적도 여러 번 있습니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                },
+                {
+                    "text": "시간 남을 때 에스엔에스 유튜브를 많이 합니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "저는 시간이 남을 때 유튜브나 소셜미디어를 활용합니다. 유튜브에는 다양한 정보와 재미있는 영상들이 많아서 시간 가는지 모르고 보게 됩니다. 소셜미디어는 여러 가지 정보들을 사진과 함께 콘텐츠로 제공하는 게 많아서 보면서 관심이 있는 것들은 저장해 놓고 찾아가거나 제품을 사거나 실제 그렇게 시간을 보내요.",
+                "wordCount": 41
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 235598,
+            "duration": 7360,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_20115.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2886798,
+            "duration": 90210,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_20115.wav"
+        }
+    }
+}

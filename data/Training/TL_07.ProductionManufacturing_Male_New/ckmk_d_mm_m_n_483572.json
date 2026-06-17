@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "기차가 운행 시 산사태로 삼십 분 동안 정차되었다고 합시다 이때 만약 관리 책임의 위치에 있다면 어떻게 조치하실 겁니까",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어 산사태로 삼십 분간 정지가 된다면 어 일단 우선적으로 아 저는 관 그 승객들에게 어 일 차적으로 그 죄송하다는 말씀을 드릴 것 같습니다. 부득이하게 앞쪽에 산사태가 났기 때문에 안전상의 이유로 삼십 분간 정차하겠습니다 그리고 또한 삼십 분이라고 얘기를 말씀을 드렸기 때문에 그 삼십 분 안에 최소한 이십 분 안에는 모든 일들이 처리가 될 수 있도록 빠르게 일을 처리할 것 같습니다. 어 처리가 되지 않는다면 그것은 커플레인이 될 수 있고 제가 다니고 있는 이 회사에 누가 될 수 있기 때문입니다. 또한 안전을 위해서 어 앞뒤 그리고 앞뒤에 있는 응 운행하고 있는 기차에 대해서 정지 명령을 내릴 것이고 주변에도 많은 이제 전파를 할 것 같습니다. 어 최대한 빨리 산사태에 의한 이제 기차선로 유실 작업을 어 빨리 처리해서 다시 유지 복구를 할 계획이고요. 어 이십 분 안에 처리를 한 다음에 모든 승객들에게는 그에 따른 보상과 같은 것을 약속을 드리겠습니다. 보상은 제가 책임질 수 있는 어 그런 부분까지 책음을 드릴 것이고요. 혹시 뭐 아프거나 그런 안전상에 문제가 없는지 제가 직접 발 뛰면서 그 관리를 할 것 같습니다. 어 그런 문제가 발생하지 않도록 사전에 하는 것이 중요하지만 산사태와 같이 저희가 예상할 수 없는 사고 같은 경우에는 사람들의 그 승객들과 직원들에게 각별한 안전 주시 조의 주시를 내릴 것 같습니다.",
+                "wordCount": 193
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "산사태로 삼 분간 정지가 되면 최대한 빨리 기차선로 유실 작업을 해서 다시 유지 복구를 할 계획이며, 모든 승객들에게는 그에 따른 보상을 약속 드리겠습니다. 사전에 우리가 예상할 수 없는 사고가 발생하는 경우에는 승객들과 직원들에게 각별한 안전 주시를 내릴 것 같습니다.",
+                "wordCount": 39
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 380558,
+            "duration": 11890,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_483572.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2892558,
+            "duration": 90390,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_483572.wav"
+        }
+    }
+}

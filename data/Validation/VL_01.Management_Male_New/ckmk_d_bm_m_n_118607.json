@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "어 지원자님께서 요즘 스터디를 따로 하고 있는 것이 있나요 있다면 어떤 공부를 하고 있는지 또 왜 그 공부를 하고 있는지도 말씀해 주시기 바랍니다",
+                "wordCount": 23
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "스터디를 따로 하고 계신 것이 있으십니까 있다면 어떤 공부를 왜 하고 계신지도 함께 말씀 부탁드리겠습니다 라고 하셨는데요. 제가 저는 티자형 인간을 추구합니다. 티자형 인간에서 알ㄹ파벳 티자 잉 인간에서 티로 가장 밑에 쪽으로 내려와 있는 부분은 본인이 가장 잘하는 부분으로 어 호구지책을 삼는 것을 말합니다. 그렇다면 호구지책을 삼는 직업이나 어 사업이나 이 부분을 제외하고 나머지 부분들은 평평하게 있는 부분들은 깊지는 않지만 넓게 여러 가지 관심사에 대해서 공부를 하고 그 공부를 함으로써 다른 사람들과의 대화에서 어느 정도는 어 같이 공유하면서 살아가는 정도까지 정도 수준에 관심을 가지고 있습니다. 제가 지금 스터디를 하고 있는 부분은 외국어 역사 그리고 운동 이 운동 등입니다. 외국어의 경우는 제가 삼 개 국어를 영어 중국어 일본어는 자유롭게 구사할 정도 수준은 되고요. 스페인어를 공부를 하고 있습니다. 스페인어를 공부하는 이유는 나중에 세계 여행을 할 때 스페인어 관련된 문 문화권 쪽을 가기를 갈 예정이라 그거에 대한 준비를 하고 있는 것입니다.",
+                "wordCount": 138
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 티자형 인간을 추구합니다. 제가 스터디를 하고 있는 부분은 외국어 역사 그리고 운동입니다. 외국어의 경우는 삼 개 국어를 영어, 중국어, 일본어는 자유롭게 구사할 정도입니다. 스페인어를 공부하는 이유는 나중에 세계 여행을 할 때 스페인어 관련된 문화권 쪽을 가기를 예정에 두고 있는 것입니다.",
+                "wordCount": 41
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 409678,
+            "duration": 12800,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/New/ckmk_q_bm_m_n_118607.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2736078,
+            "duration": 85500,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/New/ckmk_a_bm_m_n_118607.wav"
+        }
+    }
+}

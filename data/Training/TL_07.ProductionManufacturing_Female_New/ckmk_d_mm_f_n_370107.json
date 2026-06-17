@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "그동안 속해 계셨던 조직이나 단체 속에서 지원자님은 주로 어떤 역할을 하는 사람이었는지 궁금합니다",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 유년 시절 내성적인 성격으로 초중고 시절에는 단체에서 제 뜻을 말하지 않고 리더를 뒷받침하는 팔로워형 사람이었습니다. 그저 팀원 내에서 팀 분위기를 밝게 하는 분위기 메이커였던 것 같습니다. 저는 리더십을 발휘하는 친구들의 모습을 보며 저도 리더십을 키우고자 대학 진학 시 스피치 학원을 통해 제 의견을 용기 있게 말하는 연습을 해 왔습니다. 이로 인해 대학 졸업 후 사회생활에 투입되어 저는 리더십을 발휘하는 매니저 역할 슈퍼바이저 역할을 해 오며 팀을 통솔하는 리더가 되었습니다.",
+                "wordCount": 70
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "저는 유년 시절 내성적인 성격으로 초중고 시절에는 단체에서 제 뜻을 말하지 않고 리더를 뒷받침하는 팔로워형 사람이었습니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "저는 유년 시절 내성적인 성격으로 팀원을 밝게 하는 분위기 메이커였던 것 같습니다. 대학 진학 시 스피치 학원을 통해 제 의견을 용기 있게 말하는 연습을 하면서 팀을 통솔하는 리더가 되었습니다.",
+                "wordCount": 29
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 306638,
+            "duration": 9580,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_370107.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1804238,
+            "duration": 56380,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_370107.wav"
+        }
+    }
+}

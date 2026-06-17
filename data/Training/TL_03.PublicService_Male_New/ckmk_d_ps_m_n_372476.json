@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "과거에 지원자님께서 프로젝트를 수행했던 경험이 있으신지 궁금합니다 있으시다면 그런 프로젝트 내에서 어떤 역할을 맡으셨는지 설명해 주세요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 과거 대학에서 배를 직접 제작해서 한강에 배를 띄어서 사람을 태우고 한강을 배로 횡단하는 그런 프로젝트를 맡아서 한 적이 있습니다. 그 프로젝트에서 저는 배를 만들 때 필요한 재료를 사 와서 팀원들에게 수급하는 그런 역할을 맡아서 하였습니다. 저는 배를 만드는 재료를 싸게 사기 위해서 동대문과 용산 이태원 일대를 돌아다니면서 배 제작에 필요한 재료와 부품들을 최대한 싸게 사 모았고 그래서 저희 프로젝트원들은 배를 만들 수 있었습니다. 그 배를 타고 한강을 건너서 저희는 그 프로젝트를 성공적으로 마칠 수 있었습니다.",
+                "wordCount": 76
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "저는 과거 대학에서 배를 직접 제작해서 한강에 배를 띄어서 사람을 태우고 한강을 배로 횡단하는 그런 프로젝트를 맡아서 한 적이 있습니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "과거 대학에서 직접 한강에 배를 띄워서 사람을 태우고 한강을 배로 횡단하는 프로젝트를 맡았던 적이 있습니다. 그 프로젝트에서 필요한 재료를 사와서 팀원들에게 수급하는 역할을 맡았고 그 프로젝트를 성공적으로 수행할 수 있었습니다.",
+                "wordCount": 30
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 451278,
+            "duration": 14100,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_372476.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1818318,
+            "duration": 56820,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_372476.wav"
+        }
+    }
+}

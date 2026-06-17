@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님은 공동의 가치에 입각 그리고 문화 무형문화유산의 보호에 있어 적용되는 사회적인 관념이 무엇이라고 생각하는지 자세히 말씀해 주세요",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "무형 문화재 보호는 요즘에 그런 것들에 대한 가치는 알고 있지만 그런 가치를 잘 보호해야 된다는 것만 말할 뿐이지 그것을 보존하기 위해서는 너무나 힘든 것 같습니다. 왜냐하면 그런 무형문화재 자체가 사람들이 배울려고 하지도 않고 맥을 이어 갈려면 누군가는 그것을 해야만 함에도 불구하고 쉽게 그 길을 걷지 않기 때문입니다. 그렇기 때문에 사회적 관념으로도 우리 것을 소중한 것이고 우리 문화유산을 잘 보호해야 되는 거는 알고 있음에도 불구하고 그 부분을 간과하는 부분이 없지 않아 있습니다. 그래서 요즘에 사회가 발달하고 모든 문명이 발달함에 따라서 그것들을 보존하는 것은 있을 수 있지만 그것을 보존에 그치는 게 아니라 정말 그 유형의 문화유산을 잘 계승할 수 있도록 그 계승하는 사람들에게 정말 도움을 줄 수 있고 생계유지가 될 수 있는 보장이 된다면 분명 그 어떤 누구도 그 길을 들어설 것 같습니다. 그렇기 때문에 좀 더 신중한 사회 관념이 필요하지 않나 싶습니다.",
+                "wordCount": 131
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "무형 문화재 보호는 보존에 그치는 것이 아니라 잘 계승할 수 있도록 그 계승하는 사람들에게 도움을 줄 수 있고 생계유지가 될 수 있는 보장이 된다면 분명 그 어떤 누구도 그 길을 들어설 것 같기 때문에 좀 더 신중한 사회 관념이 필요합니다.",
+                "wordCount": 40
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 584398,
+            "duration": 18260,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_291255.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3754958,
+            "duration": 117340,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_291255.wav"
+        }
+    }
+}

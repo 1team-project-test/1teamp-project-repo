@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "만약 지원자님께서 게임 속에 등장하는 캐릭터라면 어떤 게임에 어떤 캐릭터로서 등장을 하고 싶으신가요 그리고 어떤 역할을 맡아서 수행하고 싶으신지 말씀 부탁드리겠습니다",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 게임 속 캐릭터라면 힐러 역할을 맡아 수행하고 싶습니다. 힐러는 엠엠오알피지를 비롯한 팀플레이 게임의 아군 지원 역할군으로 회복 역할이라고도 합니다. 아군에 깎인 체력을 회복시켜주고 추가 체력을 지원하거나 피해량을 줄여주고 아군의 능력치를 상승시키는 버프를 걸어주기도 합니다. 저는 평소 누군가를 위해 복 도움을 주고 복지에 대한 관심이 많아 공부를 하던 중 사회 서비스원에 대해 알게 되었습니다. 어 입사 후에 정영 기반 전반 업무를 수행하여 기본적인 지식과 경험을 쌓은 후에 논리적이고 문슥적인 태도로 직원과 국민에게 도움 되는 삶을 실현하고 싶습니다. 이를 위해 다양한 기업의 경영 방식이나 기업 홍보에 대해 조사하고 공부할 것이며 업무에 맞는 경영 관련 자격증을 취득하여 업무에 적용할 것입니다. 최후 직접 사업에 대해 계획하고 전반적인 업무에 참여하여 회사와 발전하여 나가고 싶습니다.",
+                "wordCount": 110
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "최후 직접 사업에 대해 계획하고 전반적인 업무에 참여하여 회사와 발전하여 나가고 싶습니다.",
+                    "expression": "c_sincere_co",
+                    "category": "etc"
+                }
+            ],
+            "summary": {
+                "text": "저는 팀플레이 게임의 아군 지원 역할군으로 힐러 역할을 수행하고 싶습니다. 사회 서비스원에 입사 후 정영 기반 전반 업무를 수행하여 기본적인 지식과 경험을 쌓은 후 논리적이고 문슥적인 태도로 직원과 국민에게 도움이 되는 삶을 실현하고 싶습니다.",
+                "wordCount": 34
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 514958,
+            "duration": 16090,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_211644.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2355918,
+            "duration": 73620,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_211644.wav"
+        }
+    }
+}

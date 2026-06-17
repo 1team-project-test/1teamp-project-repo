@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님께서 생각하시기에 직무 지식 역량 태도 이 세 가지 요소 중에 가장 중요하다고 생각하시는 것과 그 이유를 함께 말씀해 주세요",
+                "wordCount": 20
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 직무 지식 역량 태도 중에서 가장 중요하다고 생각하는 것은 태도라고 생각합니다. 업무를 진행하는 것은 단기간의 일이 아니고 단기간 끈기 있게 프로젝트를 완수하고자 하는 힘은 직무 지식과 역량이 아니라 일관된 태도에서 나오기 때문입니다. 프로젝트와 일을 진행하면 모르는 직무 지식은 서치해서 보완할 수 있으며 역량은 모자란다면 재교육을 통해 보완할 수 있습니다. 그런데 프로젝트나 업무를 진행하다 보면 예상치 못한 과정들이 발생하는 데 그것을 해결하는 힘은 긍정적으로 완수하고자 하는 일에 대한 태도입니다. 그러므로 저는 직무 지식과 역량 태도 중에서 가장 중요한 것은 일과 함께 일하는 이에 대한 태도라고 생각합니다.",
+                "wordCount": 85
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "프로젝트나 업무를 진행하다 보면 예상치 못한 과정들이 발생하는데 그것을 해결하는 힘은 긍정적으로 완수하고자 하는 일에 대한 태도이므로 직무 지식과 역량 태도 중에서 가장 중요한 것은 일과 함께 일하는 이에 대한 태도입니다.",
+                "wordCount": 31
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 585678,
+            "duration": 18300,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_q_ard_f_e_108583.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2093518,
+            "duration": 65420,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_a_ard_f_e_108583.wav"
+        }
+    }
+}

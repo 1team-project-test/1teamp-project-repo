@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "본인과 다른 사람이 원하는 디자인이 다를 경우에는 어떻게 대처를 하실 것입니까",
+                "wordCount": 11
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "회의를 다시 해야죠. 네 제가 선택한 디자인에서 왜 제가 가장 이거를 우선적으로 볼지 이게 제일 최상이라고 볼지 그리고 제가 어 주목한 디자인의 어떤 핵심 요소는 이 부분인데 동료가 생각한 디자인의 핵심 요소는 무언지를 조금 직접적으로 들어보고 제가 그 디자인을 컷한 이유에 대해서도 그 서로 간의 그 디자인을 컷한 이유에 대해서도 서로 들어보고 거기서 설득이 되는 부분이 있고 납득이 안되는 부분이 있겠죠. 그럼 그거에 대해서도 조금 생각을 가지는 시간이 필요할 것 같고요. 음 한 명을 그러면서 쪼금 정리가 될 수 있지 않을까요 뭐 그게 직급상의 어떤 차이에서 오는 부분일 수도 있고 네 그럴 것 같아요. 대화를 하면서 그리고 정말 만약에 제가 제가 선택한 디자인이 마음에 든다면 다른 부분을 조금 일정 부분 양보를 하면서라도 그 디자인을 밀고 나가도록 유도를 한번 해볼 것 같습니다.",
+                "wordCount": 122
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "디자인에 대한 회의를 다시 해 봐야 하는데, 우선 제가 선택한 디자인의 우선순위와 핵심 요소를 들어보고 설득과 납득에 필요한 부분이 있으면 생각을 해 봐야 합니다. 만약 마음에 든다면 다른 부분을 양보해서라도 그 디자인을 밀고 나가도록 유도해 볼 것 같습니다.",
+                "wordCount": 38
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 327758,
+            "duration": 10240,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_q_ard_f_e_159118.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2529358,
+            "duration": 79040,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_a_ard_f_e_159118.wav"
+        }
+    }
+}

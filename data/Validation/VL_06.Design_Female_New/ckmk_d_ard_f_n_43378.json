@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "자신의 단점과 그 단점을 보완하기 위해서 한 노력에 대해서 말해 보세요",
+                "wordCount": 11
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저의 단점은 남 남들과 자신을 비교하는 것입니다. 어 제가 아무리 잘했어도 항상 제 또래 친구들과 저 자신을 평가를 하는 하고 어 그것에 대한 저의 문제점을 찾아내어서 항상 제 성과에 관계없이 음 저의 문제점을 찾아내려고 하는 것이 제 단점이라고 생각하는데 저는 그것을 극복하기 위해서 최대한 객관적으로 상황을 많이 보려고 하고 있습니다. 또한 어 같은 또래 친구들과 이야기를 더 많이 나누면서 제 자신을 좀 더 객관화하려고 하 한 하고 있습니다.",
+                "wordCount": 69
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 또래 친구들과 자신을 평가하는 단점을 극복하기 위해 최대한 객관적으로 상황을 보려고 노력하고 있습니다. 또한 친구들과 이야기를 나누면서 제 자신을 객관화하려고 노력 중입니다.",
+                "wordCount": 23
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 264718,
+            "duration": 8270,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_43378.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1800398,
+            "duration": 56260,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_43378.wav"
+        }
+    }
+}

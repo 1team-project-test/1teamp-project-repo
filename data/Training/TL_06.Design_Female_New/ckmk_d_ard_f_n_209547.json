@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "업무를 하다 보면 영어로 서류를 작성해야 할 일이 발생할 수 있는데요 영어로 서류를 작성할 수 있으실까요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "일을 하다보면 영어로 서류를 작성해야 할 일이 생길 수 있습니다. 영어로 서류를 작성하실 수 있으신가요. 맡겨만 주신다면 충분히 잘 할 자신이 있습니다. 저는 이전에 영어로 서류를 작성해야 하는 경험을 많이 했었었고 이 전 회사의 전 전 회사 이전에 가졌던 모든 경험을 가진 회사에서 영어 방면에 일가견이 있었고 그쪽 방면에서 어 실력을 자랑할 수 있을 만큼의 음 언어 실력을 보어 보유하고 있어서 서류 작성뿐만이 아니라 스피킹 뭐 스피킹도 자신이 있으 있습니다. 커뮤니케이션에 있어서 특히 더 자신이 있고요. 서류에서 문법적인 요소가 필요로 할 때 제가 충분히 찾아서 교정해서 진행할 수 있고 이전에 번영 번역 일도 많이 진행을 했었었고 그리고 신랑도 영어권의 사람이기 때문에 인터내셔널한 사람이고 네 그래서 이미 저는 인터내셔널한 삶을 살고 있습니다. 그래서 맡겨주신다면 문제없이 해결할 것으로 생각됩니다.",
+                "wordCount": 121
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "일을 하다보면 영어로 서류를 작성해야 할 일이 생길 수 있습니다. 저는 영어 방면에 일가견이 있고 스피킹과 커뮤니케이션에 특히 더 자신있습니다. 서류에서 문법적인 요소가 필요할 때 충분히 찾아 교정해서 진행할 수 있고 신랑도 영어권의 사람이기 때문에 인터내셔널 한 사람이라 맡겨주신다면 문제 없이 해결할 것으로 생각됩니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 312718,
+            "duration": 9770,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_209547.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2732878,
+            "duration": 85400,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_209547.wav"
+        }
+    }
+}

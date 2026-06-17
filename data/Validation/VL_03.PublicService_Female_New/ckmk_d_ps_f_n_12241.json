@@ -1,0 +1,76 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "우리가 살면서 다른 사람을 돕기도 하고 다른 사람에게 도움을 받기도 합니다 아 본인이 다른 사람을 도운 경험 중에 가장 기억에 남는 일이 있으면 얘기해 보시겠습니까",
+                "wordCount": 25
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "이전에 있던 회사에서 다른 동료가 업무 업무로 인해 피곤해 하고 힘들어할 때 그 동료를 도와서 함께 업무를 지내 수행했던 적이 있습니다. 그 동료가 진행을 하고 있는 엄 사업이 잘 운영돼서 마지막에 잘 성적으로 결과가 나왔을 때 되게 기분이 좋았고 뿌듯했습니다. 제가 맡은 일이 아니더라도 다른 사람이 하는 일을 도와서 그 일이 성공했다면 그것 또한 저에게 있어서 큰 업무적인 도움이 되고 또 성취감도 느낄 수 있는 부분이라고 생각합니다.",
+                "wordCount": 67
+            },
+            "emotion": [
+                {
+                    "text": "이전에 있던 회사에서 다른 동료가 업무 업무로 인해 피곤해 하고 힘들어할 때 그 동료를 도와서 함께 업무를 지내 수행했던 적이 있습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "   그 동료가 진행을 하고 있는 엄 사업이 잘 운영돼서 마지막에   잘 성적으로 결과가 나왔을 때 되게 기분이 좋았고 뿌듯했습니다.",
+                    "expression": "p-achievement",
+                    "category": "positive"
+                },
+                {
+                    "text": "제가 맡은 일이 아니더라도 다른 사람이 하는 일을 도와서 그 일이 성공했다면 그것 또한 저에게 있어서   큰 업무적인 도움이 되고 또 성취감도 느낄 수 있는 부분이라고 생각합니다.",
+                    "expression": "u-belief",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "이전에 있던 회사에서 다른 동료가 업무 업무로 인해 피곤해 하고 힘들어할 때 그 동료를 도와서 함께 업무를 지내 수행했던 적이 있습니다.   그 동료가 진행을 하고 있는 엄 사업이 잘 운영돼서 마지막에   잘 성적으로 결과가 나왔을 때 되게 기분이 좋았고 뿌듯했습니다.   제가 맡은 일이 아니더라도 다른 사람이 하는 일을 도와서 그 일이 성공했다면 그것 또한 저에게 있어서   큰 업무적인 도움이 되고 또 성취감도 느낄 수 있는 부분이라고 생각합니다.",
+                    "expression": "p_cus_orien",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "다른 사람이 하는 일을 도와서 그 일이 성공했다면 그것 또한 제게 큰 업무적 도움이 되고 또 성취감도 느낄 수 있는 부분이라고 생각합니다.",
+                "wordCount": 22
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 585038,
+            "duration": 18280,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_12241.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1470798,
+            "duration": 45960,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_12241.wav"
+        }
+    }
+}

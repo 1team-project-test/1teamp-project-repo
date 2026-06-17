@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "입사 후에 일을 하면서 정작 지원한 분야가 본인과 맞지 않는다는 사실을 깨닫게 된다면 어떻게 하실 건가요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "입사 후 근무를 하면서 정작 지원한 분야가 지원자님과 잘 맞지 않다는 사실을 깨닫는다면 어떻게 하실 생각이십니까. 제가 입사를 했어요. 아 그럼 너무 좋을 것 같은데 우선 입사를 하고 근무를 하게 됐는데 저 막상 해보니까 저랑 잘 맞지 않는다 라는 사실을 띵 깨닫는다면 저는 좀 머리를 굴려서 다른 부서로 가기 위해 다른 방면의 노력을 또 해볼 것 같습니다. 왜냐하면 질문 자체가 저랑 잘 맞지 않다 라는 사실을 깨달았을 때의 행동이기 때문에 제가 이미 깨달았다면 거기서 계속 질질 끌고 억지로 맞춰 가는 것은 약간의 시간 낭비가 되지 않을까 라는 개인적인 생각이 있습니다. 그래서 이 회사에는 이 부서뿐만이 아니라 다른 지원 분야가 충분히 많이 있고 그리고 내가 해 볼 수 있는 능력도 자질도 있다 라고 생각을 하기 때문에 다른 분들에게 의견을 여쭤 보고 다른 부서로 옮길 방법을 찾아서 좀 더 발전 방향을 바꿀 것 같습니다.",
+                "wordCount": 133
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "잘 맞지 않는다는 사실을 깨닫게 된다면 다른 부서로 가기 위해 다른 방면의 노력을 해야 합니다. 왜냐하면 질문 자체가 자신과 맞지 않다는 것을 깨달았을 때의 행동입니다. 다른 지원 분야가 많이 있고 해 볼 수 있는 능력도 자질도 있다고 생각하기 때문에 다른 부서로의 이동을 찾으려고 합니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 340238,
+            "duration": 10630,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_196026.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2739278,
+            "duration": 85600,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_196026.wav"
+        }
+    }
+}

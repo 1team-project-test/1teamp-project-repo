@@ -1,0 +1,61 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "어 전공 외로 자신이 수준급의 실력이 될 정도로 어 노력을 한 것이 있다면 어 전공과 관련해서 어떤 도움을 주는지 설명 좀 해주시겠습니까",
+                "wordCount": 22
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 전공 이외에 잘 할 수 있는 게 있는데요. 바로 영어 언어 실력입니다. 어 제가 이런 언어가 필요하다고 생각한 거는 이제 대학교
+                쯤 되 부터인 것 같은데요. 그 대학생들이 준비하는 토익 공부뿐만이 아니라 저는 회화 커뮤니케이션 실력이 좀 좋았으면 좋겠다 라는 생각을 했구요. 그리고 아무래도 어떤 회사에 가든지 영어를 좀 수준급 실력으로 잘하고 어 하다 보면 좀 기회가 많이 있을 수 있겠다 라는 생각이 들어서 그때부터 열심히 연습을 했고요. 그리고 사실 이제 언어 같은 게 계속 쓰지 않다 보면 퇴화되고 또 커뮤니케이션 능력이 저하될 수 있기 때문에 여러 가지 노력들을 했습니다. 직접 외국인과 만나서 대화도 많이 해보고요. 그리고 스터디도 하고 또 학원 강의를 들을 정도로 제가 여러 가지로 노력을 했습니다. 그 결과 저는 영어로 서류 작성이 작성할 뿐만 아니라 어 또 대화를 통해서도 업무 처리도 가능합니다. 어 일반 일상 대화뿐만이 아니라 비즈니스 대화에 대한 공부도 따로 했기 때문에 만약에 그런 업무가 저한테 주어진다고 하면 제가 훨씬 더 경쟁력 있게 일할 수 있을 것 같다 라는 생각이 들었습니다.",
+                "wordCount": 157
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "영어 언어 실력은 전공 외에 잘 할 수 있습니다. 토익 공부뿐만 아니라 회화 커뮤니케이션 실력이 좋았으면 좋겠다는 생각을 했고, 여러 가지 노력을 했습니다. 그 결과 영어로 서류를 작성하고 대화를 통해서도 업무 처리가 가능합니다. 비즈니스 대화에 대한 공부도 따로 했으므로 업무가 주어진다면 경쟁력 있게 일할 수 있을 것 같습니다.",
+                "wordCount": 48
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 554318,
+            "duration": 17320,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/New/ckmk_q_bm_f_n_161564.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2723278,
+            "duration": 85100,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/New/ckmk_a_bm_f_n_161564.wav"
+        }
+    }
+}

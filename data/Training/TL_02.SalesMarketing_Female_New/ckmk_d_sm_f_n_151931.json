@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "저희 회사는 다른 회사들과 스타일이 조금 다릅니다 그래서 저희 회사에 들어오면 기존과는 업무 스타일이 달라질 수 있는데 기존과 달라진 업무 스타일에 잘 적응하실 수 있으실까요",
+                "wordCount": 25
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 기존과의 업무 스타일이 다르다고 할지라도 잘 적응할 수 있습니다. 이 전 회사에서 한 가지 업무만 했던 것이 아니라 저는 여러 종류의 프로젝트를 맡아서 진행했습니다. 각각의 프로젝트마다 해야 되는 업무와 스타일이 전부 다 달랐습니다. 그래서 저는 업무 스타일이 달라도 잘 적응할 수 있습니다.",
+                "wordCount": 43
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "이 전 회사에서 한 가지 업무만 했던 것이 아니라 여러 종류의 프로젝트를 맡아서 진행했기 때문에 업무 스타일이 달라도 적응할 수 있었습니다.",
+                "wordCount": 21
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 541518,
+            "duration": 16920,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_151931.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1298318,
+            "duration": 40570,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_151931.wav"
+        }
+    }
+}
