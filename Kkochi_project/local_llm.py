@@ -4,7 +4,7 @@ def ask_local_ai(prompt):
     response = requests.post(
         "http://localhost:11434/api/generate",
         json={
-            "model": "qwen3:8b",
+            "model": "gemma2:9b",
             "prompt": prompt,
             "stream": False
         }
