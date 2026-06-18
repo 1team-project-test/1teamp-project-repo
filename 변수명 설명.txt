@@ -1,0 +1,48 @@
+테이블명			컬럼명의미 및 용도
+
+users
+user_id			사용자 고유 식별자 (PK)
+email				로그인용 이메일 주소
+password	       		보안을 위해 암호화된 비밀번호
+name	        		사용자의 본명
+created_at			회원가입 일시
+
+resumes
+resume_id			이력서 고유 식별자 (PK)
+user_id			이력서 작성자 (FK)
+file_name			업로드한 파일의 원본 이름
+file_path			파일이 저장된 서버 내 경로
+raw_content		분석을 위해 추출된 이력서 원문 텍스트
+uploaded_at		이력서 업로드 일시
+
+document_analysis
+analysis_id			분석 결과 고유 식별자 (PK)
+resume_id			분석 대상 이력서 (FK)
+summary			LLM이 요약한 이력서 핵심 내용
+tech_stack			"추출된 기술 스택 (예: Python, React)"
+project_keywords		프로젝트 성과 관련 핵심 키워드
+created_at			분석 결과 생성 일시
+
+
+interview_sessions
+interview_id		면접 세션 고유 식별자 (PK)
+user_id			면접을 진행하는 사용자 (FK)
+start_time			면접 시작 시간
+end_time			면접 종료 시간
+status				"현재 상태 (대기중, 진행중, 완료 등)"
+
+chat_history
+chat_id			대화 기록 고유 식별자 (PK)
+interview_id		대화가 이루어진 면접 세션 (FK)
+question_type		"질문의 성격 (직무, 인성, 꼬리질문 등)"
+question			AI가 던진 질문 내용
+answer			사용자가 작성하거나 말한 답변
+follow_up			질문에 이어지는 AI의 꼬리질문
+created_at			대화 발생 시점
+
+ai_feedbacks
+feedback_id		피드백 고유 식별자 (PK)
+interview_id		대상 면접 세션 (FK)
+score				종합 평가 점수 (예: 1~100점)
+feedback_content	AI가 분석한 면접 총평 및 보완점
+created_at			피드백 생성 일시

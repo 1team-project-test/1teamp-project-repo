@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꼬치꼬치 AI 면접 코칭 - 메뉴</title>
+    <style>
+        html, body {
+            margin: 0; padding: 0;
+            width: 100%; height: 100%;
+            overflow: hidden;
+            background-color: #f7f3ee; /* 이미지 로딩 전 자연스러운 미색 배경 */
+            font-family: 'Malgun Gothic', sans-serif;
+        }
+
+        /* 💡 1. 배경을 보내주신 interview.png 이미지로 풀스크린 설정 */
+        .background-container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("../interview.png");
+            background-size: 100% 100%; /* 왜곡 없이 꽉 차게 */
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* 내부 버튼들을 정중앙 비어있는 공간에 정렬하기 위함 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        /* 💡 2. 배경 분위기에 맞춰 부드러운 라운딩과 그림자가 들어간 버튼 스타일 */
+        .auth-button {
+            width: 320px; 
+            padding: 18px 0; 
+            font-size: 1.25rem; 
+            font-weight: bold;
+            border: none; 
+            border-radius: 50px; 
+            cursor: pointer; 
+            box-shadow: 0 6px 15px rgba(139, 90, 43, 0.25); /* 따뜻한 갈색 톤 그림자 */
+            transition: all 0.25s ease;
+        }
+        
+        /* 💡 3. 로그인 버튼: 로고 글씨의 청량한 블루 컬러 계열 적용 */
+        .login-btn { 
+            background: linear-gradient(135deg, #2eb0ec, #007bc4); 
+            color: #ffffff; 
+        }
+        .login-btn:hover { 
+            background: linear-gradient(135deg, #007bc4, #005fa3);
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 20px rgba(0, 123, 196, 0.35);
+        }
+        
+        /* 💡 4. 회원가입 버튼: 캐릭터 꼬치(바베큐)의 따뜻한 오렌지/브라운 톤 적용 */
+        .signup-btn { 
+            background: linear-gradient(135deg, #ff8c28, #e05300); 
+            color: #ffffff; 
+        }
+        .signup-btn:hover { 
+            background: linear-gradient(135deg, #e05300, #b84100);
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 20px rgba(224, 83, 0, 0.35);
+        }
+
+        /* 💡 5. 하단 링크: 나무 테이블 색상과 매칭되는 고급스러운 브라운 링크 */
+        .back-link {
+            margin-top: 15px; 
+            color: #6d4c41; 
+            background: none; 
+            border: none;
+            cursor: pointer; 
+            text-decoration: underline; 
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+        .back-link:hover { 
+            color: #3e2723; /* 마우스 올리면 더 짙은 갈색으로 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container">
+        <button class="auth-button login-btn" onclick="location.href='login.html'">로그인 (Login)</button>
+        <button class="auth-button signup-btn" onclick="location.href='signup.html'">회원가입 (Sign Up)</button>
+        <button class="back-link" onclick="location.href='index.html'">처음으로 돌아가기</button>
+    </div>
+
+</body>
+</html>

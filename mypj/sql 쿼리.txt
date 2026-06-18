@@ -1,0 +1,20 @@
+-- 2. 회원 테이블 (users)
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userid VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) DEFAULT NULL,
+    phone VARCHAR(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+CREATE TABLE IF NOT EXISTS user_resumes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userid VARCHAR(50) NOT NULL,
+    filename VARCHAR(255) NOT NULL,
+    filecontent LONGTEXT NOT NULL,
+    -- 사용자가 회원탈퇴(삭제)되면 해당 이력서도 자동으로 함께 지워지도록 외래키 제약조건 추가
+    CONSTRAINT fk_user_resumes_userid FOREIGN KEY (userid) 
+        REFERENCES users(userid) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꼬치꼬치 AI - 면접 준비</title>
+    <style>
+        html, body {
+            margin: 0; padding: 0;
+            width: 100%; height: 100%;
+            overflow: hidden;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+        }
+
+        /* 💡 [추가] 상단 로그아웃 바 스타일 */
+        .navbar {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(43, 120, 214, 0.9);
+            padding: 12px 30px;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        .navbar .logo { font-weight: bold; font-size: 16px; }
+        .navbar .user-area { display: flex; align-items: center; gap: 15px; font-size: 14px; }
+        .btn-logout {
+            background: rgba(255, 255, 255, 0.2);
+            color: white; border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 5px 12px; border-radius: 4px; cursor: pointer; font-size: 13px;
+            transition: background 0.2s;
+        }
+        .btn-logout:hover { background: rgba(255, 255, 255, 0.4); }
+
+        .background-container {
+            width: 100vw; height: 100vh;
+            background-image: url("../interview.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            gap: 30px;
+        }
+
+        .upload-card, .interview-card {
+            background: rgba(255, 255, 255, 0.95);
+            width: 410px;
+            padding: 35px 30px;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+        }
+
+        .section-title { font-size: 20px; font-weight: 800; color: #2b78d6; margin-bottom: 20px; text-align: center;}
+        
+        .input-group { margin-bottom: 15px; }
+        .input-group label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; }
+        .input-group input, .input-group select {
+            width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box;
+        }
+
+        .type-btn-group { display: flex; gap: 10px; margin-top: 5px; }
+        .type-btn { flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #2b78d6; background: white; color: #2b78d6; font-weight: bold; cursor: pointer; }
+        .type-btn.active { background: #2b78d6; color: white; }
+
+        .start-btn { width: 100%; padding: 15px; background: #7a8793; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+
+        .drop-zone { width: 100%; height: 150px; border: 1.5px dashed #4a90e2; background-color: #f4f8fc; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; margin: 15px 0; }
+        .file-select-btn { display: inline-block; padding: 5px 12px; background: #ffffff; border: 1px solid #b7c8df; border-radius: 4px; font-size: 12px; color: #4a90e2; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">🤖 꼬치꼬치 AI 면접 코칭 시스템</div>
+        <div class="user-area">
+            <span id="welcomeMsg"><strong id="userNavName">사용자</strong>님 환영합니다</span>
+            <button class="btn-logout" onclick="logout()">로그아웃</button>
+        </div>
+    </div>
+
+    <div class="background-container">
+        <div class="upload-card">
+            <h1 class="section-title">이력서 관리</h1>
+            <div id="dropZone" class="drop-zone" onclick="document.getElementById('fileInput').click()">
+                <div class="drop-zone-text">여기에 파일을 끌어다 놓거나 선택하세요</div>
+                <span class="file-select-btn" style="margin-top: 8px;">파일 선택</span>
+            </div> 
+            <input type="file" id="fileInput" style="display:none;">   
+            <div id="fileNameDisplay" style="margin: 10px 0; font-size: 13px; color: #2b78d6; font-weight: bold;"></div>    
+            <button id="submitBtn" class="start-btn" disabled onclick="uploadResume()">이력서 제출하기</button>
+            <div style="margin-top: 15px; font-size: 12px; color: #777; line-height: 1.5; text-align: center;">
+                [HWP, WORD, PDF]<br>최대 업로드 용량: 30MB
+            </div>
+        </div>
+
+        <div class="interview-card">
+            <h1 class="section-title">📝 면접 상세 설정</h1>
+            <div class="input-group">
+                <label>희망 회사</label>
+                <input type="text" id="companyInput" placeholder="예: 꼬치꼬치 컴퍼니">
+            </div>
+            <div class="input-group">
+                <label>희망 직무</label>
+                <input type="text" id="jobInput" placeholder="예: 백엔드 개발자">
+            </div>
+            <div class="input-group">
+                <label>사용할 이력서 선택</label>
+                <select id="resumeSelect">
+                    <option value="">-- 업로드된 이력서 선택 --</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>면접 유형</label>
+                <div class="type-btn-group">
+                    <button class="type-btn active">압박형</button>
+                    <button class="type-btn">부드러운</button>
+                    <button class="type-btn">논리형</button>
+                </div>
+            </div>
+            <button id="startInterviewBtn" class="start-btn" style="background:#2b78d6;">면접 시작하기</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 💡 [추가] 로그인 이름 세팅 및 비로그인 튕겨내기 보안
+            const currentUserName = localStorage.getItem("user_name");
+            const currentUserId = localStorage.getItem("user_id");
+            if (!currentUserId) {
+                alert("로그인이 필요합니다.");
+                location.href = "login.html";
+                return;
+            }
+            if (currentUserName) {
+                document.getElementById("userNavName").textContent = currentUserName;
+            }
+
+            loadResumeList();
+
+            const dropZone = document.getElementById('dropZone');
+            const fileInput = document.getElementById('fileInput');
+
+            if (dropZone && fileInput) {
+                dropZone.addEventListener('dragover', (e) => e.preventDefault());
+                dropZone.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    if (e.dataTransfer.files.length > 0) {
+                        fileInput.files = e.dataTransfer.files;
+                        displayFileName();
+                    }
+                });
+                fileInput.addEventListener('change', displayFileName);
+            }
+
+            document.querySelectorAll('.type-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            const startBtn = document.getElementById('startInterviewBtn');
+            if (startBtn) {
+                startBtn.addEventListener('click', function() {
+                    const company = document.getElementById('companyInput').value.trim();
+                    const job = document.getElementById('jobInput').value.trim();
+                    const resumeId = document.getElementById('resumeSelect').value;
+                    const activeStyle = document.querySelector('.type-btn.active').textContent;
+
+                    if (!company) {
+                        alert("희망 회사를 입력해주세요.");
+                        return;
+                    }
+                    if (!job) {
+                        alert("희망 직무를 입력해주세요.");
+                        return;
+                    }
+                    if (!resumeId) {
+                        alert("면접에 사용할 이력서를 선택해주세요.");
+                        return;
+                    }
+
+                    localStorage.setItem("selected_company", company);
+                    localStorage.setItem("selected_job", job);
+                    localStorage.setItem("selected_resume_id", resumeId);
+                    localStorage.setItem("interviewer_style", activeStyle);
+
+                    location.href = "interview.html";
+                });
+            }
+        });
+
+        // 💡 [추가] 로그아웃 로직 함수
+        function logout() {
+            if (confirm("로그아웃 하시겠습니까?")) {
+                localStorage.removeItem("user_id");
+                localStorage.removeItem("user_name");
+                localStorage.removeItem("feedback_report");
+                alert("성공적으로 로그아웃되었습니다.");
+                location.href = "login.html";
+            }
+        }
+
+        function loadResumeList() {
+            const userId = localStorage.getItem("user_id");
+            const select = document.getElementById('resumeSelect');
+            
+            if (!userId || !select) return;
+
+            fetch(`http://localhost:8000/get-resumes?user_id=${userId}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "success" && data.data) {
+                    select.innerHTML = '<option value="">-- 업로드된 이력서 선택 --</option>';
+                    data.data.forEach(item => {
+                        const option = document.createElement('option');
+                        option.value = item.resume_id;
+                        option.textContent = item.file_name || `이력서 #${item.resume_id}`;
+                        select.appendChild(option);
+                    });
+                }
+            })
+            .catch(err => console.error("이력서 목록 로드 실패:", err));
+        }
+
+        function displayFileName() {
+            const input = document.getElementById('fileInput');
+            const display = document.getElementById('fileNameDisplay');
+            const submitBtn = document.getElementById('submitBtn');
+
+            if (input && display && submitBtn && input.files.length > 0) {
+                display.textContent = `📄 선택된 파일: ${input.files[0].name}`;
+                submitBtn.style.background = "#2b78d6";
+                submitBtn.disabled = false;
+            }
+        }
+
+        function uploadResume() {
+            const input = document.getElementById('fileInput');
+            const submitBtn = document.getElementById('submitBtn');
+            if (!input || input.files.length === 0) return;
+
+            submitBtn.textContent = "이력서를 등록 중입니다...";
+            submitBtn.disabled = true;
+            submitBtn.style.background = "#7a8793";
+
+            const formData = new FormData();
+            formData.append("file", input.files[0]);
+            formData.append("user_id", localStorage.getItem("user_id"));
+
+            fetch('http://localhost:8000/upload-resume', {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "success") {
+                    alert('업로드 완료!');
+                    location.reload();
+                } else {
+                    alert('실패: ' + data.message);
+                    submitBtn.textContent = "이력서 제출하기";
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = "#2b78d6";
+                }
+            })
+            .catch(() => {
+                alert('서버 오류 발생');
+                submitBtn.textContent = "이력서 제출하기";
+                submitBtn.disabled = false;
+                submitBtn.style.background = "#2b78d6";
+            });
+        }
+    </script>
+</body>
+</html>

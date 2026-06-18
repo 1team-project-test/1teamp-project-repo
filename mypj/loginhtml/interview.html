@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꼬치꼬치 AI - 실전 면접방</title>
+    <style>
+        html, body {
+            margin: 0; padding: 0;
+            width: 100%; height: 100%;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            overflow: hidden;
+        }
+
+        /* 💡 배경 이미지 설정 */
+        .background-container {
+            width: 100vw; height: 100vh;
+            background-image: url("../interview.png");
+            background-size: 100% 100%;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 상단 네비게이션 바 */
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            background-color: rgba(43, 120, 214, 0.9);
+            padding: 12px 30px; color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar .logo { font-weight: bold; cursor: pointer; }
+        .btn-logout {
+            background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 5px 12px; border-radius: 4px; cursor: pointer; font-size: 13px;
+        }
+
+        /* 면접방 메인 컨테이너 (반투명 처리) */
+        .interview-wrapper {
+            flex: 1; display: flex; justify-content: center; align-items: center;
+            padding: 20px;
+        }
+
+        .interview-container {
+            display: flex; flex-direction: column;
+            width: 100%; max-width: 800px; height: 85vh;
+            background: rgba(255, 255, 255, 0.92); /* 💡 살짝 투명하게 */
+            border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .interview-header { padding: 20px; background: #2b78d6; color: white; }
+        .interview-header h2 { margin: 0 0 5px 0; font-size: 18px; }
+        .interview-info { font-size: 12px; opacity: 0.9; }
+
+        .chat-area {
+            flex: 1; padding: 20px; overflow-y: auto; background: rgba(248, 249, 250, 0.5);
+            display: flex; flex-direction: column; gap: 15px;
+        }
+
+        .message-bubble { padding: 12px 16px; border-radius: 14px; font-size: 14px; line-height: 1.5; white-space: pre-wrap; }
+        .user { align-self: flex-end; max-width: 75%; }
+        .user .message-bubble { background: #2b78d6; color: white; border-top-right-radius: 2px; }
+        .assistant { align-self: flex-start; max-width: 75%; }
+        .assistant .message-bubble { background: white; color: #333; border-top-left-radius: 2px; border: 1px solid #ddd; }
+
+        .spinner { display: none; padding: 10px 20px; font-size: 12px; color: #2b78d6; font-weight: bold; text-align: center; }
+
+        .input-area { padding: 15px 20px; background: white; display: flex; gap: 10px; border-top: 1px solid #eee; }
+        .chat-input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; }
+        .send-btn { padding: 0 20px; background: #2b78d6; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+
+        .footer-actions { padding: 10px 20px 20px; background: white; }
+        .end-btn { width: 100%; padding: 12px; background: #dc3545; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="navbar">
+            <div class="logo" onclick="location.href='upload.html'">🤖 꼬치꼬치 AI 면접관</div>
+            <div class="user-area">
+                <button class="btn-logout" onclick="logout()">로그아웃</button>
+            </div>
+        </div>
+
+        <div class="interview-wrapper">
+            <div class="interview-container">
+                <div class="interview-header">
+                    <h2>🤖 AI 실전 압박 면접방</h2>
+                    <div class="interview-info">
+                        🎯 <span id="infoCompany">-</span> | 💼 <span id="infoJob">-</span> | 🧠 <span id="infoStyle">-</span>
+                    </div>
+                </div>
+
+                <div class="chat-area" id="chatArea"></div>
+                <div class="spinner" id="spinner">📝 면접관이 답변을 분석 중입니다...</div>
+
+                <div class="input-area">
+                    <input type="text" id="chatInput" class="chat-input" placeholder="답변을 입력하세요..." onkeypress="if(event.keyCode==13) sendMessage()">
+                    <button class="send-btn" onclick="sendMessage()">전송</button>
+                </div>
+
+                <div class="footer-actions">
+                    <button class="end-btn" onclick="endInterview()">🚪 면접 종료 및 피드백 받기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let interviewMessages = [];
+        const API_BASE = "http://localhost:8000";
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const company = localStorage.getItem("selected_company") || "목표 기업";
+            const job = localStorage.getItem("selected_job") || "지원 직무";
+            const style = localStorage.getItem("interviewer_style") || "일반형";
+            const resumeId = localStorage.getItem("selected_resume_id");
+
+            document.getElementById("infoCompany").textContent = company;
+            document.getElementById("infoJob").textContent = job;
+            document.getElementById("infoStyle").textContent = style;
+
+            startInterviewSession(company, job, style, resumeId);
+        });
+
+        function logout() {
+            if(confirm("로그아웃 하시겠습니까?")) {
+                localStorage.clear();
+                location.href = "login.html";
+            }
+        }
+
+        async function startInterviewSession(company, job, style, resumeId) {
+            showSpinner(true);
+            try {
+                const res = await fetch(`${API_BASE}/start-interview`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        user_id: localStorage.getItem("user_id"),
+                        company, job, style, resume_id: resumeId
+                    })
+                });
+                const data = await res.json();
+                showSpinner(false);
+                if (data.status === "success") {
+                    interviewMessages = data.messages;
+                    appendMessageBubble("assistant", interviewMessages[interviewMessages.length-1].content);
+                }
+            } catch(e) { alert("서버 연결 실패"); }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById("chatInput");
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendMessageBubble("user", text);
+            interviewMessages.push({ role: "user", content: text });
+            input.value = "";
+
+            showSpinner(true);
+            try {
+                const res = await fetch(`${API_BASE}/get-next-question`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ messages: interviewMessages })
+                });
+                const data = await res.json();
+                showSpinner(false);
+                if (data.status === "success") {
+                    appendMessageBubble("assistant", data.next_question);
+                    interviewMessages.push({ role: "assistant", content: data.next_question });
+                }
+            } catch(e) { showSpinner(false); }
+        }
+
+        function appendMessageBubble(role, content) {
+            const chatArea = document.getElementById("chatArea");
+            const msgDiv = document.createElement("div");
+            msgDiv.className = `message ${role}`;
+            msgDiv.innerHTML = `<div class="message-bubble">${content}</div>`;
+            chatArea.appendChild(msgDiv);
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        function showSpinner(show) { document.getElementById("spinner").style.display = show ? "block" : "none"; }
+
+        async function endInterview() {
+            if (!confirm("면접을 종료하시겠습니까?")) return;
+            showSpinner(true);
+            try {
+                const res = await fetch(`${API_BASE}/end-interview`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ interview_messages: interviewMessages })
+                });
+                const data = await res.json();
+                if (data.status === "success") {
+                    localStorage.setItem("feedback_report", JSON.stringify(data.report));
+                    location.href = "feedback.html";
+                }
+            } catch(e) { alert("피드백 생성 실패"); }
+        }
+    </script>
+</body>
+</html>
