@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님께서 지원하신 이 직무와 관련해서 지원자님의 강점이 무엇이라고 생각하시나요 그 점이 왜 우리 직무에 강점이 될 수 있는지 함께 설명해 주시기 바랍니다",
+                "wordCount": 22
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어 해당 직무와 관련한 자신의 강점이라고 말씀드리겠습니다. 어 일단 강점이라고 하면은 어 경험이 많이 있습니다. 이쪽 분야에 대해서 어 지금까지 그전에 했었던 군생활했을 때도 이쪽 분야에 대해서 파트에 대해서 업무를 했었고 또한 전 회사에서 이 파트에 대해서 업무를 했었습니다. 그래서 이쪽 파트에 대해서 생각보다 경력이 한 칠 팔 년 정도가 됩니다. 그러다 보니까 지금 해당 제가 맡은 직무와 어 이제 연관 했을 때 어 그렇게 적응 기간이 길지 않을 겁니다. 경험이 있기 때문에 또 그 새로운 걸 받았을 때 그 조차 할 수 있는 노하우가 있기 때문에 어 적응 기간을 굉장히 짧게 잡을 수 있고 또 그 배웠던 거와 서 이 저 추가적으로 더 연구를 하고 또 접목을 시켜서 더 이제 기발한 개발이 될 수 있도록 그런 것들이 이제 저의 강점이 될 것 같고 어 이 회사에 들어와서 그 직거를 맡게 된다면은 어 앞으로 어 저에게는 또 추진력과 성실함 또 끈기가 있습니다 그러기 때문에 그런 강점들이 모여서 더 극대화할 수 있는 회사의 이익이 될 수 있을 거라 생각하고 있습니다 네 이상입니다",
+                "wordCount": 165
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "군생활 당시 이 쪽 분야에 대한 경험이 많아 적응 기간이 길지 않습니다. 새로운 걸 받았을 때 노하우가 있어 적응 기간을 짧게 잡았고 더 연구를 하고 접목을 해서 개발할 수 있는 강점이 될 것 같습니다. 회사에 들어와서 그 직거를 맡는다면 추진력과 성실함, 끈기가 있어 강점들이 모여 회사의 이익이 될 수 있을 것이라 생각합니다.",
+                "wordCount": 52
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 431438,
+            "duration": 13480,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/Experienced/ckmk_q_ard_m_e_91635.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2759118,
+            "duration": 86220,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Male/Experienced/ckmk_a_ard_m_e_91635.wav"
+        }
+    }
+}

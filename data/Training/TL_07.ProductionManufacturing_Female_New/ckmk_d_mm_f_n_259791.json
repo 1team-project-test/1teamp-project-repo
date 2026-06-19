@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "아무래도 업무 중에 이런 돌발적으로 일정에 없던 일이 생길 때가 참 많습니다 어 그렇다면 이런 상황이 발생했을 경우 어떻게 대처를 하실 건지 말씀해 주세요",
+                "wordCount": 24
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "업무 중에 스케줄에 없던 일이 생길 때가 많다고 하셨는데요. 어 저는 이 부분에 대해서는 어 제가 일하는 사람으로서 감수해야 하는 부분이라고 생각을 합니다. 어떤 일이든지 제가 생각을 한 대로만 흘러가지 않는다는 것은 익히 알고 있습니다. 이전 회사에서도 많은 경험을 통해서 알아왔고 또 대학 시절에도 여러 가지 프로젝트를 하면서 제가 생각하지 못한 부분에서 변수가 생기는 일이 많았습니다. 어 처음에는 그런 변수에 대해서 스트레스를 받곤 했는데 점점 더 그런 일들이 많아지면서 이런 일들은 당연한 것이고 또 제가 사고의 폭을 조금 더 넓게 가진다면 스트레스를 받지 않고도 유연하게 그 상황을 대처해 나갈 수 있다는 것을 알게 되었습니다. 그래서 업무 중에 스케줄에 없던 일이 생길 때면 어 저는 미리 어 플랜 비 플랜 시 어 다양한 변수들을 어 생각해 보고 또 거기에 어떻게 대처할지에 대한 그런 방안들도 생각해 보는 그런 연습을 하게 되었습니다.",
+                "wordCount": 129
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "업무 중에 스케줄에 없던 일이 생길 때가 많다고 하셨는데 이는 제가 일하는 사람으로서 감수해야 하는 부분입니다. 어떤 일이라도 제 생각을 한 대로 흘러가지 않으며, 예상치 못한 부분에서 변수가 생기는 일이 많아졌습니다. 그래서 미리 다양한 변수들을 생각해 보고 대처방법도 생각해 보게 되었습니다.",
+                "wordCount": 41
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 514958,
+            "duration": 16090,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_259791.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2654158,
+            "duration": 82940,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_259791.wav"
+        }
+    }
+}

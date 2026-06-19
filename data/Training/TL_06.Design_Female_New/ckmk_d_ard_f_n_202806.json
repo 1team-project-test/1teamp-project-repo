@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "디자인 영감은 보통 어디에서 받는 편인지 말씀을 해주실 수 있나요",
+                "wordCount": 10
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 개인적으로 자동차 디자인에 저는 좀 관심이 많은 것 같아요. 어 예를 들면 요즘에는 저는 그 캐스퍼라고 자동차가 좀 약간 에스유비 미니 형식으로 나온 차가 있어요. 저는 그걸 보면서 정말 잘 만들었다고 생각하고 제가 돈만 있으면 정말 뽑고 싶다고 생각할 정도 저는 그런 미니 차가 제가 저는 되게 모닝이나 레이 이런 거에 되게 좀 좀 선호하지 않는데 캐스퍼는 그거랑 거의 비슷한 크기인데도 디자인 하나만으로 되게 그 미니 차에 대한 가치가 확 달라지게 느껴지는 거예요. 그래서 저는 디자인 같은 걸 볼 때 좀 자동차 무늬 같은 거로 인해서 그 가치가 확확 바뀌는 걸 보면 그래서 저는 좀 영감이 많이 떠오르는 것 같아서 저는 자동차 쪽 디자인을 조금 많이 보는 것 같습니다.",
+                "wordCount": 110
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "저는 그걸 보면서 정말 잘 만들었다고 생각하고 제가 돈만 있으면 정말 뽑고 싶다고 생각할 정도 저는 그런 미니 차가 제가 저는 되게 모닝이나 레이 이런 거에 되게 좀 좀 선호하지 않는데 캐스퍼는 그거랑 거의 비슷한 크기인데도 디자인 하나만으로 되게 그 미니 차에 대한 가치가 확 달라지게 느껴지는 거예요.",
+                    "expression": "d_sens",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "캐스퍼라는 자동차가 에스유비 미니 형식으로 나온 차를 보면서 자동차 디자인에 관심이 많이 생겼습니다. 캐스퍼는 미니 차에 대한 가치가 확 달라지게 느껴지는데 자동차 무늬 같은 거로 인해서 가치가 확 바뀌는 걸 보면 영감을 많이 떠오르는 것 같아 자동차 쪽 디자인을 많이 봅니다.",
+                "wordCount": 41
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 241358,
+            "duration": 7540,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_202806.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1767758,
+            "duration": 55240,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_202806.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "RND",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "글로벌 인재에게 필수인 요소는 무엇이고 면접자님께서 그것을 위해 노력했던 것은 무엇이었습니까",
+                "wordCount": 11
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제가 생각할 때 글로벌 인재에게 필수적 요소는 아무래도 언어입니다. 특히 영어는 물론이고 그 진출하려는 나라의 그 언어마저도 굉장한 수준을 달성을 해야 한다고 생각을 하는데요. 이 언어 영어 같은 경우에는 이제 일정 수준 이상을 이제 자유자재로 소통할 수 있어야 한다고 생각을 하고 이제 그 진출하려고 하는 나라의 언어의 경우도 이제 어 그 나라의 사업과 같은 그런 현지화가 된 언어나 이제 비즈니스적인 용어 같은 경우도 이제 그 언어를 표현을 할 수 있어야 하기 때문에 어 굉장히 이제 어 열심히 이제 자유자재로 소통을 해야 한다고 생각을 합니다. 또한 이제 뭐 언어적이나 문화적인 편견이 있는 사람도 글로벌 인재가 될 수는 없다고 생각을 합니다.",
+                "wordCount": 99
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "글로벌 인재에게 필수 요소는 영어와 그 진출하려는 나라의 언어입니다. 특히 영어는 일정 수준 이상을 자유자재로 소통할 수 있어야 하고 그 나라의 사업과 같은 현지 언어나 비즈니스 용어도 표현을 할 수 있어야 합니다.",
+                "wordCount": 32
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 287438,
+            "duration": 8980,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_q_rnd_f_n_410427.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1957518,
+            "duration": 61170,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_a_rnd_f_n_410427.wav"
+        }
+    }
+}

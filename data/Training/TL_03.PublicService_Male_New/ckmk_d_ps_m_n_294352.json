@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인의 십 년 후 미래는 어떨 것 같아요 저희 회사에는 계속 다니고 있을 것 같나요",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 십 년 후에도 아마 계속 다니고 있을 것 같습니다. 왜냐하면 저는 일단은 한곳에서 지내게 된다면은 이제 그 무리에 대해 정이 들고 그러다 보면은 저는 또 성격 자체가 뭔가 어디 휘말리고 휘둘리고 뭐 이거 하자 그러면 이게 만약에 저의 생각과 다르고 그러다 보면은 거기에 대한 선택에 휘말리지 않고 저는 제가 하고 있는 지 이 회사 뭐 이런 예로 들자면 이렇게 이런 식으로 이런 회사에 계속 쭉 다닐 수 있을 것 같습니다.",
+                "wordCount": 71
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 한곳에서 지내면 정이 들고 성격 자체가 휘둘리지 않아서 십 년 후에도 계속 다닐 것 같습니다. 이런 식으로 계속 회사를 다닐 수 있을 것 같다고 생각합니다.",
+                "wordCount": 26
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 225358,
+            "duration": 7040,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_294352.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1511438,
+            "duration": 47230,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_294352.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님께서 커뮤니케이션을 잘 할 수 있는 본인만의 스킬이 있다면 어떠한 것이 있는지 직접 한번 보여주시면서 설명해 주시면 감사하겠습니다",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "커뮤니케이션이라는 것은 한 방향이 아니라 쌍방향으로 서로가 소통이 잘 되는 현상이라고 생각합니다. 그래서 어느 한 사람만 줄기차게 이야기를 하고 한 사람은 듣기만 하는 것은 좋은 커뮤니케이션이 아니라고 생각합니다. 저는 커뮤니케이션을 할 때 일단 상대방의 말을 아주 주의 깊게 경청합니다. 상대방의 말을 들으면서 상대방의 눈을 쳐다보고 또한 끄덕 끄덕거리면서 제가 잘 듣고 있다고 표시를 해 줍니다. 또한 제가 말을 할 때에는 좋은 톤과 똑바른 어휘를 사용하고 또 일방적으로 말만 하기보다는 말을 하면서 상대방에게 질문을 통해서 답을 받는 식으로 진행합니다. 또한 손짓을 통해서 말만 할 때의 지루함을 없애기도 합니다.",
+                "wordCount": 88
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 대화를 할 때 상대방의 말을 잘 듣고 있다고 표시하고 좋은 톤과 똑바른 어휘를 사용하며 말을 하면서 상대방에게 질문을 통해서 답을 받는 방식으로 진행합니다. 또한 손짓을 통해서 말만 할 때의 지루함을 없애기도 합니다.",
+                "wordCount": 33
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 353358,
+            "duration": 11040,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_337599.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3117838,
+            "duration": 97430,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_337599.wav"
+        }
+    }
+}

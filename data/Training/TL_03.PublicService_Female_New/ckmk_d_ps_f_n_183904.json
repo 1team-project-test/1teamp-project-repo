@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인이 지금까지 살아오시면서 이룬 것 중에 어떤 것이 가장 큰 성과였는지요 어 본인이 이룬 가장 큰 성과에 대해서 자랑 한번 해 주시겠습니까",
+                "wordCount": 22
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 이 회사에 지원하기 위해서 전공 분야를 정말 열심히 공부했습니다. 그리고 공모전 아르바이트 등을 경험했고 공모전에서도 상을 받았습니다. 그리고 특히 아르바이트를 하면서 관련 업무를 많이 익혔습니다. 그런데 그런 것보다 더 중요한 것은 저희 부모님은 사회생활을 하는데 가장 중요한 것은 금전적으로 돈을 버는 것도 중요하지만 가장 중요한 것은 정직한 신념이라고 항상 말씀하셨습니다. 쉽고 간편한 길이 바른 가치관이 아니라면 저는 가지 않고 저만의 정직한 신념으로 옳은 길을 가겠습니다. 이런 신념을 바탕으로 업무에 임한다면 저는 어떤 직무가 주어진다 라도 해결할 수 있을 것이라고 생각합니다.",
+                "wordCount": 81
+            },
+            "emotion": [
+                {
+                    "text": "그리고 공모전 아르바이트 등을 경험했고 공모전에서도 상을 받았습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "그리고 특히 아르바이트를 하면서 관련 업무를 많이 익혔습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 이 회사에 지원하기 위해서 전공 분야를 열심히 공부했습니다. 그리고 아르바이트를 하면서 관련 업무를 많이 익혔습니다. 더 중요한 것은 부모님께 돈을 버는 것보다 가장 중요한 것은 정직한 신념이라고 말씀하였습니다.",
+                "wordCount": 29
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 434318,
+            "duration": 13570,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_183904.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1769678,
+            "duration": 55300,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_183904.wav"
+        }
+    }
+}

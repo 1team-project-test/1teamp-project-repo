@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님이 일을 하다 보면 주말 근무나 야근이 많이 생길 수 있습니다 주말 근무나 야근에 대해서 어떻게 생각하십니까",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "주말 근무 야근 예 좋은 일은 아닙니다. 하지만 얼마든지 예상이 가능한 그 일입니다. 그래서 저희가 그 어 회사 업무를 하면서 주말 근무가 필요하고 언제 야근이 필요하다 어떤 스케쥴상 그 미리 예견이 되고 확인이 되는 부분에 대해서는 얼마든지 가능하다고 저 개인적으로는 생각을 합니다. 그런데 이제 문제는 이제 불가피하게 급작스럽게 발생하는 이제 주말 근무나 야근이 되겠죠. 어 왜냐하면 이제 많은 분들이 이제 요즘에는 개인 생활에 대해서 어 미리 계획을 잡고 어 움직이는 분들이 많이 있기 때문에 에 급작스러운 내용은 조금 어 협조하고 업무를 시행하는 데 불편함이 많이 따를 수밖에 없습니다. 그래서 가급적이면은 그 우리가 예견된 스케줄을 좀 더 타이트하게 잘 잡고 어 예를 들어서 뭐 이번 주에 그 불필요하게 꼭 야근을 어 한다기보다 계획을 뭐 한 이 삼 일 늦춰서 한다든지 다음 주 한다든지 어떤 그런 내용을 구성원에 어떤 대응할 수 있는 시간을 좀 주고 그 회사는 회사대로 또 대응할 시간을 가지면서 조율을 해 나가면은 얼마든지 잘 그 맞춰 나갈 수 있지 않을까 생각합니다. 예 이상입니다.",
+                "wordCount": 154
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "많은 분들이 개인 생활에 대해 미리 계획을 잡고 움직이는 분들이 많아서 급작스러운 내용은 협조하고 업무를 시행하는 데 불편함이 많이 따를 수 밖에 없습니다. 그래서 예견된 일정을 좀 더 타이트하게 잘 잡고, 그 회사는 회사대로 또 대응할 시간을 가지면서 조율을 해 나가면은 얼마든지 잘 맞춰 나갈 수 있지 않을까 생각합니다.",
+                "wordCount": 49
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 467918,
+            "duration": 14620,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_294800.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2806478,
+            "duration": 87700,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_294800.wav"
+        }
+    }
+}

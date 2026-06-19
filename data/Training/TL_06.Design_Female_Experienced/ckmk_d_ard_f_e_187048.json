@@ -1,0 +1,91 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "면접자께서 따로 진행했던 프로젝트가 있으신가요 있으셨다면 어떤 것이었는지 설명 부탁드리겠습니다",
+                "wordCount": 10
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 하루 그림이라고 미술 프로젝트 같은 게 있는데요. 정말 말 그대로 하루에 그림 하나 그리는 그런 프로젝트를 진행을 했습니다. 그래서 뭐 거창하게 풍경이라든지 이런 걸 그리는 게 아니라 그날 내가 그리고 싶은 어쩔 때는 음식을 그리고 싶을 수도 있을 것 같고요. 또 어쩔 때는 하늘을 그릴 수도 있고 또 어쩔 때는 그냥 내 모습을 약간 캐릭터화해서 그릴 수도 있는데 이런 식으로 하루에 하나씩 그 쪼끔이라도 그리다 보니까 아무래도 쌓여지는 그런 것들을 보면서 성취감도 들고 뿌듯한 마음도 있고요. 내가 이것들이 쌓여지고 쌓여지면 언젠가는 또 다른 형태로 쓰여질 수도 있잖아요. 이것은 나중에 어떠한 이런 뭐 예를 들어서 전시 기회가 있을 때 또 다른 도움이 될 수도 있겠다 라는 생각을 합니다. 그래서 뭐든 꾸준히 열심히 하는 게 굉장히 중요하다고 저는 생각합니다.",
+                "wordCount": 119
+            },
+            "emotion": [
+                {
+                    "text": "정말 말 그대로 하루에 그림 하나 그리는 그런 프로젝트를 진행을 했습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "또 어쩔 때는 하늘을 그릴 수도 있고 또 어쩔 때는 그냥 내 모습을 약간 캐릭터화 해서 그릴 수도 있는데 이런 식으로 하루에 하나씩 그 쪼끔이라도 그리다 보니까 아무래도 쌓여지는 그런 것들을 보면서 성취감도 들고 뿌듯한 마음도 있고요.",
+                    "expression": "p-achievement",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "네 하루 그림이라고 미술 프로젝트 같은 게 있는데요.",
+                    "expression": "d_brand_pref",
+                    "category": "technology"
+                },
+                {
+                    "text": "정말 말 그대로 하루에 그림 하나 그리는 그런 프로젝트를 진행을 했습니다.",
+                    "expression": "d_brand_pref",
+                    "category": "technology"
+                },
+                {
+                    "text": "또 어쩔 때는 하늘을 그릴 수도 있고 또 어쩔 때는 그냥 내 모습을 약간 캐릭터화 해서 그릴 수도 있는데 이런 식으로 하루에 하나씩 그 쪼끔이라도 그리다 보니까 아무래도 쌓여지는 그런 것들을 보면서 성취감도 들고 뿌듯한 마음도 있고요.",
+                    "expression": "d_brand_pref",
+                    "category": "technology"
+                },
+                {
+                    "text": "이것은 나중에 어떠한 이런 뭐 예를 들어서 전시 기회가 있을 때 또 다른 도움이 될 수도 있겠다 라는 생각을 합니다.",
+                    "expression": "d_brand_pref",
+                    "category": "technology"
+                },
+                {
+                    "text": "그래서 뭐든 꾸준히 열심히 하는 게 굉장히 중요하다고 저는 생각합니다.",
+                    "expression": "c_value",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "하루에 그림 하나 그리는 미술 프로젝트가 있습니다. 거창하게 풍경이나 음식을 그리는 게 아니라 매일 조금씩 그리다 보니 성취감도 들고 뿌듯하기도 합니다. 이것이 나중에 전시 기회가 있을 때 다른 도움이 될 수도 있겠다는 생각을 합니다. 그러니 꾸준히 노력하는 게 중요하다고 생각합니다.",
+                "wordCount": 40
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 353998,
+            "duration": 11060,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_q_ard_f_e_187048.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1760078,
+            "duration": 55000,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_a_ard_f_e_187048.wav"
+        }
+    }
+}

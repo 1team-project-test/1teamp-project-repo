@@ -1,0 +1,66 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "어 지원자님께서 인생을 살면서 무언가 하나에 푹 빠져서 또 몰두해 본 경험이 있으신가요 있다면 그것은 무엇인지 말씀해 주시길 바랍니다",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "대학교 삼 학년 때 학교 학보사에서 제 일 회 대한민국 연극제 전체 평을 연재해 달라는 부탁을 받고 에 전체 열 개의 극단을 취재하던 중 민해 극장에 그 대표님께서 귀찮게 질문만 하지 말고 극단에 나와 연극을 해보라는 말씀에 졸지에 극단 단원이 되고 그리스 비극부터 읽으라는 가르침에 그리스 신화와 비극을 공부하고 당시 준비하던 가면극 공부와 하회탈을 공부하기 위하여 안동을 찾아가고 비공개 보물인 하회탈을 직접 보기 위해 박목월 학장님 추천으로 민속 박물관에서 하회탈을 보고 촬영하는 기회를 가진 것이 제 삶에서 무엇인가를 위해 가장 빠져 있었던 일이라고 생각이 듭니다. 그 덕에 제 일 회 대한민국 연극제에서 우리가 대통령상을 받기도 했습니다.",
+                "wordCount": 96
+            },
+            "emotion": [
+                {
+                    "text": "그 덕에 제 일 회 대한민국 연극제에서 우리가 대통령상을 받기도 했습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "대학교 삼 학년 때 제 일 회 대한민국 연극제 전체 평가를 연재해 달라는 부탁을 받고 열 개의 극단을 취재하다 보니, 그리스 비극부터 읽으라는 가르침을 받아 가면극과 하회탈을 공부하기 위해 안동을 찾아가고 민속 박물관에서 촬영하는 기회를 가졌습니다.",
+                "wordCount": 36
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 519758,
+            "duration": 16239,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_q_bm_m_e_298244.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2133838,
+            "duration": 66680,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_a_bm_m_e_298244.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "특별히 가고 싶은 회사가 있으신가요 특정 회사 이름이 중요한지 아니면 회사 분위기가 중요한지 어떤 점을 중점적으로 보시는지 궁금합니다",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 사실 특정 도메인보다 회사의 분위기가 더 중요하다 라고 생각을 합니다. 어 제가 학원 생활을 좀 오래 했었는데요. 저는 사실 어떤 일에 실증을 잘 느끼는 성향이에요. 그래서 한 곳에 오랫동안 묶여서 무언가 무언가를 하지를 않는데 그곳에서는 정말 육 년 칠 년을 있었거든요. 그 이유가 인간미였어요. 그곳 같은 경우는 원장님 이하 주축이 되시는 선생님들이 어 배려를 비롯하여 따뜻한 마음을 가지고 계셨기 때문에 정말 제가 편하게 일을 할 수 있었거든요. 일을 하다 보면 항상 힘들고 지치는 때가 오는데 그럴 때마다 정말 인간적으로 너무 힘을 주시고 위로해 주시고 까 따뜻하게 감싸주시고 하니까 이 부분들이 또다시 극복을 하고 뭔가 일을 잘 할 수 있는 어떤 그런 이유들이 되더라구요. 그래서 회사 분위기가 전반적으로 서로를 배려하고 네 서로를 위하는 어떤 협동심이나 배려심이 밑바탕에 깔린 그런 회사의 분위기라면 어 다른 회사보다 더 많은 실적을 낼 수 있을 거라고 생각을 하고 그것은 분명 어떠한 위기가 닥쳐오더라도 끝까지 살아남는 회사 중의 하나가 될 수 있다 라고 저는 믿거든요. 그렇기 때문에 회사의 분위기 굉장히 중요하다 라고 생각합니다.",
+                "wordCount": 158
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "저는 사실 어떤 일에 실증을 잘 느끼는 성향이에요.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "특정 도메인보다 회사 분위기가 중요하다 생각합니다. 학원 생활을 오래 했는데, 그 이유는 인간미였습니다. 선생님들의 따뜻한 마음이 있었기 때문에 편하게 일을 할 수 있었습니다. 회사 분위기가 서로를 위하는 어떤 협동심이나 배려심이 밑바탕에 깔린 회사라면 다른 회사보다 더 많은 실적을 낼 수 있을 것이라 생각합니다.",
+                "wordCount": 43
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 379598,
+            "duration": 11860,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_377134.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2802638,
+            "duration": 87580,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_377134.wav"
+        }
+    }
+}

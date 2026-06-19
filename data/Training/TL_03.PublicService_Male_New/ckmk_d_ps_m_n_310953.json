@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "만약 지원자님께서 본인이 게임 속의 캐릭터라면 지원자님은 어떤 게임에서 어떤 역할을 맡아서 수행하고 싶으신지 말씀해 주시기 바랍니다",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 만약 제가 게임 속 캐릭터라면 어 저는 어려서부터 인제 게임을 할 때 롤 플레잉 게임 알피지 게임을 즐겨 했었는데요. 알피지 게임은 처음에는 전혀 아무런 배경도 없었던 초보자가 점점 경험을 쌓으면서 경험치를 쌓아서 레벨을 어 올리고 어 레벨이 올라가서 정말 처음엔 상상할 수도 없었던 강한 상대를 또 이기고 그런 임무를 수행하는 게임인데요. 어 저도 그 게임 속 캐릭터처럼 어 처음에는 그런 아무것도 모르는 그런 순진한 순수한 상태에서 경험을 하면서 어 경험치를 쌓아서 레벨을 올려가는 그런 역할을 수행하고 싶습니다. 그런데 그런 역할을 수행하는 캐릭터의 특징은 순수한 마음이고 순수한 동기인 것 같습니다. 동기가 순수해야지 어 어려움을 극복할 수 있다고 생각합니다. 단순히 나한테 이익이 되는 불순한 의도로 접근을 할 때는 했다가는 어려움이 생겼을 때 나한테 불이익인 것처럼 보이는 사항이 만났을 때 포기할 수 있는데 순수한 동기로 시작된 그 여정은 어 정말 그대로 그 여정이 끝날 때까지 어 좀 변하지 않을 수 있는 가능성이 크다고 생각합니다. 그래서 그렇게 성장하는 어 캐릭터 역할을 수행해 보고 싶습니다.",
+                "wordCount": 151
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "게임 속 캐릭터처럼 순수한 상태에서 경험을 하면서 경험치를 쌓아서 레벨을 올리는 역할을 수행하고 싶습니다. 그 캐릭터의 특징은 순수한 마음이고 그 동기가 순수해야 어려움을 극복할 수 있다고 생각합니다. 순수한 동기로 시작된 여정은 변하지 않을 수 있는 가능성이 크다고 생각해서 성장하는 캐릭터 역할을 수행해 보고 싶습니다",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 652238,
+            "duration": 20380,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_310953.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3257038,
+            "duration": 101780,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_310953.wav"
+        }
+    }
+}

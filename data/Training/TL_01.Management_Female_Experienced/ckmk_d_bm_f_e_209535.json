@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "어 사람들과 협업을 하며 가장 어려웠던 점이 있으신가요 있으시다면 그것이 무엇이었나요 그리고 그것을 어떻게 극복했는지도 함께 말씀해 주시기를 바랍니다",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제가 협업을 하면서 가장 어려웠던 일은 협업 과정에서 서로의 의견 차이가 감정적인 문제까지 변하는 것이었습니다. 소통의 기본은 공감인데 업무에 너무 집중한 나머지 공감을 뒤로 밀어주는 경우가 종종 있었는데요. 이것을 해결하기 위해서 저는 소소한 잡담을 나누는 시간을 가졌습니다. 업무에만 너무 치중해서 집중한 나머지 서로 소통하고 감정을 공유할 수 있는 시간이 부족한 것 같다 라는 생각에서 시작한 것인데요. 업무와 관련이 없는 질문이나 뭐 근황이나 등을 뭐 질문 물어봄으로써 정기적으로 이야기를 나누고 동료에 대한 새로운 근황을 그 이 소식을 들을 수 있었고 이러한 소소한 잡담이 더욱 공동체를 결합되고 끈끈함을 형성해 줄 수 있다 보니 더 감정을 나눌 수 있게 되었고 우리가 하나의 목표를 통해 향해 나아간다는 것을 더 느끼고 이것은 더욱 단단해진 팀웍으로 나타났습니다.",
+                "wordCount": 111
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "보니 더 감정을 나눌 수 있게 되었고 우리가 하나의 목표를 통해 향해 나아간다는 것을 더 느끼고 이것은 더욱 단단해진 팀웍으로 나타났습니다.",
+                    "expression": "c_cop",
+                    "category": "personality"
+                }
+            ],
+            "summary": {
+                "text": "협업 과정에서 서로의 의견 차이가 감정적인 문제까지 변하는 것이 어려웠는데, 업무와 상관없는 질문이나 근황 등을 질문함으로써 더욱 공동체를 결합하고 끈끈함을 형성해 줄 수 있다 보니 더 감정을 나눌 수 있게 되었고 이것은 더욱 단단해진 팀웍으로 나타났습니다.",
+                "wordCount": 36
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 488078,
+            "duration": 15250,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_q_bm_f_e_209535.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2326158,
+            "duration": 72690,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/Experienced/ckmk_a_bm_f_e_209535.wav"
+        }
+    }
+}

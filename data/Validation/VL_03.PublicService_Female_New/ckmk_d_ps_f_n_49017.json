@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인이 생각했을 때 업무를 수행함에 있어서 원칙 원칙과 융통성 중 어떤 것이 더 중요한지 얘기해 주세요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "일을 함에 있어서 원칙이 적용되는 곳이 있고 융통성이 적용되는 곳이 있다고 생각합니다. 어떤 부분에서는 원칙을 고수해야 하고 어떤 곳에서는 융통성을 발휘하지 않으면 안 되는 것이 있다고 생각합니다. 하지만 회사 생활에 있어서는 치 꼭 지켜야 될 원칙은 꼭 지켜져야 한다고 생각합니다. 어떤 원칙과 기준이 확립이 되고 바로 서 있어야지 직원은 그 룰을 따르고 대의를 향해서 가며 커다란 흐름에서 엇나가지 않는 행동을 하게 될 거라고 생각합니다. 물론 사업을 함에 있어서 융통성도 중요한 덕목이긴 하지만 회사를 운영하고 지키고 이끌 이끌어가기 위해서 학교에서의 교칙과 같은 회사의 원칙은 꼭 필요하고 굉장히 중요한 부분이라고 생각합니다.",
+                "wordCount": 89
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "사업을 함에 있어서 융통성도 중요한 덕목이지만 회사를 운영하고 지키고 이끌어가기 위해서 학교에서의 교칙과 같은 회사의 원칙은 꼭 필요하고 굉장히 중요한 부분이라고 생각합니다.",
+                "wordCount": 22
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 462798,
+            "duration": 14460,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_49017.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1718478,
+            "duration": 53700,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_49017.wav"
+        }
+    }
+}

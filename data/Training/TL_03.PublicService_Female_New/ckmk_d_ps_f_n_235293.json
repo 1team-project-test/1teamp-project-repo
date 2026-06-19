@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "어 지원자님께서 우리 회사에 들어오게 되신다면 가장 가고 싶으신 부서와 그리고 그 부서를 가장 가고 싶으신 이유도 함께 설명해 주시길 바랍니다",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "회사에 들어오게 된다면 가장 가고 싶은 부서는 해외 영업 부서입니다. 저는 저는 대학교 다닐 때 미국으로 어학연수를 다녀오면서 다른 사람보다 영어 실력이 뛰어납니다. 저는 해외 영업부서에서 일하게 되면은 저의 영어 실력과 그리고 지금까지 쌓았던 기술 영업 커리어를 같이 활용할 수 있는 좋은 부스라고 생각합니다. 그래서 저는 해외 영업부서에서 근무를 하고 싶습니다.",
+                "wordCount": 51
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "저는 저는 대학교 다닐 때 미국으로 어학연수를 다녀오면서 다른 사람보다 영어 실력이 뛰어납니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "회사로 들어온다면 가장 가고 싶은 부서는 해외 영업부서입니다. 어학연수를 다녀오면서 영어 실력이 뛰어나서 해외 영업부에서 일하게 되면 기술 영업 커리어를 같이 활용할 수 있을 것입니다.",
+                "wordCount": 25
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 441678,
+            "duration": 13800,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_235293.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1343438,
+            "duration": 41980,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_235293.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "업무 중에 스케줄에 없던 일이 갑자기 생길 때가 많습니다 그렇다면 이런 상황이 생긴다면 어떻게 대처를 하시겠습니까",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "일단 그 스케줄이 갑자기 생긴 그 스케줄의 내용부터 먼저 파악을 할 것입니다. 그다음에 이미 하고 있었던 업무에 새로운 스케줄이 생긴 것 때문에 방해받는 문제를 확인을 해서 원래 하던 일에 문제가 생기지 않도록 단도리를 좀 해 놔야 될 거라고 봅니다. 새로운 스케줄에 새로운 어떤 없던 일이 생기는 문제는 아마도 어떤 긴급적인 거라든가 아 시간을 다투는 문제였기 때문이 아닐까 싶습니다. 그럴 경우라면은 당연히 그걸 우선적으로 처리를 해야 되기 때문에 어 이미 하던 일을 누군가가 달리 다시 맡아서 해줄 수 있는 사람이 있다면 그 사람에게 부탁을 하고 새로 생긴 일에 우선적으로 해야 되겠고 만약에 막 다른 사람한테 맡길 수 있는 상황이 못 된다 한다면 이미 하고 있던 일을 먼저 간단히 마무리를 해 놓고 새로운 일에 접근을 해야 될 거라고 봅니다.",
+                "wordCount": 118
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "새로운 스케줄에 없던 일이 생기는 경우에는 긴급한 일이거나 시간을 다투는 문제이기 때문에 원래 하던 일을 누군가가 다시 맡아서 해줄 수 있다면 그 사람에게 부탁하고 새로 생긴 일에 우선적으로 처리 한 후 새로운 일에 접근을 해야 될 것입니다.",
+                "wordCount": 37
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 470478,
+            "duration": 14700,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_q_bm_m_e_259673.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3025998,
+            "duration": 94560,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_a_bm_m_e_259673.wav"
+        }
+    }
+}

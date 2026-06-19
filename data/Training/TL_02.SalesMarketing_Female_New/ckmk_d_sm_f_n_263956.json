@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "브이알 등 최신 아이티 기술을 활용한 마카 마케팅 방안을 제시해 주시기 바랍니다",
+                "wordCount": 12
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "브이알이나 아이티 기술에 대한 내용은 많이 들었지만 제가 직접적인 기술을 배운 적이 없고 공부한 적이 없기 때문에 괜찮은 마케팅 방안을 설명하기에는 어려움이 많습니다. 그러나 만일 저에게 이러한 것을 공부하거나 업무에 주어지는 것으로 인하여 책임을 다해야 한다면 좀 더 구체적으로 공부하고 지식을 습득해서 앞으로 방향은 반드시 브이알과 아이티 기술을 활용한 마케팅이 많기 때문에 그쪽의 마케팅의 관심을 갖고 공부해 볼 의지는 충분히 있습니다.",
+                "wordCount": 61
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "브이알이나 아이티 기술에 대한 내용은 많이 들었지만 직접적 기술을 배운 적이 없어서 마케팅 방안을 설명하기에는 어려움이 많습니다. 책임을 다 해야 한다면 마케팅의 관심을 갖고 공부해 볼 의지는 충분히 있습니다.",
+                "wordCount": 29
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 375758,
+            "duration": 11740,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_263956.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1716238,
+            "duration": 53630,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_263956.wav"
+        }
+    }
+}

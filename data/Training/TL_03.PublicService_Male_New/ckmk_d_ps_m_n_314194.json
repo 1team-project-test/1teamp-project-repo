@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님께서는 평소에 시간 관리를 어떻게 하는지가 궁금한데요 시험 기간 시간이 촉박할 때 어떻게 시간 관리를 하셨습니까 지원자님만의 시간 관리법에 대해서 소개 한 번 해 주시기 바랍니다",
+                "wordCount": 26
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어 어떤 일이 사전에 예고되고 어 주어지는 그런 부분을 이야기하겠죠. 어 시험 시간이나 아니면은 여러 가지 인제 시간 관리를 해야 될 부분은 미리미리 대처할 수 있는 그런 방법들이 있습니다. 어 저는 음 전략적 사고에 바탕을 둔 목표 관리를 항상 하고 있기 때문에 어 뭐 현장이 주어진다든지 그랬을 경우에 어 시작과 끝에 대한 공정별 어 공정 관리표를 만들고요. 그리고 어 주간 단위로 어 계획 대비 실적을 나누어서 어 어 관리를 해 나가고 있습니다. 어 전체적인 인제 그 시간 관리를 할 때는 어 좀 빠듯하게 짜는 게 아니라 그렇다고 해서 느슨하게 짜지는 않습니다. 계획이라는 것은 항상 나중에 결과치에 도달해서는 항상 빠듯해지니까요. 어 그래서 초기에 어 바빠질 상황을 대비해서 초기에 시간을 많이 땡겨 놔야 되는 거죠. 그 즉 다시 말해서 어 실적을 빨리 만들어야 되는 거죠 초기에. 축구에서도 어 전반 전에 골을 넣느냐가 굉장히 중요한 어 관리이지 않습니까. 그것처럼 음 그런 식의 관리가 필요하고 어 또 시간이 모자랄 때에는 앞뒤로 분산시켜서 그렇게 관리를 해야 합니다. 저는 그런 관리 방법으로 시간을 관리하고 있습니다.",
+                "wordCount": 159
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "시험 시간이나 아니면 여러 가지 시간 관리를 해야 될 부분은 미리 미리 대처할 수 있는 방법들이 있습니다. 저는 전략적 사고에 바탕을 둔 목표 관리를 항상 하고 있기 때문에 어 시작과 끝에 대한 공정별 공정 관리표를 만들고, 그리고 주간 단위로 어 계획 대비 실적을 나누어서 관리를 해 나가고 있습니니다.",
+                "wordCount": 48
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 603598,
+            "duration": 18860,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_314194.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3536078,
+            "duration": 110500,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_314194.wav"
+        }
+    }
+}

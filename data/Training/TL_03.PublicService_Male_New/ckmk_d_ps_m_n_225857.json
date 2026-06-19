@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "업무를 하면서 가장 어려울 것으로 예상되는 것은 무엇입니까 그리고 그에 대해 어떻게 대처하실 생각이신지 함께 말씀해 주세요",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "일을 하면서 가장 어려울 것으로 예상되는 것은 팀원들의 화합이라고 생각합니다. 요즘 점점 저희 대한민국도 개인주의 사회가 되고 있습니다. 개인주의 사회의 단점은 물론 혼자 살면 되지 않아 라고 생각하실 수도 있겠지만 팀플레이를 하여 여러 가지 아이디어를 하나로 뭉칠 때 큰 문제가 발생합니다. 그래서 저도 그 문제가 가장 어려울 것으로 예상이 되는데요. 제가 대처하고 싶은 방법은 상하 제도를 없애는 것입니다. 일단 개인주의를 깔고 있기 때문에 의견은 좀 더 편하고 자유롭게 낼 수 있을텐데 상하 관계라는 것에 많은 분들이 감정적으로 소모가 심하게 되고 상처를 받을 수도 있기 때문에 상하 제도를 지우고 회의를 진행하도록 하겠습니다.",
+                "wordCount": 91
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "팀원들의 화합이 가장 어려울 것으로 예상되는데, 팀플레이로 아이디어를 하나로 뭉칠 때 문제가 발생합니다. 그래서 저는 상하 제도를 없애고 회의를 진행하도록 하겠습니다.",
+                "wordCount": 21
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 384078,
+            "duration": 12000,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_225857.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1862478,
+            "duration": 58200,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_225857.wav"
+        }
+    }
+}

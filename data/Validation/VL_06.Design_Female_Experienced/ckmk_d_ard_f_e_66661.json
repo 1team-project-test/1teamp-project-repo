@@ -1,0 +1,66 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "네 협업하면서 지원자께서 가장 어려웠던 점은 무엇입니까",
+                "wordCount": 7
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "음 의견이 상충될 경우가 있는데 어 예를 들어서 마케팅 팀이 원하는 표지 디자인 혹은 편집자가 제시하는 방향과 제가 추구하는 방향이 다를 경우에 가장 큰 게 어려운데 일반적으로 편집자와는 가장 많이 대화를 하고 이거 처 원고를 받았을 초고 당시부터 대화를 하면서 원고를 파악하고 같이 진행을 하기 때문에 어렵지 않은데 마케터와는 조금 더 어려운 것 같습니다. 마케터는 어 아무래도 홍보 방향이나 여러 가지 등에 대해서 어 진행을 할 때 현실적으로 지금 진행하는 다른 프로젝트나 다른 업무와 상충 이제 상충될 경우가 있기 때문에 이런 부분에서는 업무에 대해서 얘기를 하고 진행을 조율을 할 수밖에 없는 것 같습니다.",
+                "wordCount": 94
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "음 의견이 상충될 경우가 있는데 어 예를 들어서 마케팅 팀이 원하는 표지 디자인   혹은 편집자가 제시하는 방향과 제가 추구하는 방향이 다를 경우에   가장 큰 게 어려운데 일반적으로 편집자와는 가장 많이 대화를 하고 이거 처   원고를 받았을 초고 당시부터 대화를 하면서 원고를 파악하고 같이 진행을 하기 때문에 어렵지 않은데 마케터와는 조금 더 어려운 것 같습니다.",
+                    "expression": "c_confl_mg",
+                    "category": "personality"
+                },
+                {
+                    "text": "마케터는 어 아무래도 홍보 방향이나 여러 가지 등에 대해서   어 진행을 할 때 현실적으로 지금 진행하는 다른 프로젝트나 다른 업무와 상충 이제   상충될 경우가 있기 때문에 이런 부분에서는 업무에 대해서 얘기를 하고   진행을 조율을 할 수
+                    밖에 없는 것 같습니다.",
+                    "expression": "c_confl_mg",
+                    "category": "personality"
+                }
+            ],
+            "summary": {
+                "text": "마케터는 다른 프로젝트나 다른 업무와 상충될 경우가 있기 때문에 업무에 대해서 얘기를 하고 진행을 조율을 할 수밖에 없는 것 같습니다.",
+                "wordCount": 21
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 243278,
+            "duration": 7600,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_q_ard_f_e_66661.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1652558,
+            "duration": 51640,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/Experienced/ckmk_a_ard_f_e_66661.wav"
+        }
+    }
+}

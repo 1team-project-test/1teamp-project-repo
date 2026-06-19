@@ -1,0 +1,65 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "타인이 생각하는 본인의 장단점은 무엇이라고 생각하십니까 이유도 함께 말씀 부탁드립니다",
+                "wordCount": 10
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "다른 생각하는 다른 사람이 생각하는 저의 장점은 추진력입니다. 그리고 엄청난 에너지입니다. 사람들이 저에게 말합니다. 에너지가 정말 크다. 너 같은 사람은 처음 봤다. 어떻게 오십 대 육십 대 칠십 대까지 아우르는 에너지가 나올 수 있는지 정말 에너지가 커서 거기에 압도감을 느낀다 라고들 말합니다. 그러나 저에게는 섬세함과 정돈이 안되는 부족함이 있습니다. 인간의 감정을 잘 알아차리고 섬세하지만 실제로 청소나 정리 정돈의 부분에서는 부족한 부분이 많습니다. 큼직큼직한 것들은 잘하지만 일상생활에서의 정돈은 잘 안되는 곳들이 있습니다. 그런데 감사하게도 저희 남편이 정돈을 잘하는 사람이어서 서로의 부족한 점을 잘 메꾸면서 살아가고 있습니다. 너무너무 감사한 일이죠. 기쁘게 살아가고 있습니다. 저에게 있는 추진력과 에너지 신랑애에게 있는 정리 정돈에 대한 장점 이것들이 부부가 한 팀이 되어 잘 살아가니 모든 것이 조화롭게 되는 것 같습니다. 매일매일이 즐겁습니다. 저의 장점과 단점은 있지만 이 단점을 보완해 주는 완벽한 팀과 있으니 말입니다. 에너지도 크고 정리 정돈도 잘 되는 남편 에너지가 큰 아내 에너지가 큰 자녀들 정말 완벽한 조화이지 않습니까. 정말 너무너무 기쁩니다. 답변 들어주셔서 감사합니다.",
+                "wordCount": 151
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "다른 생각하는 다른 사람이 생각하는 저의 장점은 추진력입니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                },
+                {
+                    "text": "그러나 저에게는 섬세함과 정돈이 안되는 부족함이 있습니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "저는 섬세하지만 정리 정돈의 부분에서는 부족한 부분이 많습니다. 하지만 저희 남편이 정돈을 잘하는 사람이어서 서로의 부족한 점을 잘 메꾸면서 살아가고 있습니다. 저의 장점과 단점은 있지만 이 단점을 보완해 주는 완벽한 팀과 있으니 저는 아주 만족합니다. 답변 들어주셔서 감사합니다.",
+                "wordCount": 38
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 306638,
+            "duration": 9580,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_268905.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3699598,
+            "duration": 115610,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_268905.wav"
+        }
+    }
+}

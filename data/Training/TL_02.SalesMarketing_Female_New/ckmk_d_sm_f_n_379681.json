@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "만약 지원자님께서 본인이 하고 싶으신 직무 말고 다른 직무를 맡게 되실 텐데요 그렇게 된다면 어떻게 대처하실 건가요 또 그래도 괜찮으신지 여쭤보고 싶습니다",
+                "wordCount": 22
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "아 네 제가 지원한 직무가 아닌 다른 직무를 맡으라고 하시면 어 괜찮지는 않을 것 같습니다. 아 하지만 그렇다고 또 거부만 하 거부만 할 것은 아닌 것 같습니다. 아 제가 영업 업무나 국내 업무 에 다른 부문의 업무에 대해 잘 몰랐어요. 그때는 아마 다른 임무를 주시면 아 내가 능력이 부족해서 그런가 다른 쪽에 지원을 해야 되나 생각을 했을 것 같습니다. 하지만 업무들이 굉장히 유기적으로 연관이 되어 있다는 것을 알고 또 각 부문별로 구매나 영업이나 공통의 업무들이 있더라고요. 그래서 구매 팀에 갔다고 영업 업무를 못하는 것이 아니고 아 배우지 못하는 게 아니라는 것을 알았습니다. 아 그렇기 때문에 다른 직무를 맡기신다고 해도 또 열심히 일할 것 같습니다. 아 다만 어 일을 하면서 제 역량을 십분 발휘할 수 있는 곳이 아니라면 그때는 이제 인사 팀이나 어 팀장님께 말씀을 드려서 제 역량을 더 발휘할 수 있는 곳으로 변경 요청을 하겠습니다. 하지만 같은 다른 업무라고 해서 뭐 지금 당장 뭐 각 부서로 옮겨 달라거나 그런 요구를 할 건 아니고요. 일단 이 삼 년 은 열심히 주어진 임무를 최선을 다해 배우도록 하겠습니다.",
+                "wordCount": 165
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "업무들이 유기적으로 연관 되어 있다는 것을 알게 되었고, 각 부문별로 구매나 영업이나 공통의 업무들이 있어서 구매 팀에 갔다고 해서 영업 업무를 못하는 것이 아니라 아 배우지 못하는 것이 아니라는 것을 알았습니다. 일을 하면서 제 역량을 십분 발휘할 수 없는 곳이 아니라면 저는 역량을 더 발휘할 수 있는 곳으로 변경 요청을 하겠습니다.",
+                "wordCount": 51
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 505998,
+            "duration": 15810,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_379681.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2512718,
+            "duration": 78520,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_379681.wav"
+        }
+    }
+}

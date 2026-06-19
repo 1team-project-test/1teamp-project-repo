@@ -1,0 +1,80 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자분께 질문 하나 하겠습니다 어느 특정 작업을 하는데 소요되는 작업 시간은 얼마나 걸리시는지 그것에 대해서 말씀해 주십시오",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "특정 작업이라고 하면 여러 가지 작업이 있을 수 있지만 어 저에게 있어서 특정 작업을 설명해 드리겠습니 설명하겠습니다. 어 먼저 그 디자인을 만들기 위해서는 디자인을 어 시안하는 작업이 많이 필요합니다. 그 시안 작업을 한 다음에 그다음에는 인쇄에 들어가게 되는 디자인을 하게 되는데요. 그 디자인을 하는 과정에서 어 시간이 많이 어 걸리고 있습니다. 그 디자인 과정을 거친 다음에 그다음에 인쇄에 들어가게 되는데요. 이 인쇄 작업은 기계로 하는 것이기 때문에 그렇게 특별히 많은 시간을 소요하 소비하지는 않습니다. 어 그 시간을 시간이 더 많이 걸리는지 적기 적게 걸리게 하는 건지는 중간 과정인 디자인 제작 과정에서 그 불필요한 시간을 덜고 어 더 하고 하는 것이 필요합니다. 그래서 이 디자인 제작 과정에서 시간이 많이 걸리면 그 시간을 줄이는 작업이 필요해서 전체적인 시간을 디자인 제도 자적 작업 과정에서 줄일 수 있습니다.",
+                "wordCount": 125
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "어 먼저 그 디자인을 만들기 위해서는   디자인을 어 시안하는 작업이 많이 필요합니다.",
+                    "expression": "d_dgn_proc",
+                    "category": "technology"
+                },
+                {
+                    "text": "그 시안 작업을 한 다음에 그다음에는 인쇄에 들어가게 되는 디자인을 하게 되는데요.",
+                    "expression": "d_dgn_proc",
+                    "category": "technology"
+                },
+                {
+                    "text": "그 디자인 과정을 거친 다음에 그다음에 인쇄에 들어가게 되는데요.",
+                    "expression": "d_dgn_proc",
+                    "category": "technology"
+                },
+                {
+                    "text": "이 인쇄 작업은 기계로 하는 것이기 때문에   그렇게 특별히 많은 시간을 소요하 소비하지는 않습니다.",
+                    "expression": "d_dgn_proc",
+                    "category": "technology"
+                },
+                {
+                    "text": "그래서 이 디자인 제작 과정에서 시간이 많이 걸리면 그 시간을 줄이는 작업이 필요해서 전체적인 시간을   디자인 제도 자적 작업 과정에서 줄일 수 있습니다.",
+                    "expression": "d_dgn_proc",
+                    "category": "technology"
+                }
+            ],
+            "summary": {
+                "text": "디자인 제작은 시안 작업, 시안, 인쇄 순으로 시간이 많이 걸리고 인쇄 작업은 기계로 하기 때문에 시간 소요가 크지 않습니다. 디자인 제작 과정에서 시간이 많이 걸린다면 그 시간을 줄이는 작업이 필요해서 전체적인 시간을 디자인 제도 자적 작업 과정에서 줄일 수 있습니다.",
+                "wordCount": 40
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 441358,
+            "duration": 13790,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_67576.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2761038,
+            "duration": 86280,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_67576.wav"
+        }
+    }
+}

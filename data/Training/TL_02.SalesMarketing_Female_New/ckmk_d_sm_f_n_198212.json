@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "다양한 사람들과 함께 일을 하다 보면 아무래도 구성원들과 갈등이 생길 일이 많습니다 이럴 때 어떻게 해결을 하실 건지 말씀해 주시기 바랍니다",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "그렇 안 그러면 좋겠지만 어 일을 하다 보면 구성원들과 갈등이 생길 수밖에 없어요. 일단은 첫 번째 갈등이 생기면 저에 자신을 먼저 돌아봅니다. 제가 뭘 잘못해서 이 이렇게까지 됐는지. 근데 만약에 돌아보고 제 잘못이 아니라면 일단은 구성원들과 얘기를 해서 제 생각에 대해서 이해를 시킬려고 애를 쓸 거예요. 그렇게 해서도 구성원들이 뭐 제가 일이고 구성 구성원이 구가 될 상황에서 이해를 시켰는데도 안되고 계속 갈등이 생긴다면 상사에게 얘기해서 저만에 뭐 잠깐이라도 다른 업무를 요청을 할 거예요. 잠깐 떨어져 있으면서 서로 대립에 대해서 어 조금은 피해 갈 수 있는 시간을 달라고 상사 분에 얘기하고 다시 복귀를 했을 때도 여전히 그 감정의 골이 남아있다면 다시 한번 얘기를 해 봅니다. 얘길 해보도 해결이 안 나면 부서 이동을 요청을 할 것 같습니다. 어쨌든 같이 살아 나가야 되는데 그 구성원들이 저와 뭐 갈등이 생겨 저를 싫어한다고 해서 우리가 서로 일을 못하고 그만 두고 그런 상황이 되면 안 되지 않습니까. 그러면은 구가 맞든 틀리든 단체 생활에서는 대다수의 의견이 반영이 되기 때문에 제가 혼자 다른 부서를 요청을 하게 될 것 같습니다.",
+                "wordCount": 161
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "갈등이 생기면 자신을 먼저 돌아보고 이해를 시키려 노력하고, 상사에게 얘기해서 저만의 다른 업무를 요청을 할 것 같습니다. 그래도 갈등 해결이 안 되면 부서 이동을 요청을 할 것 같습니다. ",
+                "wordCount": 28
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 496718,
+            "duration": 15520,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_198212.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2782478,
+            "duration": 86950,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_198212.wav"
+        }
+    }
+}

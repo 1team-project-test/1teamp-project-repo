@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님 저희 일에 특성상 야근이나 잔업 외근이 많아질 수도 있습니다 지원자님 그래도 괜찮으시겠어요",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 일의 특성상 야근이나 잔업 외근이 많다고 하셨는데요. 저는 외근은 굉장히 좋아하는 편이기는 합니다. 밖에 나가서 일을 하다 보면 저희 회사 분들 외에도 다른 분들과 함께 의사소통을 하면서 새로운 것을 많이 배울 수 있다고 생각을 해서 저는 외근은 굉장히 좋은데요. 야근이나 잔업은 사실 제가 전 회사에서도 프로 야근러라고 할 만큼 굉장히 늦게까지 일하기도 했고 어 잔업을 많이 하기도 했는데요. 제가 해본 결과 야근이나 잔업보다는 그 회사 시간 내에 열심히 하는 게 조금 더 효율성이 높다 라는 생각이 많이 들더라고요. 그래서 야근이나 잔업은 좀 최대한 피하는 방향으로 하고 싶긴 한데 만약에 회사 분들이 불필요하게 꼭 필요하다고 하신다면 저도 할 의향이 있습니다.",
+                "wordCount": 101
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "네 일의 특성상 야근이나 잔업 외근이 많다고 하셨는데 전 회사에서도 프로 야근러 라고 할 만큼 늦게까지 일하기도 했고 잔업을 많이 하기도 했습니다. 회사 시간 내에 열심히 하는 게 더 효율성이 높다 라는 생각이 들어서 최대한 피하는 방향으로 하고 싶습니다.",
+                "wordCount": 39
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 519758,
+            "duration": 16239,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/New/ckmk_q_bm_f_n_154106.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1986638,
+            "duration": 62080,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Female/New/ckmk_a_bm_f_n_154106.wav"
+        }
+    }
+}

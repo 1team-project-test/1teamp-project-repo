@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "입사 후에 근무를 하시면서 정작 지원한 분야가 본인과 잘 맞지 않는다는 사실을 깨닫게 될 경우 어떻게 하실 건가요",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제가 신입 사원으로서 지원한 분야에서 맞지 않는 것을 알게 되었다면 이미 직장을 다니고 있는 상황이었다고 한다면 일단은 육 개월 이상은 제 업무를 어 다시 한번 잘 해볼 수 있도록 노력해 보겠습니다. 긍정적인 마인드로 못한다는 게 아니라 해낼 수 있다 라는 마음으로 끝까지 해보려고 합니다. 그렇지만 육 개월이 지나도록 제가 한 이가 제가 원하는 업무와 지금 이 회사에서 지원한 업무가 맞지 않는다는 것을 알게 되면 신입인 경우에는 아직 어리기 때문에 앞으로 어느 방향으로도 발전할 가능성이 있으므로 전직을 준비하려고 합니다. 전직 준비를 위한 서 미리 준비해서 육 개월 정도 더 어 전직 준비 기간 동안에 새로운 직업을 찾아보고 그리고 정확 적당히 나한테 맞는 직장이 나타나면 그쪽과의 그 관계를 제대로 하고 여기에 제 업무를 대신할 사람을 충분히 어 해 놓은 다음에 그다음에 이직을 하려고 합니다.",
+                "wordCount": 122
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 신입 사원으로서 지원한 분야에서 맞지 않는 것을 알게 되었다면 일단 육 개월 이상은 제 업무를 다시 한번 잘 해볼 수 있도록 노력해 보겠습니다. 그러나 육 개월이 지나도록 신입인 경우에는 어느 방향으로도 발전할 가능성이 있으므로 전직을 준비하고 미리 준비를 한 다음에 그다음 이직을 하려고 합니다.",
+                "wordCount": 45
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 316238,
+            "duration": 9880,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_q_ps_f_e_258397.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2265678,
+            "duration": 70800,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_a_ps_f_e_258397.wav"
+        }
+    }
+}

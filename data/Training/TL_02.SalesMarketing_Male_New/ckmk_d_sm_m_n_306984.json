@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인이 생각하시는 십 년 후 미래는 어떨 것 같나요 우선 저희 회사는 계속 다니고 계실 것 같나요",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 저의 십 년 후 미래는 아무래도 이제 이 영업 쪽에서 계속 몸을 담고는 있겠지만 이 회사를 계속 다닐지는 솔직히 말씀드려서 잘 모르겠습니다. 다양한 사유가 있을 것 같습니다. 어 회사의 조건이 제 맘에 들지 않아서 그만둘 수도 있을 것이고 아니면 정말 제가 이 회사의 부족한 인재여서 회사에서 자진적으로 퇴사를 할 수도 있을 것이고 여러 여러 가지 요인이 있을 것이라고 생각을 합니다. 하지만 저는 이 영업이라는 길은 버리지 않을 것 같습니다. 왜냐하면 저는 이제 바닥부터 올라왔다는 그러한 자부심이 아직까지 저에 있기 때문에 그러한 것들을 이제 생각해서라도 끝까지 이를 악물고 저에게 맞는 회사를 찾아다니기 어 저에게 맞는 직무를 찾기 위해서 끊임없이 노력할 것이기 때문입니다. 이상으로 답변 마치도록 하겠습니다. 들어 주셔서 감사합니다.",
+                "wordCount": 109
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 이 영업쪽을 계속 다니지는 않을 것 같습니다. 여러 요인이 있겠지만 저는 영업이라는 길을 버리지 않을 것입니다. 왜냐하면 저는 아직까지 바닥부터 올라왔다는 자부심이 있기 때문입니다. 이상으로 답변 마치겠습니다.",
+                "wordCount": 28
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 257998,
+            "duration": 8060,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_q_sm_m_n_306984.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1960398,
+            "duration": 61260,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_a_sm_m_n_306984.wav"
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "협업을 할 때 가장 중요하게 생각하는 것이 무엇인가요 왜 그것이 가장 중요한지 그 이유를 들어 볼 수 있을까요",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "협업을 할 때 가장 중요하게 생각하는 것은 의견 충돌 해결입니다. 상대방의 의견이 더 좋지는 않은지 제가 미처 생각하지 못한 부분은 없는지 점검해 보는 과정입니다. 그리고 이렇게 다시 생각해 보았음에도 제 의견도 타당성이 있다면 상대방에게 어떤 부분이 잘 전달되지 않았는지를 파악하고 상대방의 화법에 맞춰 이야기하겠습니다. 평소에도 학과 과제나 동아리 활동에서 서로의 의견을 나눌 때 이러한 방식으로 진행해 왔습니다. 이렇게 서로 의견을 주고받다보면 상대방도 저에게 충분한 이야기를 하였고 저도 제 의견을 충분히 전달했기 때문에 보통은 서로의 타협점을 찾거나 더 좋은 의견으로 합해지는 경우가 많았습니다. 간혹 의견 조율이 잘 안될 때에는 토론이 너무 과열되지 않도록 잠깐의 시간을 갖고 다시 생각한 후에 이야기하는 방법을 주로 사용했습니다. 그럴 때면 잠시 화장실이 급하다거나 커피 한 잔 사라겠다는 등의 적당한 이유를 들었고 상대방의 기분이 나쁘지 않게 눈치채지 않도록 했기 때문에 큰 충돌 없이 사람들과 의견을 나눌 수 있었습니다.",
+                "wordCount": 131
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "협업을 할 때 가장 중요하게 생각하는 것은 의견 충돌 해결입니다.",
+                    "expression": "c_cop",
+                    "category": "personality"
+                },
+                {
+                    "text": "그리고 이렇게 다시 생각해 보았음에도 제 의견도 타당성이 있다면 상대방에게 어떤 부분이 잘 전달되지 않았는지를 파악하고 상대방의 화법에 맞춰 이야기하겠습니다.",
+                    "expression": "s_comn",
+                    "category": "attitude"
+                },
+                {
+                    "text": "이렇게 서로 의견을 주고 받다보면 상대방도 저에게 충분한 이야기를 하였고 저도 제 의견을 충분히 전달했기 때문에 보통은 서로의 타협점을 찾거나 더 좋은 의견으로 합해지는 경우가 많았습니다.",
+                    "expression": "c_confl_mg",
+                    "category": "personality"
+                },
+                {
+                    "text": "간혹 의견 조율이 잘 안될 때에는 토론이 너무 과열되지 않도록 잠깐의 시간을 갖고 다시 생각한 후에 이야기하는 방법을 주로 사용했습니다.",
+                    "expression": "c_confl_mg",
+                    "category": "personality"
+                },
+                {
+                    "text": "그럴 때면 잠시 화장실이 급하다거나 커피 한 잔 사라겠다는 등의 적당한 이유를 들었고 상대방의 기분이 나쁘지 않게 눈치채지 않도록 했기 때문에 큰 충돌 없이 사람들과 의견을 나눌 수 있었습니다.",
+                    "expression": "c_confl_mg",
+                    "category": "personality"
+                }
+            ],
+            "summary": {
+                "text": "협업 시 가장 중요하게 생각하는 것은 의견 충돌 해결로, 상대방의 의견이 더 좋지는 않은지 제가 미처 생각하지 못한 부분은 없는지 점검해 보는 과정입니다. 그리고 다시 생각해 보았음에도 제 의견도 타당성이 있다면 상대방에게 어떤 부분이 잘 전달되지 않았는지를 파악하고 상대방의 화법에 맞춰 이야기하겠습니다.",
+                "wordCount": 42
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 455118,
+            "duration": 14220,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_155534.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2442638,
+            "duration": 76330,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_155534.wav"
+        }
+    }
+}

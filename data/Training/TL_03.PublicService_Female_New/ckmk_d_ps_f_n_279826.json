@@ -1,0 +1,81 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "시간이 남을 때 무슨 일을 하시나요 또한 다른 일이 아니라 꼭 그 일을 하시는 어떤 이유가 있으시다면 같이 들어볼 수 있을까요",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제 취미는 운동입니다. 스트레스가 있으면 모조리 운동을 통해서 풉니다. 개인적인 정신 건강에도 좋으며 몸이 건강해지니 체력적으로 지치는 일이 없습니다. 분양 사무소에서 일 년 반 동안 근무를 했을 때도 서 있는 일도 많고 끊임없이 말을 해야 하는 일이 많았는데 그때 받았던 스트레스와 피로를 풀기 위해서 운동을 시작했던 것이 계기가 되었습니다. 자연스럽게 몸이 균형 잡혔으며 보기 좋아졌다는 말을 많이 들으니 자신감이 붙었습니다. 또한 운동을 좋아하다 보니 여러 운동 동호회를 다니면서 사람들과 어울리는 재미도 생겼습니다. 그리고 운동을 통해 만난 다양한 사람들과 친분 관계뿐만 아니라 일로도 단단한 고리를 만들 수 있었고 인맥이 꼭 필요한 사회에서 좋은 인맥을 형성하게 만들었던 계기가 되었습니다. 바른 몸을 가꿔야 바른 정신이 나온다고 생각하는 주의이기 때문에 운동을 열심히 해서 건강함을 가꾸는 것을 좋아합니다. 저는 정말 체력 하나는 정말 자신이 있습니다. 여자이지만 밤샘도 거뜬 없으며 무거운 것을 드는 것도 참 잘합니다. 저는 운동으로 많은 즐거움을 느끼고 있습니다.",
+                "wordCount": 136
+            },
+            "emotion": [
+                {
+                    "text": "또한 운동을 좋아하다 보니 여러 운동 동호회를 다니면서 사람들과 어울리는 재미도 생겼습니다.",
+                    "expression": "p-interest",
+                    "category": "positive"
+                },
+                {
+                    "text": "바른 몸을 가꿔야 바른 정신이 나온다고 생각하는 주의이기 때문에 운동을 열심히 해서 건강함을 가꾸는 것을 좋아합니다.",
+                    "expression": "p-interest",
+                    "category": "positive"
+                },
+                {
+                    "text": "저는 운동으로 많은 즐거움을 느끼고 있습니다.",
+                    "expression": "p-happiness",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "스트레스가 있으면 모조리 운동을 통해서 풉니다.",
+                    "expression": "p_str_coping",
+                    "category": "technology"
+                },
+                {
+                    "text": "분양 사무소에서 일 년 반 동안 근무를 했을 때도 서 있는 일도 많고 끊임없이 말을 해야 하는 일이 많았는데 그때 받았던 스트레스와 피로를 풀기 위해서 운동을 시작했던 것이 계기가 되었습니다.",
+                    "expression": "p_str_coping",
+                    "category": "technology"
+                }
+            ],
+            "summary": {
+                "text": "제 취미는 운동으로 몸이 건강해져 스트레스와 피로를 풀었습니다. 분양 사무소에서 근무할 때도 서 있는 일도 많고 말을 해야 하는 일이 많았는데 스트레스를 풀기 위해 운동을 시작한 것이 계기가 되어 몸이 균형 잡히고 보기 좋아졌다는 말을 들으니 자신감이 붙었습니다. 운동을 통해서 다양한 사람들과 친분 관계와 일로도 단단한 고리를 만들 수 있었고 좋은 인맥을 만들었습니다.",
+                "wordCount": 53
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 606158,
+            "duration": 18940,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_279826.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3786318,
+            "duration": 118320,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_279826.wav"
+        }
+    }
+}
