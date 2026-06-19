@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인의 장단점을 말씀해 주세요 그리고 그것들을 각각 특화 시키고 극복하기 위해 노력한 점도 함께 말씀해 주세요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 이제 저는 어떠한 상황이 닥쳐도 포기하지 않는 끈기 있는 성격과 집중력이라고 말씀을 드리고 싶습니다. 어 저 같은 경우는 이제 어떤 일을 맡게 되었을 때 그 일에 대해서 다른 방해 요소를 모두 다 치워 놓고 그 일에 그 일이 이제 어떠한 방해 요소 같은 것들이 있다면 그 요소들을 최대한 배제해 가면서 저는 이제 일을 진행을 하는 편입니다. 그래서 보다 장기적인 업무가 가능하고 장기적인 성과를 장기적이지만 확실하게 성과를 내는 그런 타입이라고 말씀을 드릴 수 있겠습니다. 어 단점이라고 한다면 어 아무래도 보다 다른 것들을 조금 살피지 못한다는 것에 있습니다. 아무래도 한 가지 일에 집중을 확실하게 하다 보니까 여러 가지 애로사항이 발생할 수밖에 없고 그리고 여러 가지를 이제 신경을 못 씀으로 인해서 아무래도 이제 저도 모르게 다른 사람한테 피해를 주는 경우가 있었습니다. 그래서 그것을 극복하기 위해서 보다 조금 더 일을 너무 이제 몰두해서 진행할 때는 가끔씩 쉬기도 하면서 옆 이제 주위 사람들이 살피는 그러한 습관들을 가질 수 있 가질도록 노력을 하였습니다. 이상으로 답변에 마치겠습니다. 들어주셔서 감사합니다.",
+                "wordCount": 153
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "네 이제 저는 어떠한 상황이 닥쳐도 포기하지 않는 끈기 있는 성격과 집중력이라고 말씀을 드리고 싶습니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "끈기있는 집중력으로 어떠한 상황에서도 포기하지 않는 성격과 집중력이 있는 저는 어떤 일을 맡게 되었을 때 방해 요소를 최대한 배제해 가면서 일을 진행합니다. 단점이라면 다른 것들을 살피지 못한다는 것에 있습니다. 이것을 극복하기 위해 조금 더 일을 몰두할 때는 가끔 쉬면서 주위 사람들을 살피는 습관을 가질 수 있도록 노력하였습니다.",
+                "wordCount": 47
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 316238,
+            "duration": 9880,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_q_sm_m_n_323768.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2345998,
+            "duration": 73310,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/New/ckmk_a_sm_m_n_323768.wav"
+        }
+    }
+}

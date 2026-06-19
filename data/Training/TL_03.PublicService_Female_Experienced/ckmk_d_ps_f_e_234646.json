@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님 규범 준수와 현실 상황은 종종 충돌하곤 합니다 지원자님께서 직접 경험한 관련 경험이 있다면 이것에 대해서 말씀해 주세요",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제일 쉬운 것으로서 제가 어 횡단보도 건널 때 횡단보도 흰 선 줄이 있는 곳을 잘 지나가지 않고 그 옆으로 건너거나 어 멀찍이 있는 횡단보도 없는 쪽을 걷는 일이 많습니다. 이건 본인이 자꾸 주의해서 고쳐야 하지만 현실적으로 그냥 차가 오지 않으면 그곳으로 자꾸 가려고 하는 그런 내용 일이 있습니다. 그래서 이런 거는 직접 경험한 사항이니까 현실적으로 꼭 횡단보도를 건너야 하는 게 맞지만 그렇게 안 하고 있는 시간이 더 많습니다.",
+                "wordCount": 68
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "횡단보도까지 걸어가서 도로를 횡단할 수 있다면, 그렇게 시간을 소비하기 보다는 바로 앞의 이차선 도로를 무단으로 횡단하려 한 적이 있습니다. ",
+                "wordCount": 19
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 483278,
+            "duration": 15100,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_q_ps_f_e_234646.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1392398,
+            "duration": 43510,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_a_ps_f_e_234646.wav"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "이제까지 진행한 프로젝트들 가운데 가장 기억에 남는 프로젝트가 있다면 그것이 어떤 점에서 기억에 남는 프로젝트였는지 설명해 주세요",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "엄밀히 말하면 제가 시에서 주최하는 프로젝트에 나갔기 때문에 이를 제가 진행한 프로젝트라고 할 수 있는지 고민이 되는데요. 저한테 있어서 가장 기억에 남는 프로젝트가 있다면 바로 마을에 벽화 그리기 프로젝트였습니다. 해당 마을은 많이 노쇠하고 낙후된 지역이었습니다. 그렇기 때문에 마을에서 공공재로 쓰이는 벽이 충분히 페인트질이 되지 않고 또 가끔 올라오거나 훼손되어서 그 외관이 몹시 보기 흉물스러웠습니다. 그렇기 때문에 저희는 일차적으로 페인트를 새로 칠하면서도 어떻게 어떤 것을 그려 넣어야 해당 마을에 튀지 않고 조화로울지 생각을 했어야만 했습니다. 이렇게 저희의 기획력과 노동력 그리고 색감과 그 외의 모든 것을 생각해 보게 만든 프로젝트가 벽화 프로젝트였으므로 저는 프로젝트 중 벽화 그리기 프로젝트가 가장 인상 깊게 남았습니다.",
+                "wordCount": 99
+            },
+            "emotion": [
+                {
+                    "text": "이렇게 저희의 기획력과 노동력 그리고 색감과 그 외의 모든 것을 생각해 보게 만든 프로젝트가 벽화 프로젝트였으므로 저는 프로젝트 중 벽화 그리기 프로젝트가 가장 인상 깊게 남았습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "저한테 있어서 가장 기억에 남는 프로젝트가 있다면 바로 마을에 벽화 그리기 프로젝트였습니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                },
+                {
+                    "text": "이렇게 저희의 기획력과 노동력 그리고 색감과 그 외의 모든 것을 생각해 보게 만든 프로젝트가 벽화 프로젝트였으므로 저는 프로젝트 중 벽화 그리기 프로젝트가 가장 인상 깊게 남았습니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "노쇠하고 낙후된 지역의 마을에 공공재로 쓰이는 벽을 페인트칠을 하여 조화로울 수 있을지 생각한 프로젝트가 마을에 벽화 그리기 프로젝트였습니다. 이처럼 우리의 기획력과 노동력 그리고 색감과 그 외의 모든 것을 생각하게 만든 프로젝트가 벽화 프로젝트로서 가장 인상 깊었습니다.",
+                "wordCount": 36
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 337998,
+            "duration": 10560,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_258599.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2448078,
+            "duration": 76500,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_258599.wav"
+        }
+    }
+}

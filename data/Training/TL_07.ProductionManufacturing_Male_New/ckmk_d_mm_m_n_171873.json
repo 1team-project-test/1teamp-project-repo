@@ -1,0 +1,65 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자분 본인께서 가지고 계시는 장점 그리고 단점에 대해서 설명해 주시고 장점은 특화시키되 단점은 최대한 극복하기 위해서 어떠한 노력들을 해 오셨는지에 대해서도 함께 이야기해 주세요",
+                "wordCount": 24
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "어 공교롭게도 저의 장점과 단점은 같습니다. 어 우선 저의 장점을 말씀드리면 저는 매우 신중하다는 것입니다. 어떤 문제나 선택해야 될 일이 생겼을 때 그것을 해결하기 위해서 저는 정말 신중한 편입니다. 그 선택이라는 것이 한 번 내리면 되드릴 되돌릴 수 없기 때문에 저는 그 선택을 함에 있어서 어 한 수 두 수 뒤까지 생각을 합니다. 내가 이런 판단을 했을 때 이로 인해서 어떤 일이 발생할 수 있고 그로 인해서 어떤 일이 생길 수 있는지 등을 어 여러 가지 경우 수를 생각해서 선택을 합니다. 때로는 조언도 구합니다. 어 저보다 선배라든지 일을 경험했던 사람에게 어떠한 어 것이 좋은지 조언도 구하고 이러한 사례가 있다면 그것 역시 살펴봅니다. 어 그런데 이것이 남들에게 비춰질 때는 뭐 우유부단함 어 때로는 뭐 심지어는 뭐 어 선택 장애가 있다 이런 말까지도 사실은 들어본 경험이 있습니다. 어 저는 이것이 그까 좀 신중하다는 것이 누군가에게는 어 선택 장애 어 우유부담함으로 비칠 수 있지만 저는 이것이 결코 나쁜 점만이라고 생각하지 않습니다. 저 스스로도 공부하고 또 생각의 폭을 넓혀서 실수하지 않게 선택하는 것이 저는 올바른 판단이라고 생각합니다.",
+                "wordCount": 163
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "어 우선 저의 장점을 말씀드리면 저는 매우 신중하다는 것입니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                },
+                {
+                    "text": "어떤 문제나 선택해야 될 일이 생겼을 때 그것을 해결하기 위해서 저는   정말 신중한 편입니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "저는 매우 신중하다는 장점과 우유부단함, 선택장애 등으로 비춰질 수 있는 단점을 가지고 있지만 저 스스로도 공부하고 또 생각의 폭을 넓혀 실수하지 않게 선택하는 것이 올바른 판단이라고 생각합니다.",
+                "wordCount": 27
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 604238,
+            "duration": 18880,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_q_mm_m_n_171873.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2799758,
+            "duration": 87490,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/New/ckmk_a_mm_m_n_171873.wav"
+        }
+    }
+}

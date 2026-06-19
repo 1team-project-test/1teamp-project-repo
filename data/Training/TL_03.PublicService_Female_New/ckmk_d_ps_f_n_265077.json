@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지금 읽고 계신 책이 있다면 말씀해 주시고 왜 그 책을 선택하셨는지 이유와 함께 설명해 주세요",
+                "wordCount": 15
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 최근에 빠르게 실패하기 라는 책을 읽고 있습니다. 그 책은 음 이 연구를 이십 년 동안 스탠퍼드 대학에서 인생 성장 프로젝트 연구를 하면서 그 연구 기간 동안 성공한 사람들에게 나타나는 그런 공통적인 행동 패턴을 찾는 게 가장 핵심인 그런 책입니다. 어 이 실험에서 저는 작은 행동의 힘에 대해서 가장 강조를 하고 있고요. 가장 필요한 행동을 큰 준비 없이 즉각 실행하게 만드는 그런 부분이 있었고 더 잘 준비되고 더 대단한 목표가 성공에 있어서는 정말 중요한 요소가 될 것이다. 그래서 지금 당장 시작할 수 있는 작은 행동을 통해서 더 많이 더 실패하고 함으로 인해서 이것이 성공의 열쇠가 될 것이다 라는 부분에 대해서 강조하고 있는 책이어서 실패를 두려워하지 않고 실패를 해야 하지만이 다시 일어날 수 있다 라는 점을 더 명확하게 얻을 수 있는 그런 책이였던 것 같습니다.",
+                "wordCount": 124
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "성공하는 사람들의 공통적인 행동 패턴을 찾는 빠르게 실패하기 라는 책을 읽고 있는데, 이 책을 통해 실패를 두려워하지 않고 실패를 해야 하지만이 다시 일어날 수 있다 라는 점을 더 명확하게 얻을 수 있었습니다.",
+                "wordCount": 31
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 330958,
+            "duration": 10340,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_265077.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2637838,
+            "duration": 82430,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_265077.wav"
+        }
+    }
+}

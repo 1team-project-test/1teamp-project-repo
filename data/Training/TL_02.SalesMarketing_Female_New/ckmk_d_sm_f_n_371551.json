@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "여태까지 살아오면서 겪었던 갈등들 중에서 가장 심각했던 갈등은 무엇입니까 한 가지만 말씀해 주세요",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "인생에서 가장 힘든 일은 가족과의 갈등일 것 같아요. 회사에서의 갈등이라면 그거는 나무의 일이잖아요. 남과의 일이니까 심하면 그 사람을 안 보면 되는데 가족과의 갈등은 그럴 수가 없잖아요. 어떻게든지 해결을 하고 좋은 관계를 유지하도록 노력을 해야 될 일이잖아요. 저는 저의 아이와 좀 갈등을 겪었어요. 아이는 사춘기도 없이 참 무난히 잘 컸다고 생각이 들었는데 실제로는 그렇지 않았나 봐요. 그래서 대학을 졸업하고 회사를 다닐 때 어 저와의 갈등이 표면으로 드러났어요. 처음에는 서로 오해를 했다고 자기 입장에서의 말만 그것도 불만을 계속 토로했죠. 이렇게 해서는 될 일이 아니다 싶어서 둘이 같이 심리 치료를 받으러 다녔어요. 비슷한 사례들이 집집마다 많잖아요. 그래서 아마 그런 상황들을 서로 어 얘기를 듣고 또 역지사지로 어 생각하면서 이해하게 되지 않았나 지금은 잘 지내고 있습니다.",
+                "wordCount": 112
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "인생에서 가장 힘든 일은 가족과의 갈등일 것 같은데, 회사에서의 갈등은 남과의 일이니 심하면 그 사람을 안 봐도 되는 것이므로 해결하고 좋은 관계를 유지하도록 노력해야 될 일인데, 자녀와의 갈등은 노력을 많이 해야해서 둘이 같이 심리 치료를 받으러 다니고 있습니다.",
+                "wordCount": 38
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 306638,
+            "duration": 9580,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_371551.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3489998,
+            "duration": 109060,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_371551.wav"
+        }
+    }
+}

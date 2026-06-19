@@ -1,0 +1,65 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인의 십 년 후 미래는 어떨 것 같아요 우선 저희 회사에 계속 다니고 있을 것 같나요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네. 물론 십 년 후에도 저는 이 회사를 다니고 있을 것이라고 굉장히 자신합니다. 그 이유는 제가 나이도 있다 보니 한 번 입사를 하게 되면은 앞으로 제가 장기적으로 근무할 곳을 위주로 저는 지원을 했고요. 그리고 현재 기업의 지원함에 앞서서 저는 회사가 가지고 있는 그런 분위기라든지 이런 부분들을 굉장히 잘 살펴보았습니다.. 그 결과 제가 가지고 있는 가치관과 굉장히 유사하다 라는 점을 발견을 했고 열심히 오래 근무할 수 있다는 믿음을 가지고 현재 회사에 지원하게 되었습니다.",
+                "wordCount": 72
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "그 이유는 제가 나이도 있다 보니 한 번 입사를 하게 되면은 앞으로 제가 장기적으로 근무할 곳을 위주로 저는 지원을 했고요.",
+                    "expression": "c_sincere_job",
+                    "category": "etc"
+                },
+                {
+                    "text": "그 결과 제가 가지고 있는 가치관과 굉장히 유사하다 라는 점을 발견을 했고 열심히 오래 근무할 수 있다는 믿음을 가지고 현재 회사에 지원하게 되었습니다.",
+                    "expression": "c_sincere_job",
+                    "category": "etc"
+                }
+            ],
+            "summary": {
+                "text": "저는 나이가 있어 입사 후 장기적으로 근무할 곳을 중심으로 지원했고, 회사 분위기를 살펴본 결과 가치관과 유사함을 발견하여 열심히 오래 근무할 수 있다는 믿음으로 회사에 지원하게 되었습니다.",
+                "wordCount": 26
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 241358,
+            "duration": 7540,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_275504.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2033998,
+            "duration": 63560,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_275504.wav"
+        }
+    }
+}

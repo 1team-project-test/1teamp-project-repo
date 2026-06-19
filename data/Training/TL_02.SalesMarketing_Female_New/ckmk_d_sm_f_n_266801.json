@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "현대 사회에 없어서는 안 될 가장 중요하다고 생각하는 직업 한 가지를 골라 말씀해 주세요",
+                "wordCount": 14
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 현대사회에서 중요한 직업 중의 하나는 상담가라고 생각합니다. 심리 상담가요. 요즘엔 전철 같은 곳에서 폭행 사건도 많이 일어나는데 이렇게 옆에서 엄청난 일이 일어나는데도 불구하고 핸드폰만 바라보면서 관심을 갖지 않는 경우들이 많더라고요. 이렇게 사람들이 시대가 변하면서 디지털화 되어가다 보니 다른 사람과 소통하는 것 관심 갖는 것 마음을 나누는 것 등을 잘 못하는 경우가 많은데 이러다 보니 자살률도 올라가는 것 같아요. 만약 내 마음을 알아주고 어딘가에 마음을 털어놓을 곳이 있다면 사람들은 조금 더 심리적으로 편안해지지 않을까 생각합니다. 그래서 현대사회에서는 자신의 마음을 헤아려 줄 사람이 필요하다고 생각이 드는데요. 그게 바로 심리 상담가가 아닐까 생각해 봅니다.",
+                "wordCount": 92
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "현대사회에서 중요한 직업 중의 하나는 상담가라고 생각합니다. 현대사회에서는 자신의 마음을 헤아려 줄 사람이 필요하다고 생각되는데, 그게 바로 심리 상담가가 아닐까 생각합니다.",
+                "wordCount": 21
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 258638,
+            "duration": 8080,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_266801.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2062798,
+            "duration": 64459,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_266801.wav"
+        }
+    }
+}

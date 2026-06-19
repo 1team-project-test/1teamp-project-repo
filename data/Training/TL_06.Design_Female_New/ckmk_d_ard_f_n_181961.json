@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지금까지 대학교에서 배워오셨을 지원자 분의 전공 과목 중에서 가장 기억에 남을 만한 과목이 있으셨을 텐데요 그 과목에 대해서 자세히 이야기해 주신다면 좋겠습니다 한 가지만 이야기해 주세요",
+                "wordCount": 26
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "전공 과목 중에서 가장 기억에 남는 과목이라고 하면 사실 저는 반주법 과목이었거든요. 음 혼자서 연주하는 거와 달리 반주법은 두 사람이 아니면 세 사람 네 사람이 한꺼번에 호흡을 맞춰야 하고 동시에 시작해서 어떻게 이 곡을 이끌어 나갈지를 의논하고 또 그거를 다 맞춰보면서 잘 되어가는지 체크하고 또 그것을 들어 보면서 내 혼자 하는 음악과는 달리 음 협업을 통해서 이루어지는 음악은 또 새로운 아름다움과 절제와 또 서로에 대한 배려가 필요하다는 것을 배울 수 있었고 음 발란스를 맞추는 것 하모니를 이루는 것에 대해서 아주 깊이 있게 공부할 수 있었던 과목이었고 그 당시에 함께 했던 멤버들이 지금도 기억에 남을 정도로 아주 뭐 좋은 수업이었으면서 저에게 오래 기억에 남고 제가 한 발짝 성장하는 데 도움을 주었던 그런 과목이었다고 생각해서 음 반주법 과목 지금도 기억이 납니다.",
+                "wordCount": 118
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "협업을 통해서 이루어지는 음악은 새로운 아름다움과 절제 그리고 서로에 대한 배려가 필요하다는 것을 배울 수 있었고 음 발란스를 맞추는 것 하모니를 이루는 것에 대해서 깊이 있게 공부할 수 있었던 과목인 반주법 과목이 가장 기억에 남습니다.",
+                "wordCount": 35
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 648718,
+            "duration": 20270,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_181961.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2706638,
+            "duration": 84580,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_181961.wav"
+        }
+    }
+}

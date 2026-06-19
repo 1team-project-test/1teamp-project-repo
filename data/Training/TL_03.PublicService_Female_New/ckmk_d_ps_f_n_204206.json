@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "이 직무에 지원한 이유를 말씀해 주시고 이 직무의 본인이 왜 적합한 인재인지도 말씀해 주세요",
+                "wordCount": 14
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 지금 공공 서비스 분야에 지원을 하게 되었습니다. 어 저는 이 일을 하기 위해서 어 행정학과를 졸업하였습니다. 그렇기 때문에 공공 분야에 대해서 더 많은 지식을 가지고 있습니다. 또한 서비스 업무를 잘 하기 위해서도 관련된 여러 어 그 경험을 쌓아 왔기 때문에 제가 적합한 인재에 더 맞다고 적합하다고 말씀드릴 수 있겠는데요 어 저희 능력을 확인해 보고 싶으시다면 저를 채용하셔서 제가 일을 잘 수행해 나가는지 한 번 믿고 봐주셨으면 좋겠습니다. 어 다른 면접자들 또한 우수한 지원자들이 많겠지만 어 저는 일을 차분히 잘 해 나갈 수 있고 또한 솔직하고 계획적으로 일을 처리해 나갈 수 있어서 저희 장점을 좀 어필하여서 어 저를 채용해 주시길 어 바라겠습니다. 부족하지만 저희 답변은 여기까지입니다. 감사합니다.",
+                "wordCount": 107
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "어 저는 이 일을 하기 위해서 어 행정학과를 졸업하였습니다.",
+                    "expression": "c_private",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "행정학과를 졸업한 저는 공공 서비스 분야에 지원을 하게 되었습니다. 행정학과 졸업과 서비스 업무를 잘 하기 위한 경험을 쌓아 왔기 때문에 제가 적합한 인재에 더 맞는다고 봅니다. 능력을 확인해 보고 싶으시면 채용하셔서 믿고 봐주시길 바랍니다. 부족하지만 저희 답변은 여기까지입니다.",
+                "wordCount": 38
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 294478,
+            "duration": 9200,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_204206.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2898318,
+            "duration": 90570,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_204206.wav"
+        }
+    }
+}

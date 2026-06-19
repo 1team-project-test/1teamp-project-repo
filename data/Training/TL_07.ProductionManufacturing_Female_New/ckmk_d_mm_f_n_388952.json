@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "직무 수행 시에 난관에 봉착했다면 어떻게 해결하실 겁니까 지원자님의 해결법과 이유를 말씀해 주시기 바랍니다",
+                "wordCount": 14
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 우선 모든 수단과 방법을 가리지 않고 일단은 인터넷부터 뒤져보고 그다음엔 사람 대 사람 사람을 통해서 물어보고 그렇게 방법을 찾아나가겠죠. 그래도 힘들다면 뭐 자료를 여기저기 찾아보고 회사에서. 그런 식으로 난관이라는 건 극복하라고 있는 것 같아요. 뭐 어떻게든 해결해 나가야 하는 결국엔 해결을 하게 될 그런 난관이기 때문에 하나의 시련이라고 저는 생각합니다. 반드시 해결할 수 있고 그 시기가 조금 늦어도 반드시 나중에는 해결된 결과를 볼 수 있는 난관이라고 저는 생각하기 때문에 네 저는 일단은 다 해봅니다. 다 해보고 그래도 해결법이 안 나올까요. 그렇게 하면 해결법이 나올 거예요. 저는 나오리라고 생각합니다. 그렇게 해서 모두에게 인정을 받고 더 잘 할 수 있는 그런 사람이 되었으면 좋겠습니다.",
+                "wordCount": 103
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "모든 수단과 방법을 가리지 않고 일단 인터넷부터 뒤지고 사람 대 사람 사람을 통해서 묻고 그렇게 방법을 찾아나가는 것이라고 생각합니다. 모든 사람에게 인정을 받고 더 잘 할 수 있는 그런 사람이 되었으면 좋겠습니다.",
+                "wordCount": 32
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 330958,
+            "duration": 10340,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_q_mm_f_n_388952.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2944078,
+            "duration": 92000,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/New/ckmk_a_mm_f_n_388952.wav"
+        }
+    }
+}

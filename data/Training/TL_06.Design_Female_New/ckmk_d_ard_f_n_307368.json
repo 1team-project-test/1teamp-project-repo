@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님이 이 직무에 지원하신 이유는 무엇인가요 또한 왜 본인이 해당 직무에 적합한 인재라고 생각하시는지도 말씀해 주시기 바랍니다",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 일단 제가 이 직무에 지원한 이유는 저는 예술에 대해 관심이 많고 예술에 대해 더 공부하고 예술을 하는 삶을 살고 싶기 때문입니다. 또한 이에 왜 적합한 인재인지 말씀드리자면 일단 저는 어렸을 때부터 예술과 가까운 삶을 살았습니다. 그림 노래 춤 그리고 연기까지 예술과 관련된 것을 어렸을 때부터 계속해서 연습하고 성실하게 저의 성장을 위해서 노력한 기억이 있기 때문에 이것은 제가 왜 적합한 인재인지 설명드릴 수 있을 것 같습니다. 또한 저는 성격이 되게 밝고 친화력이 좋습니다. 그리고 미묘하고 섬세한 감각과 아름다움을 가지고 있기 때문에 제가 적합한 인재라고 말씀드리고 싶습니다.",
+                "wordCount": 87
+            },
+            "emotion": [
+                {
+                    "text": "네 일단 제가 이 직무에 지원한 이유는 저는 예술에 대해 관심이 많고 예술에 대해 더 공부하고 예술을 하는 삶을 살고 싶기 때문입니다.",
+                    "expression": "p-interest",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "네 일단 제가 이 직무에 지원한 이유는 저는 예술에 대해 관심이 많고 예술에 대해 더 공부하고 예술을 하는 삶을 살고 싶기 때문입니다.",
+                    "expression": "c_sincere_job",
+                    "category": "etc"
+                },
+                {
+                    "text": "또한 저는 성격이 되게 밝고 친화력이 좋습니다.",
+                    "expression": "c_person",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "예술에 관심이 많고 예술의 삶을 살고 싶기 때문에 이 직무에 지원한 저는 밝고 친화력이 좋고 미묘하고 섬세한 감각과 아름다움을 가지고 있어서 적합한 인재라고 말씀드리겠습니다.",
+                "wordCount": 24
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 600078,
+            "duration": 18750,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_307368.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2070478,
+            "duration": 64700,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_307368.wav"
+        }
+    }
+}

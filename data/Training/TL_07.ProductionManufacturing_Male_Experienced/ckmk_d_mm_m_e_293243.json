@@ -1,0 +1,76 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "-34",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님은 공장에서 일해 보신 경험이 있는지 궁금한데요 만약 있다면 그 경험에 대해서 자세한 설명 좀 부탁드리겠습니다",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제가 지금 일하고 있는 회사는 금형 회사인데 몰드 베이스를 안 만드는 회사입니다. 그곳에서 지금 저의 업무는 캐드캠 프로그램을 작성을 하고 그것을 현장에 보내 줌으로써 현장에서 제가 만들어 놓은 프로그램 대로 가공을 하여 금속 가공 즉 몰드 베이스를 만드는 일을 하는데 이 일을 하기 전에 현장에서 한 일 년가량 일을 했었습니다. 그때에 직접적으로 그 몰드베이스에 코트 작업과 좌표 작업 등을 직접적으로 해 보면서 소재의 재질들을 먼저 파악을 하고 또한 그에 맞는 스핀들과 알피 알피엠 피드 등을 직접 입력하여 음 효율적인 생산이 되도록 그리고 어 불량이 발생하지 않고 고객이 클라이언트가 요구한 그런 몰드 베이스를 만드는 일을 했었습니다. 그 일은 주간과 야간 이 교대로 했었으며 아무래도 체력적으로 쪼금 많이 힘들었던 부분들이 있었습니다. 작업 환경 자체가 어 깨끗하고 좋은 상황은 아니었었기 때문에 그러한 부분들이 쉽지 않았었고 또한 밤낮이 바뀌는 일을 하다 보니깐 저의 바이오리듬 또한 많이 깨지는 경우도 있었고 건강을 관리하는 것이 그렇게 쉽지 않았었던 걸로 네 그러한 경험이 있습니다.",
+                "wordCount": 146
+            },
+            "emotion": [
+                {
+                    "text": "제가 지금 일하고 있는 회사는 금형 회사인데 몰드 베이스를 안 만드는 회사입니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "그곳에서 지금 저의 업무는 캐드캠 프로그램을 작성을 하고 그것을 현장에 보내 줌으로써 현장에서 제가 만들어 놓은 프로그램 대로 가공을 하여 금속 가공 즉 몰드 베이스를 만드는 일을 하는데 이 일을 하기 전에 현장에서 한 일 년 가량 일을 했었습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                },
+                {
+                    "text": "그때에 직접적으로 그 몰드베이스에 코트 작업과 좌표 작업 등을 직접적으로 해 보면서 소재의 재질들을 먼저 파악을 하고 또한 그에 맞는 스핀들과 알피 알피엠 피드 등을 직접 입력하여 음 효율적인 생산이 되도록 그리고 어 불량이 발생하지 않고 고객이 클라이언트가 요구한 그런 몰드 베이스를 만드는 일을 했었습니다.",
+                    "expression": "u-fact",
+                    "category": "neutral"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "금형 회사에서 몰드 베이스를 안 만드는 회사에서 일 년 가량 일을 했었습니다. 몰드베이스에 코트 작업과 좌표 작업 등을 직접 해 보면서 소재의 재질들을 먼저 파악하고 스핀들과 알피 알피엠 피드 등을 직접 입력하여 음 불량이 발생하지 않고 고객이 요구하는 몰드 기반을 만들었습니다. 작업 환경 자체가 깨끗하고 좋은 상황은 아니었기에 체력적으로 많이 힘들었습니다.",
+                "wordCount": 51
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 355278,
+            "duration": 11100,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/Experienced/ckmk_q_mm_m_e_293243.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3467598,
+            "duration": 108360,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Male/Experienced/ckmk_a_mm_m_e_293243.wav"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "우리 회사에 들어와서 본인이 꼭 하고 싶은 업무가 있으신가요 있다면 그것은 무엇인지 하고 싶은 이유도 무엇인지 각각 말씀해 주세요",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제가 7십여 년 동안 사회 복지 업무를 하면서 가장 많이 해보고 싶은 일은 미혼모 가정을 위한 프로그램과 프로복자를 통한 도움입니다. 사회 복지적 차원에서 우리나라의 사회 복지 시스템에서 가장 혜택을 받지 못하고 있는 어 그 계층이 미혼모 가정입니다. 그래서 만약 이 회사에서 어 저를 필요로 하신다면 제가 이 업무를 충실히 잘 해낼 수 있을 것이라고 생각합니다. 왜냐하면 어 사회에서의 취약 계층인 미혼모 가정들이 너무나 사회적인 혜택을 받고 있지 못하기 때문에 어 이 회사에서는 사회 공헌 프로그램으로 앞으로 좀 더 많은 다양한 사회 복지적 업무를 해내 내신다고 들었습니다. 그러므로 제가 그동안에 이십여 년 동안에 사회 복지 업무를 하면서 어 어 가졌던 다양한 사회 복지 능력과 그리고 전문적인 지식과 그리고 사회 복지 업무를 대하는 저의 성실성과 그리고 책임감으로 어 미혼모 가정을 위한 사회 복지 프로그램을 지속적으로 해내고 싶습니다.",
+                "wordCount": 126
+            },
+            "emotion": [
+                {
+                    "text": "제가 이십여 년 동안 사회 복지 업무를 하면서 가장 많이 해보고 싶은 일은 미혼모 가정을 위한 프로그램과 프로복자를 통한 도움입니다.",
+                    "expression": "p-interest",
+                    "category": "positive"
+                },
+                {
+                    "text": "그러므로 제가 그동안에 이십여 년 동안에 사회 복지 업무를 하면서 어 어 가졌던 다양한 사회 복지 능력과 그리고 전문적인 지식과 그리고 사회 복지 업무를 대하는 저의 성실성과 그리고 책임감으로 어 미혼모 가정을 위한 사회 복지 프로그램을 지속적으로 해내고 싶습니다.",
+                    "expression": "p-interest",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "이십여 년 동안 사회 복지 업무를 하면서 가장 많이 해보고 싶은 일은 미혼모 가정을 위한 프로그램과 프로복자를 통한 도움인데, 우리나라의 사회 복지 시스템에서 가장 혜택을 받지 못하고 있는 계층이 미혼모 가정입니다. 회사에서 저를 필요로 한다면 이 업무를 충실히 잘 해낼 수 있을 것이라고 생각합니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 620558,
+            "duration": 19390,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_q_ps_f_e_263391.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2503118,
+            "duration": 78220,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/Experienced/ckmk_a_ps_f_e_263391.wav"
+        }
+    }
+}

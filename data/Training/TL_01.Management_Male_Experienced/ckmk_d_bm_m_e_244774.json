@@ -1,0 +1,66 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "BM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "역사 속에서 가장 존경하는 인물을 말씀해 주시고 또 지원자님이 그 인물을 가장 존경하는 이유에 대해서도 함께 말씀해 주시기 바랍니다",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "역사 속에서 가장 존경하는 인물은 베트남의 호치민이었습니다. 그 사람하고 어 미국의 해군 장군 리미츠 제독이었습니다. 아 그 이유는 호치민 같은 경우 평생을 타이프라이터를 들고서 글을 썼던 사람이고요. 그다음에 리미츠 같은 경우는 어 불가능한 임무를 어 훌륭하게 소화를 했습니다. 그리고 성공을 했습니다. 아 모든 사람의 주목이 유럽 전쟁에 포커스 되어 있을 때 아 리미츠는 외롭게 자기한테 주어진 인물을 완벽하게 소화를 했습니다.",
+                "wordCount": 61
+            },
+            "emotion": [
+                {
+                    "text": "역사 속에서 가장 존경하는 인물은 베트남의 호치민이었습니다.",
+                    "expression": "p-affection",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "역사 속에서 가장 존경한 인물은 타이프라이터를 들고 글을 쓴 베트남 호치민과 미국의 해군 장군 리미츠 제독이었습니다. 유럽 전쟁에 포커스 되어 있을 때, 그는 외롭게 자신의 임무를 소화했습니다.",
+                "wordCount": 27
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 598798,
+            "duration": 18710,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_q_bm_m_e_244774.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1633998,
+            "duration": 51060,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/01.Management/Male/Experienced/ckmk_a_bm_m_e_244774.wav"
+        }
+    }
+}

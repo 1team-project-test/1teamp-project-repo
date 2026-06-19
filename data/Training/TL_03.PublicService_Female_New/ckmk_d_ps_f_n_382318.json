@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "회사의 덕목은 무엇이라고 생각하시나요 어떤 회사가 좋은 회사라고 생각하시는지 말해주세요",
+                "wordCount": 10
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 회사라는 것은 어 가장 큰 덕목이 지속적인 발전과 발전 가능성이라고 생각합니다. 그리고 어떤 회사가 좋은가 라고 묻는다면 그 발전을 직원들과 함께 사원들과 함께 해 나가는 회사라고 생각합니다. 이 이야기는 물론 회사가 그냥 사람들을 돕고 또 어떤 기부하고 이런 기관이 아니라 공공의 이익을 추구하는 기관이라기보단 회사의 경제적인 이익 가장 최 최선의 이익을 추구하는 곳이기는 하지만 그러나 그것이 그저 회사의 몇몇 오너라든지 위에서 명령하는 몇몇 사람에 의해서 좌지우지되는 것이 아니라 일개 사원에 이르기까지 모든 그 회사에 속한 사람들이 함께 머리를 맞대고 고민하고 그리고 함께 어떻게 나아가야 하는 것이 좋은 방향인지 모두가 살 수 있는 방법 함께 공생하는 방법을 생각하는 것이 좋은 회사라고 생각합니다. 그래서 이제까지 어 최고 과거에 있었던 그런 수직적인 문화가 아니라 수평적인 문화가 지켜지고 그래서 그 수평적인 문화 속에서 서로의 할 말을 하고 서로의 필요를 이야기하고 그것들을 맞추어 가고 그리고 그 가운데에서 창의성이 나오는 회사 그래서 그 창의성을 또 바탕으로 해서 조금씩 조금씩 발전해 가는 회사 그것이 최고의 덕목이라고 생각하고 최고의 좋은 회사라고 생각합니다.",
+                "wordCount": 155
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "회사는 지속적인 발전 가능성이 가장 큰 덕목이라고 생각합니다. 어떤 회사가 좋은가 라고 묻는다면 사원들과 함께 해 나가는 회사라 생각합니다. 수평적인 문화가 지켜지고 그 안에서 창의성이 나오는 회사 그것이 최고의 덕목이고 좋은 회사라고 생각합니다.",
+                "wordCount": 33
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 213518,
+            "duration": 6670,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_382318.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3196558,
+            "duration": 99890,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_382318.wav"
+        }
+    }
+}

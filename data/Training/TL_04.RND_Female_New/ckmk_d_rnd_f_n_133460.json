@@ -1,0 +1,66 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "RND",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "일을 하다 보면 다른 지역에서 업무를 수행하게 될 수도 있는데요 타 지역 근무도 문제 없이 가능하신가요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 무리 없이 수행 가능합니다. 어 중국에서 어학 연수를 삼 년간 다녀왔을 때도 어 집이 많이 좀 그립고 좀 힘든 경험들이 다른 분들에게는 있었는데 제게는 어 사실 그런 부분들이 그렇게 크게 와닿지는 않았고 그저 새로운 환경과 또 배움의 어 연장선이 오히려 설레고 신났던 것 같습니다. 그렇기 때문에 타 지역에서의 근무 그리고 그 지역 분들 그 지역 근무자분들과의 어떤 소통 어 이런 부분들이 제게 있어서 그렇게 힘든 예 영역은 아니라고 생각이 들고 어 그리고 혹시나 이런 외로움이나 향수병 등등이 생길 수 있겠지만 어 그런 부분들은 이제 연휴라던가 기타 주말에 이제 휴식 일에 좀 어 고향을 다녀오면은 해결될 문제라고 생각합니다. 어 그렇기 때문에 어 굳이 무리 없이 타 지역 업무를 수행할 수 있다 좀 자신 있게 말씀드릴 수 있습니다.",
+                "wordCount": 117
+            },
+            "emotion": [
+                {
+                    "text": "어 중국에서 어학 연수를 삼 년간 다녀왔을 때도 어 집이 많이 좀 그립고 좀 힘든 경험들이 다른 분들에게는 있었는데 제게는 어 사실 그런 부분들이 그렇게 크게 와닿지는 않았고 그저 새로운 환경과 또 배움의 어 연장선이 오히려 설레고 신났던 것 같습니다.",
+                    "expression": "p-interest",
+                    "category": "positive"
+                }
+            ],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "중국에서 어학 연수를 삼 년간 다녀왔을 때도 어려운 부분들이 그리 와닿지는 않았고 그저 새로운 환경과 배움의 연장선이 오히려 설레고 신났던 것 같습니다. 그렇기 때문에 무리 없이 타 지역 업무를 수행할 수 있다 자신 있게 말씀드리겠습니다.",
+                "wordCount": 35
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 320078,
+            "duration": 10000,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_q_rnd_f_n_133460.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2323278,
+            "duration": 72600,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_a_rnd_f_n_133460.wav"
+        }
+    }
+}

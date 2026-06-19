@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "RND",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "주변 친구들 중 한 사람을 골라서 칭찬해 주시기 바랍니다 가능하다면 구체적이고 자세하게 친구분을 칭찬해 주시면 더욱 좋을 것 같아요",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "주변 제 친구 중에 현재 미국에 유학 간 친구가 있는데요. 그 친구는 사실 건축학과인데 어 부모님이 둘 다 건축 설계사이셔서 두 분을 따라 이제 건축 설계사가 되려고 유학을 갔는데 그 친구는 스무 살 때부터 지금 이제 서른 살이 안 됐지만 서른 살 때까지 학교를 다닐 예정이에요. 어 대학교는 물론 졸업했고 지금 대학원 과정을 하고 있는데 사실 이십 대의 전부를 학교생활로만 보내는 것이 사실 의사나 좀 특수한 전문직 외에는 잘 없습니다. 보통은 졸업하고 사회생활을 어느 정도 하고 뭐 필요에 의해 대학원을 가긴 하지만 이렇게 드문 케이스다 보니 굉장히 저는 그 친구가 한편으로 대단한다고 생각을 합니다.",
+                "wordCount": 94
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "주변 제 친구 중에 현재 미국에 유학 간 친구가 있는데, 그 친구는 20대의 전부를 학교생활로만 보내는 것이 의사나 전문직 외에는 없다고 합니다. 이런 케이스는 굉장히 저는 그 친구가 대단하다고 생각 합니다.",
+                "wordCount": 31
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 608718,
+            "duration": 19020,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_q_rnd_f_n_314907.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2536398,
+            "duration": 79260,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Female/New/ckmk_a_rnd_f_n_314907.wav"
+        }
+    }
+}

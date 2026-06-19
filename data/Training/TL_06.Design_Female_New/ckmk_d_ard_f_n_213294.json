@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "ARD",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "디자니어로서 가지고 있는 앞으로의 목표가 있으십니까 있다면 그것에 대해서 설명을 해 주시기 바랍니다",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "제가 디자이너로서 가지고 있는 앞으로의 목표에 대해 설명드리도록 하겠습니다. 제가 앞으로 이루어 내고 싶은 목표를 말하자면 모든 디자이너들의 꿈이라고 말할 수 있듯이 그것은 바로 저의 사업체를 꾸리는 곳입니다. 제가 그동안은 다른 사람의 요청을 받아 그분이 원하는 대로 디자인을 해 드렸다면 이제는 저만에 정체성을 바탕으로 한 저의 아이덴티티를 담은 브랜드를 설립하여 제가 원하는 브랜드의 가치를 담아 디자인해보고 싶다고 생각했습니다. 따라서 저는 그런 디자인을 하기 위해 고객에 충고를 바탕으로 한 커스터마이징 향수 편집 샵을 내고 싶다는 생각을 했습니다. 제가 평소에 향수를 좋아하는데 그 사람이 원하는 느낌의 향수를 만들 수 있다면 그것은 아주 큰 향수를 원하는 사람들의 니즈를 충족시키는 것이라고 생각했기 때문입니다. 감사합니다.",
+                "wordCount": 102
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "디자이너로서 앞으로 이루고 싶은 목표는 바로 저만에 정체성을 바탕으로 한 아이덴티티를 담은 브랜드를 설립하여 제가 원하는 브랜드의 가치를 담아 디자인해보고 싶다는 것입니다. 이를 위해 고객에 충고를 바탕으로 한 커스터마이징 향수 편집숍을 내고 싶다는 생각을 했습니다.",
+                "wordCount": 36
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 492878,
+            "duration": 15400,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_q_ard_f_n_213294.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2629838,
+            "duration": 82180,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/06.Design/Female/New/ckmk_a_ard_f_n_213294.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "요즘 시대에는 팬데믹이라든지 환율이 천 사백 원까지 올랐습니다 이 시장의 향후 발전 방향은 어떻게 될 것인지 본인의 생각을 말씀해 주세요",
+                "wordCount": 20
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "이 로봇 시장의 향후 발전 발전 가능성은 아주 크다고 보고 있습니다. 우리나라도 고령화 사회로 가면서 근로할 수 있는 사람의 수가 줄어들고 있습니다. 그리고 그 근로하는 사람들로 예전과 달리 많이 그 회사에서 세회사 내부에서 일하는 그런 화이트 칼라를 원합니다. 그래서 쓰리디 업종이라든지 또 공장에서 일하는 부분에 있어서는 사람을 대체할 수 있는 로봇이 많이 쓸 수 있다고 생각합니다. 그래서 이 시장이 점점 커지고 그리고 그 로봇을 많이 사용함으로써 그 로봇을 관리하는 인원도 추가로 필요하기 때문에 로봇 시장과 그리고 사람과 같이 공존하면서 클 수 있다고 생각합니다.",
+                "wordCount": 83
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "고령화 사회에서 근로자는 줄고 근로자는 화이트 칼라를 원합니다. 그래서 쓰리디 업종이나 공장에서는 사람을 대체할 수 있는 로봇이 많이 쓰일 수 있습니다. 로봇을 관리하는 인원도 필요하기 때문에 로봇 시장과 사람은 공존할 수 있다고 생각합니다.",
+                "wordCount": 33
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 452558,
+            "duration": 14140,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_97627.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2145678,
+            "duration": 67050,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_97627.wav"
+        }
+    }
+}

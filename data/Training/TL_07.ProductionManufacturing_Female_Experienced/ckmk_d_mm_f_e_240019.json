@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "MM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "과거 직면한 어려운 문제를 해결하기 위해서 지원자님께서는 어떤 아이디어를 제안했고 또 무엇을 하셨는지 그 과정을 상세하게 말씀 부탁드리겠습니다",
+                "wordCount": 18
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "부서 간에 의사소통이 부족해서 서로 정보 공유가 되지 않아 생산 과정에서 어 납기를 맞추지 못하거나 품질 관리가 되지 않거나 생산성을 높이지 못하는 일들이 빈번하게 발생하였을 때 부서 간에 긴밀하게 협조할 수 있는 방법을 제안하였습니다. 그 아이디어는 어 의사소통을 하는 시간을 어 자주 갖고 그 안에 체크해야 될 목록들을 만들어서 서로 중요한 것들을 정확하게 체크하고 그것에 대한 대답을 철저히 해서 어 체크리스트를 만들어서 체크리스트를 토대로 일의 경중과 난이도를 까 따져서 일이 중요한 것들을 긴박하게 진행하고 그리고 그에 따른 책임을 질 소재가 분명하게 어디에 있는지를 어 매 회의 때나 의사소통이 어 원활하게 돌아갈 때마다 늘 상시로 체크 해두는 어 모니터링하는 사람을 따로 두고 일을 해 나가는 아이디어를 제안하였습니다. 그 결과 어 그 모니터링을 해주고 일을 일에 진행을 체크해두는 사람이 따로 있을 때에 문제 해결하는 데 훨씬 수월한 어 결과를 나타내었었던 적이 있습니다.",
+                "wordCount": 130
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "부서 간에 의사소통이 부족해서 서로 정보 공유가 되지 않아 생산 과정에서 어 납기를 맞추지 못하거나 품질 관리가 되지 않거나 생산성을 높이지 못하는 일들이 빈번하게 발생하였을 때 부서 간에 긴밀하게 협조할 수 있는 방법을 제안하였습니다.",
+                    "expression": "c_confl_mg",
+                    "category": "personality"
+                }
+            ],
+            "summary": {
+                "text": "부서 간 정보 공유가 되지 않아 생산 과정에서 문제가 발생했을 때 부서 간에 협조할 수 있는 방법을 제안했습니다. 그 아이디어는 의사소통을 하는 시간을 자주 갖고 체크해야 될 목록을 만들어서 체크리스트를 만들어 일의 경중과 난이도를 따져서 중요한 것들을 긴박하게 진행하고 책임을 질 소재를 분명히 했습니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 408398,
+            "duration": 12760,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/Experienced/ckmk_q_mm_f_e_240019.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3041998,
+            "duration": 95060,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/07.ProductionManufacturing/Female/Experienced/ckmk_a_mm_f_e_240019.wav"
+        }
+    }
+}

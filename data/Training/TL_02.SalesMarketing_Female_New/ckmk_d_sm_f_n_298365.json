@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "만약 일을 하던 도중 타 부서와 갈등 상황이 발생한다면 지원자님께서는 어떻게 해결하실 계획이십니까 직접 상황을 가정하고 말씀해 주시기 바랍니다",
+                "wordCount": 19
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 충분히 다 부서와 갈등이 일어날 수 있을 거라고 생각합니다. 그 이유는 서로 일하는 환경이 다르고 서로 어떤 업무를 하는지 충분히 모르는 상황에서 오해가 발생하기 때문입니다. 저는 이전에 호텔에서 일을 하면서 레스토랑에 있는 주방 부서와 홀 부서가 서로 갈등이 있어서 사이가 좋지 않아서 업무 분위기가 삭막해졌던 경험이 있었습니다. 그때 저는 홀에 있었는데요. 그때 주방 부서들과 함께 회식을 하면서 이야기를 나눴던 경우가 있습니다. 그때 있었던 일이 오해로 발전돼서 이런 삭막한 분위기가 연출되었다는 걸 알게 되었습니다. 그래서 저는 부서들 다른 부서들과 이런 갈등이 일어날 경우 대화로써 풀어나가려고 노력할 것입니다.",
+                "wordCount": 87
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "서로 일하는 환경이 다르고 서로 어떤 업무를 하는지 충분히 모르는 상황에서 오해가 발생하기 때문에 저는 충분히 다른 부서와 갈등이 일어날 수 있다고 생각합니다. 그 이유는 오해로 발전돼서 이런 삭막한 분위기가 연출되었기 때문입니다.",
+                "wordCount": 32
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 571278,
+            "duration": 17850,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_298365.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 1881998,
+            "duration": 58810,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_298365.wav"
+        }
+    }
+}

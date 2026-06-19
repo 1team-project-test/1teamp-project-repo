@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "최근에 보신 뉴스들 가운데에서 가장 인상 깊었던 뉴스는 무엇이 있습니까",
+                "wordCount": 10
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 최근에 우리나라 서울 이태원에서 어 많은 사람들이 일시에 몰려서 압사로 많은 희생자들이 이 나왔다는 뉴스를 접했을 때 에 많은 안타까움과 왜 저런 사태를 막지 못했을까 하는 이런 아쉬움이 많이 크는 뉴스를 접한 적이 있습니다. 아 뉴스는 아 좋은 뉴스보다는 안 좋은 뉴스를 아 접했을 때 훨씬 더 많은 충격을 주고 있는 것 같습니다. 특히 사람 생명이 이 희생되는 그런 뉴스를 접할 때는 더욱더 그런 것 같습니다. 이번 이태원 참사 경우도 공권력이나 어떤 단체나 시민들이 자발적으로 조금만 더 어 노력을 기울이고 그 어 그 암담한 사태를 어 막을 수 있었다면 얼마나 좋았을까 하는 이런 아쉬움이 그 뉴스를 접하는 많은 사람들이 다 같은 생각을 했을 것 같습니다. 그래서 항상 일이 일어났을 때 그것을 예방하겠다는 그런 자세보다는 일이 일어나기 전에 미리 대비해야 된다는 그런 철저한 아 시스템도 구축돼야 되고 모든 사람들이 어 그거에 대한 사고방식을 항상 가지고 있어야 된다고 생각합니다. 본인은 본인 스스로 위험을 잘 대처하게 해야 된다고 생각합니다. 어떤 위험한 경우가 생길 수 있다 하면은 바로 그것을 해소할 수 있는 방법을 강구해아지 않으면 항상 이런 사태는 되풀이된다고 봅니다. 일이 터지고 나서 어떤 일을 대처하는 것은 매우 위험한 일입니다.",
+                "wordCount": 177
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "최근 서울 이태원에서 많은 사람들이 일시에 몰려서 압사로 많은 희생자들이 나왔다는 뉴스를 접했을 때 많은 안타까움과 아쉬움이 많이 크는 뉴스를 접한 적이 있습니다. 항상 일이 일어났을 때 그것을 예방하겠다는 자세보다는 일이 일어나기 전에 미리 대비해야 된다는 그런 철저한 시스템도 구축돼야 되고 모든 사람들이 그것에 대한 사고방식을 항상 가지고 있어야 된다고 생각합니다.",
+                "wordCount": 51
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 243278,
+            "duration": 7600,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_386073.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3840718,
+            "duration": 120020,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_386073.wav"
+        }
+    }
+}

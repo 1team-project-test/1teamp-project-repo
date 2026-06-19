@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "업무 중 스케줄에 없던 일이 발생할 때가 많은데요 이런 상황이 생긴다면 어떻게 대처하시겠습니까",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "그래도 저는 지금 현재 제가 하고 있는 일을 계속할 것입니다. 지금 하고 있는 일에 박차를 가하여 신속하게 마무리 짓도록 일의 속도를 내겠습니다. 왜냐하면 지금 제가 하고 있는 일은 저의 업무 스타일과 일의 성격 일의 강도 그리고 시간 안배를 충분히 해서 제가 계획하고 진행하는 진행하고 있는 일입니다. 그러한 저의 현재 스케줄을 제쳐 놓고 새로운 스케줄을 끼워 넣어 하고 있는 업무의 진행 방향과 속도를 바꾸어 가면서까지 새로운 스케줄의 일을 하고 싶지는 않습니다. 그러나 새로운 스케줄이 어떤 일인지 우선 살펴는 볼 것입니다. 만약 지금 당장 제 업무를 조정하고 새로운 스케줄을 소화해야만 하는 응급 상황인지도 고려할 것입니다. 혹시 새로운 일을 조금 차후에라도 할 수 있고 그 새로운 일을 함으로써 지금 하는 일이나 추후 제가 해야 할 일에 긍정적인 결과를 가져다주는 일이라면 조금 나중에라도 천천히 새로운 스케줄을 마무리하기는 할 것입니다.",
+                "wordCount": 126
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 지금 현재 제가 하고 있는 일을 계속할 것이고 신속하게 마무리 짓도록 일의 속도를 내겠습니다. 지금 당장 제 업무를 조정하고 새로운 일정을 소화해야만 하는 응급 상황이라도 새로운 일을 조금 차후에라도 할 수 있다면 천천히 새로운 일정을 마무리하기는 할 것입니다.",
+                "wordCount": 39
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 307278,
+            "duration": 9600,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_333390.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3553358,
+            "duration": 111040,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_333390.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "35-44",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "태어나서 지금까지 했던 일들 중에 가장 후회했던 일은 무엇인가요 한 가지만 골라서 구체적으로 해당 경험을 말씀해 주세요",
+                "wordCount": 17
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저는 태어나서 지금까지 한 일 가운데 가장 후회했던 것보다 하지 못해서 후회했던 게 좀 있었는데 그거는 바로 어학 연수를 가지 않았던 것이 후회가 됩니다. 사실 대학을 다니면서 어학 연수를 가기 위해서 계획도 잡았었고 어 가기 위해서 여러 가지 자바 자금도 마련을 했었는데 좀 빨리 졸업을 해서 취업을 하고 싶은 마음에 어학 연수를 포기한 적이 있었습니다. 아무래도 영어를 수월하게 한다면 제가 지원하는 업무와 하고 싶은 업무의 선택의 폭이 많이 늘어날 수 있을 것 같은데 또 해외여행을 가더라도 또 현지인과의 대화가 잘 통하면 좀 더 즐길 수 있었을 텐데 하는 또 아쉬움도 많이 남습니다. 또 그리하여서 지금은 꼭 야 어학 연수가 아니더라도 국내에서도 열심히 공부를 하면 영어 능력을 향상시킬 수도 있는 기회가 많이 있기 때문에 저는 매일매일 또 공부도 하고 있는 중이고 또 화상 영어와 과외를 또 하면서 영어 실력을 향상하기 위해 노력 중입니다.",
+                "wordCount": 131
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 어학 연수를 가지 않은 것이 후회됩니다. 어학연수를 가기 위해서 자금도 마련하고 했었는데, 빨리 졸업을 해서 취업을 하고 싶은 마음에 포기한 적이 있었습니다. 영어를 수월하게 한다면 업무의 선택의 폭이 늘어날 것 같은데, 또 현지인과의 대화가 잘 통하면 더 즐거울 텐데 하는 아쉬움도 많이 남습니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 581838,
+            "duration": 18180,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/Experienced/ckmk_q_sm_f_e_240599.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2176078,
+            "duration": 68000,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/Experienced/ckmk_a_sm_f_e_240599.wav"
+        }
+    }
+}

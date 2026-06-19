@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "최근에 공부하고 있는 것이 있으신가요 있다면 그것을 공부하고 있는 이유는 무엇인지 그리고 그것을 공부하면서 지금까지 무엇을 배우셨는지도 함께 말씀해 주시기를 바랍니다",
+                "wordCount": 21
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 우선 사람들을 대할 때 제가 제 의견을 잘 전달할 수 있는 그런 그것에 대한 공부를 하고 있습니다. 우선 제 의사 표시와 제 저를 잘 포장할 수 있는 그런 언어 습관을 공부하고 있습니다. 또 많은 사람들 앞에서 제가 잘 말을 할 수 있도록 그런 데 대한 단어 공부 발음 연습 등 그런 것을 주로 공부하고 있습니다. 그래서 그런 발음 연습이라든가 말할 때에 좀 잡음을 넣지 않는 그런 연습도 많이 하고 있습니다. 그래서 지금은 과거보다는 많이 좋아졌다고 봅니다. 또 말할 때 두려움도 없애야 되기 때문에 그에 대한 담력도 키우려고 노력하고 있습니다. 그래서 주로 책을 읽을 때나 어떤 기사를 읽을 때 밖으로 소리 내어 읽습니다. 눈으로만 읽 읽다 보면 발음에는 크게 도움이 되지 않는 것 같습니다. 그리고 다른 사람들이 편지나 뉴스나 어떤 글을 읽는 그런 채널을 통해서 그 사람들의 발음과 말하는 태도 그런 것을 잘 살펴보고 있습니다. 그래서 저도 최대한 제 말을 다른 사람들이 잘 들을 수 있게끔 많이 공부하고 있습니다.",
+                "wordCount": 149
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "사람들을 대할 때 제 의견을 잘 전달할 수 있는 언어습관, 발음연습, 담력향상을 위해 노력하고 있습니다. 책을 읽을 때나 기사를 읽을 때 밖으로만 읽다 보면 발음에 큰 도움이 되지 않는 것 같습니다. 다른 사람들이 글을 읽는 채널을 통해 그 사람들의 발음과 말하는 태도를 살피며 제 말을 잘 들을 수 있게 많이 공부하고있습니다.",
+                "wordCount": 51
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 489038,
+            "duration": 15280,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_338547.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3697358,
+            "duration": 115540,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_338547.wav"
+        }
+    }
+}

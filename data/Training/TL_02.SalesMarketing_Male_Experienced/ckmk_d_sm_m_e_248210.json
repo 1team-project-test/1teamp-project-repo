@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "EXPERIENCED"
+        },
+        "question": {
+            "raw": {
+                "text": "영업을 하면 영업인으로서 필요한 역량은 무엇이라고 생각하시나요 중요한 거 몇 가지만 말씀해 주세요",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "한마디로 인간관계입니다. 영업을 하는 사람이나 영업을 당하는 사람이나 또는 영업하는 동료들 서로 서로 간에 인간관계를 원활히 가진다면은 하고자 하는 영업은 백 프로 이상 달성이 가능합니다. 영업은 영업을 위해서 있는 것이라 아니라 사람을 관리하기 위해서 있는 것입니다. 특히 고객 관리는 좀 더 면밀하고도 세밀한 인간관계가 중요하다고 봅니다. 상대방의 처지를 충분히 이해하고 그 수요자의 그 고객의 니즈를 확실하게 이해하기 위해서는 그 사람의 성품은 물론이요 그 사람의 모든 환경을 충분히 이해해야 된다고 봅니다. 즉 그런 모든 고객의 관리는 인간관계에서 시작이 됩니다. 인간관계 그다음에 이 하스피탈러티 돌봄 이런 것들은 영업에서 중요한 역할을 한다고 생각합니다.",
+                "wordCount": 90
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "인간관계는 영업의 백프로이상 달성가능합니다. 특히 고객관리는 인간관계에서 시작됩니다. 인간관계, 하스피탈러티 돌봄이 영업에서 중요한 역할을 합니다.",
+                "wordCount": 15
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 350798,
+            "duration": 10960,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/Experienced/ckmk_q_sm_m_e_248210.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2823758,
+            "duration": 88240,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Male/Experienced/ckmk_a_sm_m_e_248210.wav"
+        }
+    }
+}

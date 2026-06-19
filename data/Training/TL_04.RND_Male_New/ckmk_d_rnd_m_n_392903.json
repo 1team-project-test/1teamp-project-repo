@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "RND",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "55-",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "지원자님의 전공 연구 경험을 실생활에 응용하는 방안을 생각해 보신 적이 있으시다면 설명 부탁드리겠습니다",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 실생활에 사용할 수 있는 것은 다양하게 많이 있다고 생각합니다. 아 예를 들어 집에 어떤 문제가 생겼을 때 그것을 고칠 수 있는 방법이라든가 또는 현관문이 잘 안될 때 그것을 잘 수리해서 잘 작동할 수 있도록 하는 것 등 저는 다양한 분야에서 많이 활용될 수 있다고 생각합니다. 아 그리고 또는 저 집안에 어떤 제품을 설치하거나 이럴 때도 저는 많이 활용될 수 있다고 생각합니다. 아 그리고 또 주변의 사람들에게도 많은 도움을 줄 수 있는 그런 분야라고 생각하고 있습니다. 그래서 잘 응용하거나 그 실상에 실제로 어 접목하는 것은 참 좋은 생각이라고 생 생각합니다. 그래야만 또 제가 경험도 조금이라도 쌓을 수 있고 또는 그 이렇게 실천을 함으로써 아 저 새로운 제품에 대한 도전 또는 새로운 새로운 방식에 대한 이런 아이디어 같은 것을 많이 얻을 수 있다고 생각합니다. 그래서 저는 우리 일상생활에 에 잘 사용할 수 있는 그런 방법을 많이 찾아보는 것이 좋은 것 같습니다. 그리고 그것을 잘 적용했을 때 또 생활의 편리성 또는 어 생활에서 어려웠던 부분이 해결된다면 그야말로 참 좋은 방안이라 생각되어서 어 조금 실천을 많이 해 볼까 하는 생각이 많이 들고 있습니다.",
+                "wordCount": 170
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "실생활에 사용할 수 있는 것은 다양한 분야에서 많이 활용될 수 있고, 주변에도 도움을 줄 수 있는 분야라고 생각합니다. 그래서 잘 응용하거나 그 실상에 실제로 접목하는 것은 참 좋은 생각이라고 생각합니다. 그래야만 새로운 제품에 대한 도전이나 새로운 방식의 아이디어 같은 것을 얻을 수 있다고 생각합니다.",
+                "wordCount": 44
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 371278,
+            "duration": 11600,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Male/New/ckmk_q_rnd_m_n_392903.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3773518,
+            "duration": 117920,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/04.RND/Male/New/ckmk_a_rnd_m_n_392903.wav"
+        }
+    }
+}

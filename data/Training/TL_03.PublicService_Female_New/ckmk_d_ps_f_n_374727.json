@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "45-54",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "이직을 생각하는 동료를 만나게 된다면 어떤 말씀을 해주실 수 있습니까",
+                "wordCount": 10
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "음 일단 이직을 생각하는 동료를 만나면 이직의 생각이 몇 프로인지부터 묻겠습니다. 어 몇 프로의 생각을 지금 움직이는 쪽으로 가 있는지 계속 지금 직장에 남아 남겠다고 생각하는 부분은 몇 프로인지 진심을 일단 물어 보고 많은 생각이 이직 쪽으로 움직여 있다면 그거에 대해서 어 되짚어 보라고 생각은 하지 않을 생각입니다. 본인이 결정한 거를 거의 결정이 끝난 상태라고 한다면 박수를 쳐주고 응원을 해 줄 것 같습니다. 하지만 반반 정도라고 하면 같이 머리를 맞대고 그래도 어느 쪽이 음 그 동료의 인생에 도움이 되는지를 짚어 보고 음 조언 아닌 조언이겠지만 같이 고민을 해 보겠습니다.",
+                "wordCount": 90
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "",
+                    "expression": "",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "이직 생각을 하는 동료에게 이직의 생각을 물습니다. 본인 결정이 거의 끝난 상태라면 응원은 해 줄 것 같습니다. 하지만 어느 쪽이 동료의 인생에 도움이 되는지 짚어 보고 같이 고민을 해 보겠습니다.",
+                "wordCount": 30
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 209038,
+            "duration": 6530,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_q_ps_f_n_374727.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3233358,
+            "duration": 101040,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Female/New/ckmk_a_ps_f_n_374727.wav"
+        }
+    }
+}

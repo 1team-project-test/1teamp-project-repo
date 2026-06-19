@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "SM",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "FEMALE",
+            "ageRange": "-34",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "본인의 단점이 있다면 말씀해 주세요 그리고 이것을 보완하기 위해서 어떤 노력들을 했는지 그것도 같이 말씀해 주세요",
+                "wordCount": 16
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "저만의 단점은 다른 사람들과 업무를 수행하거나 같이 하는 일이 있을 때에는 해당 팀원이 뒤처지고 있다는 생각이 들면 해당 팀원을 돕기 위해 제 업무를 나중으로 미룬다는 것입니다. 팀원을 돕기 위해 제 업무를 뒤로 미루다 보니 팀원은 도왔지만 제 업무를 제시간에 해결할 수 없다는 단점이 있습니다. 저는 이를 극복하고자 먼저 팀원들을 도울 필요가 더욱 강할 때에는 팀원을 먼저 돕도록 합니다. 하지만 제 일이 먼저 시급하다는 생각이 들 때에는 먼저 제 업무를 완료하고 그다음 시간이 남는다면 다른 팀원의 업무를 도와주려고 하는 편입니다. 이렇게 하다 보니 제 업무는 제시간에 해결할 수 있었고 다른 팀원에게도 도움이 될 수 있었었습니다. 앞으로도 이렇게 다른 사람과 함께 하게 된다면 다른 사람을 적극적으로 도울 것입니다.",
+                "wordCount": 105
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "하지만 제 일이 먼저 시급하다는 생각이 들 때에는 먼저 제 업무를 완료하고 그다음 시간이 남는다면 다른 팀원의 업무를 도와주려고 하는 편입니다.",
+                    "expression": "s_intp",
+                    "category": "attitude"
+                }
+            ],
+            "summary": {
+                "text": "저는 팀원을 돕기보다는 먼저 팀원을 도울 필요가 강할 때에는 팀원을 먼저 돕고, 다음 시간이 남는다면 다른 팀원의 업무를 도와주려고 하는 편입니다. 이렇게 하다 보니 제 업무는 제시간에 해결할 수 있었고 다른 팀원에게도 도움이 될 수 있었습니다.",
+                "wordCount": 36
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 312398,
+            "duration": 9760,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_q_sm_f_n_215189.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 2671438,
+            "duration": 83480,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/02.SalesMarketing/Female/New/ckmk_a_sm_f_n_215189.wav"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "dataSet": {
+        "info": {
+            "date": "20230116",
+            "occupation": "PS",
+            "channel": "MOCK",
+            "place": "ONLINE",
+            "gender": "MALE",
+            "ageRange": "35-44",
+            "experience": "NEW"
+        },
+        "question": {
+            "raw": {
+                "text": "제도적인 부패에 대한 지원자님의 생각 그리고 제도적 부패 대처 방법에 대해 말씀해 주세요",
+                "wordCount": 13
+            },
+            "emotion": [],
+            "intent": []
+        },
+        "answer": {
+            "raw": {
+                "text": "네 제도적인 부패는 어 제 개인적인 생각으로는 필연적이라고 생각을 합니다. 제도적인 부패가 좋다는 이야기가 아니라 어 제도적인 부패는 있을 수밖에 없다. 음 그래서 제도적인 부패를 없애기 위해서 역사적으로두 많은 고민을 해 왔고 그렇게 사회가 사실은 발전해 왔다고 생각을 합니다. 그래서 이 제도적인 부패를 대처하기 위한 방법은 어 그것을 점검하는 것입니다. 제도적인 부패가 있는지를 잘 어 점검할 수 있는 기관을 또 만들고 그런 시스템을 제도적으로 정비를 하는 게 유일한 방법이라고 생각을 합니다. 개인적인 윤리심이나 도덕심에 의존하고 호소하는 것도 필요하고 그와 동시에 제도적으로 이런 제도적인 부패를 없애 나가는 그런 어 법적인 힘을 가진 그런 기구가 필요하다고 생각합니다. 그렇게 해서 어 내가 그 행동을 하고 싶더라도 했을 때 뒤따라 올 그것이 두려워서 겁나서 못 하게 되는 것도 사회에서는 어 꼭 필요하다고 생각합니다. 그래서 개인적으로는 윤리나 도덕이 호소하겠지만 제도적인 사회 집단 안에서는 제도적인 방법으로 이런 부패에 대처해야 한다고 생각합니다. 이상입니다.",
+                "wordCount": 136
+            },
+            "emotion": [],
+            "intent": [
+                {
+                    "text": "개인적인 윤리심이나 도덕심에 의존하고 호소하는 것도 필요하고 그와 동시에 제도적으로 이런 제도적인 부패를 없애 나가는 그런 어 법적인 힘을 가진 그런 기구가 필요하다고 생각합니다.",
+                    "expression": "c_value",
+                    "category": "background"
+                }
+            ],
+            "summary": {
+                "text": "개인적인 윤리심이나 도덕심에 의존하고 호소하는 것도 필요하지만 제도적으로 제도적으로 부패를 없애 나가는 그런 법적인 힘을 가진 기구가 필요합니다. 그래서 개인적으로는 윤리나 도덕이 호소하겠지만 제도적인 사회 집단 안에서는 제도적인 방법으로 이런 부패에 대처해야 합니다.",
+                "wordCount": 33
+            }
+        }
+    },
+    "rawDataInfo": {
+        "question": {
+            "fileFormat": "wav",
+            "fileSize": 311758,
+            "duration": 9740,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_q_ps_m_n_310960.wav"
+        },
+        "answer": {
+            "fileFormat": "wav",
+            "fileSize": 3337678,
+            "duration": 104300,
+            "samplingBit": 16,
+            "channelCount": 1,
+            "samplingRate": "16kHz",
+            "audioPath": "/Mock/03.PublicService/Male/New/ckmk_a_ps_m_n_310960.wav"
+        }
+    }
+}
