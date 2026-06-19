@@ -6,15 +6,30 @@ import auth
 import document_page
 import interview_page
 import feedback_page  # 💡 [신규 추가] 피드백 페이지 모듈 임포트
+import history_page
+
+from mariadb_control import initialize_database_automatically
 
 load_dotenv()
-st.set_page_config(page_title="꼬치꼬치 - AI 면접 코칭", page_icon="🍢", layout="wide")
+
+initialize_database_automatically()
+
+st.set_page_config(
+    page_title="꼬치꼬치 - AI 면접 코칭",
+    page_icon="🍢",
+    layout="wide"
+)
 
 # 세션 기본값 일괄 초기화
-for key, default in [("logged_in", False), ("user_info", None), ("show_auth_page", False), ("current_menu", "📄 이력서 제출")]:
+for key, default in [
+    ("logged_in", False),
+    ("user_info", None),
+    ("show_auth_page", False),
+    ("current_menu", "📄 이력서 제출"),
+    ("interview_history", [])
+]:
     if key not in st.session_state:
         st.session_state[key] = default
-
 # Query Parameter 감지 시 즉시 리프레시
 if "trigger_auth" in st.query_params:
     st.query_params.clear()
@@ -70,18 +85,17 @@ else:
     st.title(f"🍢 {st.session_state['user_info']['username']}님의 면접 코칭방")
     
     # 💡 [오류 해결 핵심] 피드백 리포트 메뉴 항목을 menu_list에 정식 추가하여 index 에러 해결!
-    menu_list = ["📄 이력서 제출", "🤖 실전 면접방", "📊 면접 피드백"]
+    menu_list = ["📄 이력서 제출", "🤖 실전 면접방", "📊 면접 피드백", "📚 면접 이력"]
     menu = st.sidebar.radio("이동할 페이지 선택", menu_list, index=menu_list.index(st.session_state["current_menu"]))
     st.session_state["current_menu"] = menu
 
     if st.sidebar.button("로그아웃"):
         st.session_state.update({"logged_in": False, "user_info": None})
-        for key in ["document_loaded", "db_data_fetched", "selected_company", "selected_job", "resume_text", "intro_text", "document_text", "interview_messages", "feedback_report"]:
+        for key in ["document_loaded", "db_data_fetched", "selected_company", "selected_job", "resume_text", "intro_text", "document_text", "interview_messages", "feedback_report", "history_saved"]:
             st.session_state.pop(key, None)
         st.rerun()
 
-    if os.getenv("OPENAI_API_KEY"): st.caption("⚡ AI 엔진이 연결되었습니다.")
-    else: st.error("⚠️ .env 파일에서 OPENAI_API_KEY를 확인해 주세요.")
+    st.caption("⚡ 로컬 AI 엔진이 연결되었습니다.")
     st.markdown("---")
 
     # 각 메뉴 페이지 렌더링 스위칭 연동 구역
@@ -90,5 +104,6 @@ else:
     elif menu == "🤖 실전 면접방":
         interview_page.render_interview_page()
     elif menu == "📊 면접 피드백":
-        # 💡 [신규 추가] 피드백 전용 페이지 렌더링 함수 호출 연결
         feedback_page.render_feedback_page()
+    elif menu == "📚 면접 이력":
+        history_page.render_history_page()

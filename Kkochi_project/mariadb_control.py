@@ -1,4 +1,5 @@
 import os
+import json
 import streamlit as st
 import mysql.connector
 from dotenv import load_dotenv
@@ -35,6 +36,25 @@ def initialize_database_automatically():
                         personality TEXT,
                         full_text TEXT,
                         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+                """)
+                # 3. 면접 이력 테이블 생성
+                cur.execute("""
+                    CREATE TABLE IF NOT EXISTS kkochi_interview_history (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        user_id VARCHAR(50) NOT NULL,
+                        company VARCHAR(100),
+                        job VARCHAR(100),
+                        score INT,
+                        grade VARCHAR(10),
+                        logic_score INT,
+                        specificity_score INT,
+                        job_fit_score INT,
+                        followup_score INT,
+                        pass_probability INT,
+                        messages_json LONGTEXT,
+                        feedback_json LONGTEXT,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
                 """)
                 conn.commit()
@@ -94,7 +114,6 @@ def save_parsed_resume(user_id, company, job, style, file_name, skills, exp, mot
     except:
         return False
     
-    # 💡 mariadb_control.py 최하단에 이어서 복사 붙여넣기 해주세요.
 def get_user_resume(user_id):
     """[이력서/설정 불러오기] 로그인된 유저의 기존 면접 설정 및 파싱 서류 데이터를 DB에서 조회"""
     try:
@@ -105,3 +124,74 @@ def get_user_resume(user_id):
             return cur.fetchone()
     except:
         return None
+
+def save_interview_history(user_id, company, job, report, messages):
+    """[면접 이력 저장] 피드백 결과와 대화 기록을 DB에 저장"""
+    try:
+        with get_db() as conn, conn.cursor() as cur:
+            cur.execute("USE {};".format(N))
+
+            sql = """
+                INSERT INTO kkochi_interview_history
+                (
+                    user_id,
+                    company,
+                    job,
+                    score,
+                    grade,
+                    logic_score,
+                    specificity_score,
+                    job_fit_score,
+                    followup_score,
+                    pass_probability,
+                    messages_json,
+                    feedback_json
+                )
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """
+
+            cur.execute(
+                sql,
+                (
+                    user_id,
+                    company,
+                    job,
+                    report.get("total_score", 0),
+                    report.get("grade", "-"),
+                    report.get("logic_score", 0),
+                    report.get("specificity_score", 0),
+                    report.get("job_fit_score", 0),
+                    report.get("followup_score", 0),
+                    report.get("pass_probability", 0),
+                    json.dumps(messages, ensure_ascii=False),
+                    json.dumps(report, ensure_ascii=False),
+                ),
+            )
+
+            conn.commit()
+            return True
+
+    except Exception as e:
+        st.error(f"❌ 면접 이력 저장 실패: {e}")
+        return False
+
+
+def get_interview_history(user_id):
+    """[면접 이력 조회] 로그인된 유저의 면접 이력 목록 조회"""
+    try:
+        with get_db() as conn, conn.cursor(dictionary=True) as cur:
+            cur.execute("USE {};".format(N))
+            cur.execute(
+                """
+                SELECT *
+                FROM kkochi_interview_history
+                WHERE user_id = %s
+                ORDER BY created_at DESC
+                """,
+                (user_id,),
+            )
+            return cur.fetchall()
+
+    except Exception as e:
+        st.error(f"❌ 면접 이력 조회 실패: {e}")
+        return []
