@@ -135,7 +135,7 @@ def render_feedback_page():
     if "history_saved" not in st.session_state:
         user_id = st.session_state["user_info"]["user_id"]
 
-        save_interview_history(
+        saved = save_interview_history(
             user_id=user_id,
             company=st.session_state.get("selected_company", "기업 없음"),
             job=st.session_state.get("selected_job", "직무 없음"),
@@ -143,7 +143,8 @@ def render_feedback_page():
             messages=st.session_state.get("interview_messages", []),
         )
 
-        st.session_state["history_saved"] = True
+        if saved:
+            st.session_state["history_saved"] = True
 
     col1, col2, col3 = st.columns(3)
 

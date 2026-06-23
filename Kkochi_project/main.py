@@ -26,10 +26,11 @@ for key, default in [
     ("user_info", None),
     ("show_auth_page", False),
     ("current_menu", "📄 이력서 제출"),
-    ("interview_history", [])
+    ("menu_radio", "📄 이력서 제출"),
 ]:
     if key not in st.session_state:
         st.session_state[key] = default
+
 # Query Parameter 감지 시 즉시 리프레시
 if "trigger_auth" in st.query_params:
     st.query_params.clear()
@@ -86,8 +87,24 @@ else:
     
     # 💡 [오류 해결 핵심] 피드백 리포트 메뉴 항목을 menu_list에 정식 추가하여 index 에러 해결!
     menu_list = ["📄 이력서 제출", "🤖 실전 면접방", "📊 면접 피드백", "📚 면접 이력"]
-    menu = st.sidebar.radio("이동할 페이지 선택", menu_list, index=menu_list.index(st.session_state["current_menu"]))
-    st.session_state["current_menu"] = menu
+
+    if st.session_state.get("current_menu") not in menu_list:
+        st.session_state["current_menu"] = "📄 이력서 제출"
+
+    if "menu_radio" not in st.session_state:
+        st.session_state["menu_radio"] = st.session_state["current_menu"]
+
+    def change_menu():
+        st.session_state["current_menu"] = st.session_state["menu_radio"]
+
+    st.sidebar.radio(
+        "이동할 페이지 선택",
+        menu_list,
+        key="menu_radio",
+        on_change=change_menu
+    )
+
+    menu = st.session_state["current_menu"]
 
     if st.sidebar.button("로그아웃"):
         st.session_state.update({"logged_in": False, "user_info": None})

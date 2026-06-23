@@ -3,26 +3,57 @@ import re
 import os
 import json
 import mariadb_control as db
-from openai import OpenAI
+from local_llm import ask_local_ai
 from docx import Document
 import io
 
 def parse_document_via_ai(text_content):
-    """OpenAI API를 활용해 한글 서류 문맥을 완벽 분석하고 4대 항목 JSON으로 자동 파싱"""
+    """Ollama 기반 이력서/자기소개서 자동 파싱"""
     try:
-        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            response_format={ "type": "json_object" },
-            messages=[
-                {"role": "system", "content": "너는 이력서와 자기소개서 전문 파서 엔진이다. 제공된 텍스트를 철저히 분석해서 반드시 다음 4개의 키를 가진 JSON 오브젝트로만 응답해라: 'skills_and_specs' (보유 기술, 학력, 자격증 스펙), 'experience_projects' (경력 사항 및 수행 프로젝트 이력), 'motivation' (지원 동기 및 입사 후 포부), 'personality' (성격의 장단점 및 가치관). 텍스트에서 해당하는 내용이 있다면 핵심 요약 문장으로 채우고, 전혀 없다면 빈 문자열로 채워라."},
-                {"role": "user", "content": text_content}
-            ],
-            temperature=0.0
-        )
-        return json.loads(response.choices.message.content)
-    except:
-        return {"skills_and_specs": "", "experience_projects": "", "motivation": "", "personality": ""}
+        prompt = f"""
+너는 이력서와 자기소개서 전문 파서 엔진이다.
+
+아래 서류 내용을 분석해서 반드시 JSON 형식으로만 답변하라.
+
+[서류 내용]
+{text_content}
+
+[반드시 아래 JSON 형식만 출력]
+{{
+    "skills_and_specs": "보유 기술, 학력, 자격증 스펙",
+    "experience_projects": "경력 사항 및 수행 프로젝트 이력",
+    "motivation": "지원 동기 및 입사 후 포부",
+    "personality": "성격의 장단점 및 가치관"
+}}
+
+[출력 규칙]
+반드시 JSON만 출력한다.
+JSON 밖에 설명을 쓰지 않는다.
+해당 내용이 없으면 빈 문자열로 출력한다.
+반드시 한국어만 사용한다.
+한자, 일본어, 중국어, 태국어 문자를 사용하지 않는다.
+"""
+
+        result = ask_local_ai(prompt)
+
+        result = result.replace("```json", "")
+        result = result.replace("```", "")
+        result = result.strip()
+
+        match = re.search(r"\{.*\}", result, re.DOTALL)
+        if not match:
+            raise ValueError("JSON 형식 응답을 찾지 못했습니다.")
+
+        return json.loads(match.group())
+
+    except Exception as e:
+        print(f"[LOCAL PARSING ERROR] {e}")
+        return {
+            "skills_and_specs": "",
+            "experience_projects": "",
+            "motivation": "",
+            "personality": ""
+        }
 
 def extract_text_from_docx(uploaded_file):
     """업로드된 바이너리 .docx 파일에서 순수 한글 텍스트 본문 전체를 긁어오는 유틸 함수"""

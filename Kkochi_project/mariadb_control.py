@@ -86,7 +86,8 @@ def authenticate_user(user_id, password):
             cur.execute("USE {};".format(N))
             cur.execute("SELECT * FROM {} WHERE user_id = %s AND password = %s".format(T), (user_id, password))
             return cur.fetchone()
-    except: 
+    except Exception as e:
+        st.error(f"❌ 로그인 DB 오류: {e}")
         return None
 
 def save_parsed_resume(user_id, company, job, style, file_name, skills, exp, motiv, personality, raw_text):
@@ -111,7 +112,8 @@ def save_parsed_resume(user_id, company, job, style, file_name, skills, exp, mot
             cur.execute(sql, (user_id, company, job, style, skills, exp, motiv, personality, raw_text))
             conn.commit()
             return True
-    except:
+    except Exception as e:
+        st.error(f"❌ 이력서 저장 실패: {e}")
         return False
     
 def get_user_resume(user_id):

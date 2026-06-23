@@ -1,4 +1,4 @@
-from local_llm import ask_local_ai
+from local_llm import ask_local_question
 import streamlit as st
 
 def generate_ai_question(messages):
@@ -54,7 +54,7 @@ def generate_ai_question(messages):
 
 """
 
-        return ask_local_ai(prompt)
+        return ask_local_question(prompt)
 
     except Exception as e:
         return f"⚠️ Ollama 연결 오류: {e}"
@@ -69,7 +69,7 @@ def render_interview_page():
     company = st.session_state.get("selected_company", "지정 기업")
     job = st.session_state.get("selected_job", "지정 직무")
     style = st.session_state.get("interviewer_style", "🔥 압박형 (날카로운 꼬리 질문)")
-    doc_text = st.session_state.get("document_text", "")[:1200]
+    doc_text = st.session_state.get("document_text", "")[:2000]
 
     st.subheader("🤖 AI 실전 압박 면접방")
     st.caption(f"🎯 목표 기업: **{company}** | 💼 지원 직무: **{job}** | 🧠 면접관 성향: **{style}**")
