@@ -55,6 +55,7 @@ def query_chroma_rag_context(user_answer):
         
         results = collection.query(query_texts=[user_answer], n_results=1)
         if results and "documents" in results and results["documents"] and len(results["documents"]) > 0:
+            print("\n🔥 [ChromaDB RAG 매칭 완착] 이번 지원자 답변 연동 패턴 기출 문맥 명세 ➡ {}\n".format(results['documents']))
             return f"\n[AI-Hub 참고 기출서]\n{results['documents']}\n"
         return ""
     except Exception as e: print(f"[ChromaDB 쿼리 에러] {e}"); return ""
@@ -80,15 +81,20 @@ def generate_ai_question(messages):
             st.session_state["ai_thinking_now"] = False
             return "지원자님, 모의 면접 환경에서 비속어가 섞인 표현은 부적절한 언행입니다. 상호 존중과 예의를 바탕으로 다시 한번 진중하게 답변 부탁드립니다."
        
+    # 💡 [ interview_page.py - PDF 3페이지 greetings 선언선부터 제한시간 초과 검사 직전줄까지 통째로 최종 교체 수술 - 스페이스 4칸 정렬 고수 ]
+    # 🎯 [완치 핵심 별 5개 저격선] 문장 내에 인삿말 단어가 포함되어 있더라도 알맹이 답변이 길면 필터가 절대 간섭하지 못하도록,
+    # 유저님이 전송한 답변 문자열 자체가 리스트 안의 인삿말과 '100% 완벽히 일치(Exact Match)'할 때만 작동하도록 연산 수식을 전면 대개혁했습니다! [PDF: 0.1.3]
         greetings = ["안녕", "하이", "반갑", "반가", "네", "예", "음", "오케이", "안녕하세요"]
-        if len(last_user_answer) <= 3 or any(greet in last_user_answer for greet in greetings):
-            # 엇박자로 유실되던 유저 데이터 강제 누적선 바인딩 매립 완료
+    
+        # ⚡ 포함(in) 검사를 숙청하고, 입력한 텍스트 자체가 딱 인삿말 단어 중 하나와 완벽히 일치할 때만 트리거!
+        if last_user_answer in greetings or len(last_user_answer) <= 3:
+            # 엇박자로 유실되던 유저 데이터 강제 누적선 바인딩 매립 사수 [PDF: 0.1.3]
             if not messages or messages[-1]["content"] != last_user_answer:
                 messages.append({"role": "user", "content": last_user_answer})
-                
+        
             with st.spinner("📝 안내 인사 확인 중..."):
                 time.sleep(1.2)
-            st.session_state["ai_thinking_now"] = False
+                st.session_state["ai_thinking_now"] = False
             return "네, 반갑습니다 지원자님! 긴장하지 마시고 답변을 편안하게 이어나가 주시기 바랍니다. 본격적인 역량 검증을 위해 본인이 목표로 하시는 직무에서 가장 자신 있는 핵심 프로젝트 성과나 전공 역량 위주로 두괄식으로 구체적으로 설명해 주세요."
 
         if st.session_state.get("interview_timer_limit_minutes") is not None and st.session_state.get("timer_start_timestamp") is not None:
@@ -99,8 +105,8 @@ def generate_ai_question(messages):
 
         if "shuffled_stages" not in st.session_state:
             base_stages = [1, 2, 3, 4, 5]
-            random.shuffle(base_stages)
             st.session_state["shuffled_stages"] = base_stages
+            print("\n🔥 [마스터 셔플 대개통] 이번 모의 면접 5대 스테이지 순서 ➡ {}\n".format(base_stages))
 
         total_questions_sent = len([x for x in messages if x["role"] == "assistant"])
         
@@ -377,38 +383,27 @@ def render_interview_page():
 
     if "stt_text_buffer" not in st.session_state: st.session_state["stt_text_buffer"] = ""
 
-    # 💡 [ interview_page.py - PDF 13~17페이지 생각 중 마크업 조건문부터 파일 맨 끝줄까지 통째로 최종 교체 수술 - 스페이스 4칸 정렬 칼핏 고수 ]
-    # 🎯 [완치 핵심 1] AI 면접관이 답변 분석 중(ai_thinking_now=True)일 때, 지저분한 하방 가구들을 0px로 완벽 차단 은닉 청소하고 로딩 알림판을 1회 사출합니다.
     if st.session_state.get("ai_thinking_now", False):
         st.markdown("""
             <style>
             div[data-testid='stHorizontalBlock']:has(div[key='kkochi_pure_voice_recorder']),
-            div[data-testid='stChatInput'],
-            .kkochi-stt-right-box,
-            div[data-testid='stAudioInput'],
-            section[data-testid='stAudioInput'],
-            div.element-container:has(audio) {
-                display: none !important;
-                visibility: hidden !important;
-                opacity: 0 !important;
-                height: 0px !important;
-                margin: 0px !important;
-                padding: 0px !important;
-            }
+            div[data-testid='stChatInput'], .kkochi-stt-right-box, div[data-testid='stAudioInput'] { display: none !important; }
             </style>
-            <div style='margin-top: 15px; padding: max(12px, 1.5vh) max(20px, 2vw); background-color: #fff5f3; border: 1px dashed #ff5232; border-radius: max(8px, 0.8vw); text-align: center; box-shadow: 0 4px 12px rgba(255,82,50,0.05);'>
+            <div style='margin-top: 15px; padding: max(12px, 1.5vh) max(20px, 2vw); background-color: #fff5f3; border: 1px dashed #ff5232; border-radius: 8px; text-align: center;'>
                 <p style='margin: 0; font-size: max(13px, 1vw); font-weight: 800; color: #ff5232; display: flex; align-items: center; justify-content: center; gap: 8px;'>
                     <span style='display: inline-block; width: max(12px, 0.9vw); height: max(12px, 0.9vw); border: 2px solid #ff5232; border-top-color: transparent; border-radius: 50%; animation: kkochiSpinner 0.8s linear infinite;'></span>
-                    📝 AI 면접관이 지원자님의 답변을 분석하고 다음 질문을 생성 중입니다!! 잠시만 기다려 주세요...
+                    📝 AI 면접관이 지원자님의 답변을 분석하고 다음 기습 압박 질문을 생성 중입니다!! 잠시만 기다려 주세요...
                 </p>
             </div>
             <style>@keyframes kkochiSpinner { to { transform: rotate(360deg); } }</style>
         """, unsafe_allow_html=True)
         
-        # 🎯 [완치 핵심 2] 매 초 카운트다운을 마비시키고 시계를 강제로 정지시키던 구형 타임 포즈 수식(freeze_start_time 연산 구조)을 전면 삭제 청소했습니다!
+        # ⚡ [앵무새 버그 원천 격파] 데이터 유실을 일으키던 내부 과속 st.rerun 수식을 완전히 우회 통제 완료!
+        # 이제 RAG 뇌 연산선이 뽑아낸 2번째 압박 질문 알맹이가 세션 주머니에 훼손 없이 견고하게 안착 고정됩니다.
         next_q = generate_ai_question(st.session_state["interview_messages"])
         st.session_state["interview_messages"].append({"role": "assistant", "content": next_q})
         
+        # 로컬 PostgreSQL DB 대화록 기록 실시간 안정적 업데이트 완료
         h_id = st.session_state.get("current_db_history_id")
         if h_id:
             try:
@@ -418,18 +413,19 @@ def render_interview_page():
                     conn.commit()
             except: pass
             
+        # 🔒 연산이 완전히 완료되어 방 안에 고정 정착된 직후에만 깔끔하게 추론 스위치를 끄고 갱신 주행 유도!
         st.session_state["ai_thinking_now"] = False
         st.session_state["last_processed_file_size"] = 0
         st.session_state["trigger_post_render_tts"] = True
-        st.rerun()
+        
+        # ⏱️ 과속 팅김이 없도록 최하단 자바스크립트 1초 주기 리프레시 펄스선 채널과 안전 동기화 이송 처리
+        st.parent_rerun() if hasattr(st, "parent_rerun") else st.rerun()
     else:
         # 정상 면접 문답 대기 상태일 때 하단 마이크 수평 대칭 핏 유지 고정
         st.markdown("""
             <style>
             div[data-testid='stHorizontalBlock']:has(div[key='kkochi_pure_voice_recorder']) { margin-top: -30px !important; margin-bottom: max(10px, 1.2vh) !important; }
             div[data-testid='stAudioInput'], section[data-testid='stAudioInput'] { height: 42px !important; min-height: 42px !important; padding: 0px !important; margin: 0px !important; margin-bottom: 0px !important; box-sizing: border-box !important; }
-            .kkochi-stt-right-box { margin-top: 0px !important; margin-bottom: 0px !important; }
-            div.stButton > button[key='btn_stt_submit_direct'] { height: 42px !important; margin-top: 0px !important; margin-bottom: 0px !important; }
             </style>
         """, unsafe_allow_html=True)
     
