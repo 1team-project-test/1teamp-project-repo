@@ -20,16 +20,12 @@ def render_auth_page():
             "}"
             "[data-testid='stHeader'] { background: transparent !important; display: none !important; height: 0 !important; }"
             ".main .block-container { max-width: 650px !important; width: 100% !important; margin: 0 auto !important; padding: 0 !important; }"
-            ""
-            "/* 📌 상단 고정 및 55vh 압축으로 바닥 잘림 완벽 해결 */"
             "[data-testid='stSubcontainer'], div[data-testid='stVerticalBlock'] > div:has(div[data-testid='stTabs']) {"
             "    background-color: #ffffff !important; border: 1px solid #e2e8f0 !important; border-radius: 16px !important;"
             "    max-width: 650px !important; width: 100% !important; padding: 10px 40px 25px 40px !important; box-shadow: 0px 15px 35px rgba(0,0,0,0.1) !important;"
             "    position: fixed !important; left: 50% !important; top: 35% !important; transform: translateX(-50%) !important; z-index: 99999 !important;"
             "    max-height: 55vh !important; overflow-y: auto !important; overflow-x: hidden !important;"
             "}"
-            ""
-            "/* 폼 요소 간격 컴팩트 압축 */"
             "div[data-testid='stTextInput'] { margin-bottom: 8px !important; width: 100% !important; }"
             "div[data-testid='stTextInput'] label p { color: #1a202c !important; font-weight: 700 !important; margin-bottom: 4px !important; }"
             "div[data-testid='stTextInput'] input { background-color: #f8fafc !important; border: 1px solid #cbd5e1 !important; border-radius: 8px !important; height: 38px !important; padding-left: 12px !important; }"
@@ -40,8 +36,7 @@ def render_auth_page():
             "div.stButton > button { background-color: #ff5232 !important; color: white !important; font-size: 15px !important; font-weight: 700 !important; border-radius: 8px !important; border: none !important; height: 42px !important; margin-top: 10px !important; width: 100% !important; }"
             "</style>", unsafe_allow_html=True
         )
-    else:
-        st.error("⚠️ 'background.png' 배경 파일을 찾을 수 없습니다.")
+    else: st.error("⚠️ 'background.png' 배경 파일이 없습니다.")
 
     with st.container():
         st.markdown('<div class="back-btn-box">', unsafe_allow_html=True)
@@ -52,27 +47,25 @@ def render_auth_page():
             
         tab1, tab2 = st.tabs(["🔒 로그인", "📝 회원가입"])
         
-        # --- 탭 1: 로그인 구역 ---
         with tab1:
             login_id = st.text_input("아이디", key="login_id", placeholder="아이디를 입력하세요")
             login_pw = st.text_input("비밀번호", type="password", key="login_pw", placeholder="비밀번호를 입력하세요")
             
-            # 💡 버튼 클릭 또는 비밀번호 입력창에서 엔터(Enter)를 눌렀을 때 둘 다 실행되도록 결합
             btn_click = st.button("로그인하기", use_container_width=True, key="btn_login_submit")
             
-            # 💡 login_pw에 값이 있고 엔터가 입력되거나, 버튼이 클릭되면 로그인 검증 가동
             if btn_click or (login_id and login_pw and st.session_state.get("login_pw")):
-                # 버튼을 누르지 않고 엔터만 쳤을 때 로직이 2번 중복 실행되는 것을 방지하는 안전 조건
                 if login_id and login_pw:
                     user = db.authenticate_user(login_id, login_pw)
                     if user:
                         st.session_state.update({"logged_in": True, "user_info": user, "show_auth_page": False})
+                        
+                        # 💡 [오류 해결 핵심] 읽기 전용인 쿠키 대입 연산 대신, 공식 순정 주소창 파라미터 제어로 안전 수송 전환!
+                        st.query_params["sid"] = str(user["user_id"])
+                        
                         st.success("🎉 환영합니다!")
                         st.rerun()
-                    else: 
-                        st.error("❌ 아이디 또는 비밀번호가 올바르지 않습니다.")
-                else: 
-                    st.warning("⚠️ 모든 필드를 입력해 주세요.")
+                    else: st.error("❌ 아이디 또는 비밀번호가 올바르지 않습니다.")
+                else: st.warning("⚠️ 모든 필드를 입력해 주세요.")
 
         with tab2:
             reg_id = st.text_input("아이디 생성", key="reg_id", placeholder="사용할 로그인 ID")
@@ -88,20 +81,7 @@ def render_auth_page():
             
             if st.button("가입하기", use_container_width=True, key="btn_register_submit"):
                 if all([reg_id, reg_pw, reg_name, reg_email, reg_phone]):
-                    if not re.match(r"^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$", reg_pw): 
-                        st.warning("⚠️ 비밀번호 조건을 다시 확인해 주세요.")
-                    elif "@" not in reg_email: 
-                        st.error("❌ 올바른 이메일 주소 형식이 아닙니다.")
-                    else:
-                        # 회원가입 함수 실행
-                        is_success = db.register_user(reg_name, reg_id, reg_pw, reg_email, reg_phone)
-                        
-                        if is_success:
-                            st.success("🎉 회원가입 성공! 로그인 탭에서 로그인을 진행해 주세요.")
-                            # 사용자가 성공 메시지를 볼 수 있도록 1.5초 대기 후 새로고침 (필요시 사용)
-                            # import time; time.sleep(1.5); st.rerun()
-                        else:
-                            # mariadb_control.py에서 에러 출력을 해주지만, 여기서도 실패 알림
-                            st.error("❌ 회원가입에 실패했습니다. 위의 DB 오류 메시지를 확인하세요.")
-                else: 
-                    st.warning("⚠️ 모든 항목을 빈칸 없이 채워주세요.")
+                    if not re.match(r"^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$", reg_pw): st.warning("⚠️ 비밀번호 조건을 다시 확인해 주세요.")
+                    elif "@" not in reg_email: st.error("❌ 올바른 이메일 주소 형식이 아닙니다.")
+                    elif db.register_user(reg_name, reg_id, reg_pw, reg_email, reg_phone): st.success("✅ 회원가입 성공!")
+                else: st.warning("⚠️ 모든 항목을 빈칸 없이 채워주세요.")
