@@ -1,0 +1,1 @@
+pip install fastapi uvicorn python-multipart pymysql bcrypt python-docx openai python-dotenv
